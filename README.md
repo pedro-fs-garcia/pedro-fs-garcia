@@ -17,25 +17,10 @@ Once advertisor and filmmaker. Currently a student of Systems Analysis and Devel
   <img alt="sqlite" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg">
   <img alt="linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg">
   <img alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
+  <img alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
   <img alt="VSCode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg">
   <img alt="Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
 </p>
-
-
-###
-
-- **Programming languages**:
-  - Python
-  - HTML & CSS
-  - SQL
-- **Frameworks and Libraries**:
-  - Flask
-  - Bootstrap
-- **Version control**:
-  - Git & GitHub
-- **Database**:
-  - MySQL
-  - SQLite
 
 ## PoW
 
