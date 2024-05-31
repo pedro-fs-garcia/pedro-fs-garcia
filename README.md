@@ -24,10 +24,10 @@ Once advertisor and filmmaker. Currently a student of Systems Analysis and Devel
 
 ## PoW
 
-### [Projeto 1: SCRUM Educational Platform](https://github.com/SeuUsuario/Projeto1)
+### [Projeto 1: SCRUM Educational Platform](https://github.com/Titus-System/1Semestre-ADS)
 An interactive educational platform for learning and implementing the SCRUM methodology.
 
-### [Projeto 2: Film Library](https://github.com/SeuUsuario/Projeto2)
+### [Projeto 2: Film Library](https://github.com/pedro-fs-garcia/grandes_filmes)
 A website built with Flask, HTML, CSS, Bootstrap, and MySQL to showcase some of the greatest movies of all time.
 
 ## Contribute
