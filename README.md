@@ -34,6 +34,10 @@ A website built with Flask, HTML, CSS, Bootstrap, and MySQL to showcase some of 
 
 Contributions are always welcome! If you have suggestions, improvements, or corrections, feel free to open issues and pull requests in my repositories.
 
+## [PGP key](https://github.com/pedro-fs-garcia/pedro-fs-garcia/blob/main/pedrogarcia.asc)
+5DCE 27C7 EA71 BA8F CA1D  4E9B 2A0F 1FF6 B858 7489
+
+
 ## Contact
 
 <p align="center">
