@@ -21,7 +21,7 @@ Once advertisor and filmmaker. Currently a student of Systems Analysis and Devel
   <img alt="VSCode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg">
   <img alt="Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
 </p>
-
+![](https://github-readme-stats-wheat-two-53.vercel.app/api/top-langs/?username=pedro-fs-garcia&theme=nightowl&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 ## PoW
 
 ### [Projeto 1: SCRUM Educational Platform](https://github.com/Titus-System/1Semestre-ADS)
