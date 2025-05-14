@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Pedro Felipe Sousa Garcia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+            }
+
+            .break-after {
+                page-break-after: always;
+            }
+
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2b5797',
+                        // primary: '#000000',
+                        secondary: '#1e88e5',
+                        accent: '#43a047',
+                        light: '#f5f5f5',
+                        dark: '#212121',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans text-sm leading-snug print:text-sm">
+    <div class="container mx-auto p-12 max-w-[210mm] min-h-[297mm]">
+        <section class="mb-6 border-b-2 border-primary pb-4">
+            <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
+            <p class="text-lg text-secondary font-medium">Backend Developer with Fullstack vision</p>
+
+            <div class="grid grid-cols-3 gap-2 mt-3">
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2 w-4"></i>
+                    <a href="http://google.com/maps/place/S%C3%A3o+Jos%C3%A9+dos+Campos,+SP" target="blank_">
+                        <span> Brazil - SP - SJC</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone text-accent mr-2 w-4"></i>
+                    <a href="tel:+5512982242629" target="blank_">
+                        <span>+55 12 98224-2629</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-accent mr-2 w-4"></i>
+                    <a href="mailto:pedrofsgarcia.pro@gmail.com" target="blank_">
+                        <span class="text-blue-800">pedrofsgarcia.pro@gmail.com</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-globe text-accent mr-2 w-4"></i>
+                    <a href="http://pedrogarcia.space" target="blank_">
+                        <span class="text-blue-800">pedrogarcia.space</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-github text-accent mr-2 w-4"></i>
+                    <a href="http://github.com/pedro-fs-garcia" target="blank_">
+                        <span class="text-blue-800">github.com/pedro-fs-garcia</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin text-accent mr-2 w-4"></i>
+                    <a href="http://linkedin.com/in/pedro-fs-garcia" target="blank_">
+                        <span class="text-blue-800">linkedin.com/in/pedro-fs-garcia</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two-column layout -->
+        <div class="flex w-100:flex-col flex-row gap-6">
+            <!-- Left Column (60%) -->
+            <div class="w-3/5 space-y-4 no-break">
+                <!-- Professional Summary -->
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Goals</h2>
+                    <p class="text-justify">
+                        Internship or junior position in Software Development, with a focus on backend or full stack,
+                        where I can apply and expand my technical skills and my ability to solve problems
+                        creatively and collaboratively.
+                    </p>
+                </section>
+
+                <!-- Projects -->
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Main Projects</h2>
+
+                    <div class="mb-3">
+                        <a href="https://github.com/Titus-System/InsightFlow" target="blank_">
+                            <h3 class="font-semibold text-primary">InsightFlow</h3>
+                        </a>
+                        <p class="italic">Brazilian Export/import data analysis and trend forecasting platform</p>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, Pandas, PostgreSQL,
+                            StatsModels, Tailwind, React</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <a href="https://github.com/pedro-fs-garcia/filmmash-android/releases/latest" target="blank_">
+                            <h3 class="font-semibold text-primary">FilmMash</h3>
+                        </a>
+                        <p class="italic">Android app for movie ranking using ELO algorithm.</p>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, MySQL, Kotlin,
+                            SQLite, Android Studio</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <a href="https://github.com/pedro-fs-garcia/JurisBot" target="blank_">
+                            <h3 class="font-semibold text-primary">JurisBot</h3>
+                        </a>
+                        <p class="italic">Legal AI assistant for brazilian case law search.</p>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Python, Hugging Face Hub,
+                            Gradio</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <a href="https://github.com/pedro-fs-garcia/IdScan" target="blank_">
+                            <h3 class="font-semibold text-primary">IdScan</h3>
+                        </a>
+                        <p class="italic">Local AI-powered Brazilian ID (RG) processing using Ollama.</p>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Java, Ollama, MySQL,
+                            TesseractOCR, ollama4j, tess4j</p>
+                    </div>
+                </section>
+                <!-- Technical Skills -->
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Hard Skills</h2>
+
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <h3 class="font-semibold text-primary">Languages</h3>
+                            <p class="italic text-xs">Python, Java, Kotlin, Typescript</p>
+                            <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
+                                <img alt="Python" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
+                                <img alt="Java" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg">
+                                <img alt="Kotlin" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg">
+                                <img alt="Typescript" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-primary">Backend</h3>
+                            <p class="italic text-xs">Flask, Node</p>
+                            <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
+                                <img alt="Flask" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg">
+                                <img alt="Node" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-primary">Data and Machine Learning</h3>
+                            <p class="italic text-xs">Python, Pandas, StatsModels</p>
+                            <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
+                                <img alt="Python" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
+                                <img alt="Pandas" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg">
+                                <img alt="StatsModels" height="15" width="20"
+                                    src="https://www.statsmodels.org/stable/_images/statsmodels-logo-v2.svg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-primary">Database</h3>
+                            <p class="italic text-xs">MySQL, PostgreSQL, SQLite</p>
+                            <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
+                                <img alt="MySQL" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg">
+                                <img alt="PosgreSQL" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                                <img alt="sqlite" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-primary">Web Development</h3>
+                            <p class="italic text-xs">React, HTML, CSS, Tailwind</p>
+                            <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
+                                <img alt="React" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg">
+                                <img alt="HTML" height="15" width="20"
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                <img alt="CSS" height="15" width="20"
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                                <img alt="Tailwind" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-primary">Mobile Development</h3>
+                            <p class="italic text-xs">Java, Kotlin, AndroidStudio</p>
+                            <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
+                                <img alt="Java" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg">
+                                <img alt="Kotlin" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg">
+                                <img alt="AndroidStudio" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg">
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold text-primary">Cloud and DevOps</h3>
+                            <p class="italic text-xs">AWS, Linux, Git, GitHub</p>
+                            <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
+                                <img alt="aws" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg">
+                                <img alt="linux" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg">
+                                <img alt="Git" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
+                                <img alt="GitHub" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold text-primary"> AI </h3>
+                            <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
+                                <p class="italic text-xs">HuggingFaceHub, smolagents, Ollama, TesseractOCR</p>
+                                <img alt="HuggingFace" height="25" width="30"
+                                    src="hf-logo.svg">
+                                <img alt="Smolagents" height="15" width="20"
+                                    src="https://cdn-avatars.huggingface.co/v1/production/uploads/63d10d4e8eaa4831005e92b5/a3R8vs2eGE578q4LEpaHB.png">
+                                <img alt="Ollama" height="15" width="20" src="https://ollama.com/public/ollama.png">
+                                <img alt="Tesseract" height="10" width="20"
+                                    src="https://www.outsystems.com/Forge_CW/_image.aspx/Q8LvY--6WakOw9afDCuuGfyi8SnPCgmeaGDl3TZaUx4=/tesseractocr-2023-01-04%2000-00-00-2025-03-12%2014-11-47">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column (40%) -->
+            <div class="w-2/5 space-y-4 no-break">
+                <!-- About Me -->
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">About Me</h2>
+                    <div class="mb-3">
+                        <p class="italic">Systems Analysis and Development student transitioning purposefully from
+                            Communication to Technology. Self-taught with a constant drive for learning. Seeking to
+                            apply my knowledge in real-world projects, adding value to teams and products.</p>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Education</h2>
+                    <div class="mb-3">
+                        <div class="flex justify-between">
+                            <h3 class="font-semibold text-primary">Associate Degree in Systems Analysis and Development
+                            </h3>
+                            <span class="text-gray-600">2024-2026</span>
+                        </div>
+                        <p class="italic">FATEC São José dos Campos</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between">
+                            <h3 class="font-semibold text-primary">Bachelor's in Social Communication – Advertising &
+                                Marketing</h3>
+                            <span class="text-gray-600">2017-2021</span>
+                        </div>
+                        <p class="italic">ECA/USP (University of São Paulo)</p>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Languages</h2>
+                    <p><span class="font-semibold text-primary">English:</span> Advanced (Reading, writing,
+                        conversation)</p>
+                </section>
+
+                <!-- Additional Info -->
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Additional Information</h2>
+                    <ul class="list-disc list-inside pl-2">
+                        <li>Available for remote, on-site, or hybrid work</li>
+                        <li>Flexible schedule (currently mornings)</li>
+                        <li>Full portfolio at <a class="text-primary" href="http://pedrogarcia.space"
+                                target="blank_">pedrogarcia.space</a></li>
+                    </ul>
+                </section>
+
+                <!-- Soft Skills -->
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Soft Skills</h2>
+                    <ul class="list-disc list-inside pl-2 columns-2">
+                        <li>Self-taught</li>
+                        <li>Proactive</li>
+                        <li>Teamwork</li>
+                        <li>Clear communication</li>
+                        <li>Analytical thinking</li>
+                        <li>Problem-solving</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Página 2 -->
+            <!-- Experiencias -->
+            <!-- <div class="pt-12">
+            <section>
+                <h2 class="text-lg font-bold text-primary uppercase border-b border-primary mb-2">Experiência
+                    Profissional</h2>
+    
+                <div class="mb-3">
+                    <div class="flex justify-between">
+                        <h3 class="font-semibold text-secondary">IBGE - Agente Censitário Supervisor</h3>
+                        <span class="text-gray-600">06/2022 - 06/2023</span>
+                    </div>
+                    <ul class="list-disc list-inside pl-2 mt-1">
+                        <li>Coordenação de até 15 recenseadores em 5 bairros</li>
+                        <li>Planejamento e supervisão de coletas de dados</li>
+                        <li>Resolução de problemas em campo</li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <div class="flex justify-between">
+                        <h3 class="font-semibold text-secondary">Produção Audiovisual e Publicitária</h3>
+                        <span class="text-gray-600">2018-2024</span>
+                    </div>
+                    <p class="mt-1">Freelancer e experiência na Saborea Té y Café. Produção de curtas e campanhas
+                        institucionais.</p>
+                </div>
+            </section>
+        </div>         -->
+        </div>
+</body>
+
+</html>
