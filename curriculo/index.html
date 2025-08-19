@@ -33,11 +33,11 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#2b5797',
+                        primary: '#16386c',
                         // primary: '#000000',
-                        secondary: '#1e88e5',
-                        accent: '#43a047',
-                        light: '#f5f5f5',
+                        secondary: ' #1e88e5',
+                        accent: '#225625',
+                        light: ' #f5f5f5',
                         dark: '#212121',
                     }
                 }
@@ -47,10 +47,10 @@
 </head>
 
 <body class="bg-white text-gray-800 font-sans text-sm leading-snug print:text-sm">
-    <div class="container mx-auto p-12 max-w-[210mm] min-h-[297mm]">
-        <section class="mb-6 border-b-2 border-primary pb-4">
+    <div class="container mx-auto px-12 py-6 max-w-[210mm] min-h-[297mm]">
+        <section class="mb-2 border-black pb-2">
             <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
-            <p class="text-lg text-secondary font-medium">Desenvolvedor Backend/Full Stack</p>
+            <p class="text-lg font-medium">Desenvolvedor Backend | Estágio / Júnior</p>
 
             <div class="grid grid-cols-3 gap-2 mt-3">
                 <div class="flex items-center">
@@ -98,20 +98,17 @@
             <div class="w-3/5 space-y-4 no-break">
                 <!-- Professional Summary -->
                 <section>
-                        <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Objetivo</h2> 
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Objetivo</h2>
                     <p class="text-justify">
-                        Estágio ou posição júnior na área de Desenvolvimento de Software, com foco em backend ou full
-                        stack,
-                        onde possa aplicar e expandir minhas habilidades técnicas e minha capacidade de resolver
-                        problemas
-                        de forma criativa e colaborativa.
+                        Estágio ou posição júnior em Desenvolvimento Backend, visando aplicar habilidades em Python,
+                        Java, Typescript, APIs REST e bancos de dados relacionais, ao mesmo tempo em que aprimoro minhas
+                        competências em arquitetura de software e boas práticas de desenvolvimento.
                     </p>
                 </section>
 
                 <!-- Projects -->
                 <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Principais Projetos</h2>
-
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Principais Projetos</h2>
                     <div class="mb-3">
                         <a href="https://github.com/Titus-System/InsightFlow" target="blank_">
                             <h3 class="font-semibold text-primary">InsightFlow</h3>
@@ -119,9 +116,22 @@
                         <p class="italic">Plataforma de análise de dados de exportação/importação e previsão de
                             tendências</p>
                         <!-- <p class="mt-1"><span class="font-semibold text-accent">REST API, Análise de Dados, Big Data, Machine Learning</span> -->
-                        
-                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, Pandas, PostgreSQL, StatsModels,
-                            Tailwind, React</p>
+
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, Pandas,
+                            StatsModels, PostgreSQL, Redis, API REST, Docker, AWS</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <a href="" target="blank_">
+                            <h3 class="font-semibold text-primary">
+                                Exploradores Sem Fronteiras <span class="text-sm font-normal">(projeto em
+                                    desenvolvimento)</span>
+                            </h3>
+                        </a>
+                        <p class="italic">Plataforma de divulgação e exploração científica</p>
+
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Typescript, NestJS,
+                            Jest, PostgreSQL, Redis, Swagger, API REST, Docker, AWS</p>
                     </div>
 
                     <div class="mb-3">
@@ -129,7 +139,8 @@
                             <h3 class="font-semibold text-primary">FilmMash</h3>
                         </a>
                         <p class="italic">App Android de ranqueamento de filmes com algoritmo ELO.</p>
-                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, MySQL, Kotlin, SQLite, Android Studio</p>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, MySQL, Kotlin,
+                            SQLite, API REST</p>
                     </div>
 
                     <div class="mb-3">
@@ -137,7 +148,8 @@
                             <h3 class="font-semibold text-primary">JurisBot</h3>
                         </a>
                         <p class="italic">Assistente jurídico de IA para busca de jurisprudências.</p>
-                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Python, Hugging Face Hub, Gradio</p>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Python, Hugging Face Hub,
+                            SmolAgents, Gradio</p>
                     </div>
 
                     <div class="mb-3">
@@ -145,91 +157,150 @@
                             <h3 class="font-semibold text-primary">IdScan</h3>
                         </a>
                         <p class="italic">Processamento de RGs com IA local usando Ollama.</p>
-                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Java, Ollama, MySQL, TesseractOCR, ollama4j, tess4j</p>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Java, Ollama, MySQL,
+                            TesseractOCR, ollama4j, tess4j</p>
                     </div>
                 </section>
                 <!-- Technical Skills -->
                 <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Competências Técnicas</h2>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Competências Técnicas</h2>
 
                     <div class="grid grid-cols-2 gap-2">
                         <div>
                             <h3 class="font-semibold text-primary">Linguagens</h3>
                             <p class="italic text-xs">Python, Java, Kotlin, Typescript</p>
                             <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
-                                <img alt="Python" height="15" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
-                                <img alt="Java" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg">
-                                <img alt="Kotlin" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg">
-                                <img alt="Typescript" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg">
+                                <img alt="Python" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
+                                <img alt="Java" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg">
+                                <img alt="Kotlin" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg">
+                                <img alt="Typescript" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg">
                             </div>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-primary">Backend</h3>
-                            <p class="italic text-xs">Flask, Node</p>
+                            <h3 class="font-semibold text-primary">Backend & APIs</h3>
+                            <p class="italic text-xs">Flask, Node, NestJS, Jest, Swagger/OpenAPI</p>
                             <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
-                                <img alt="Flask" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg">
-                                <img alt="Node" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg">
+                                <img alt="Flask" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg">
+                                <img alt="Node" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg">
+                                <img alt="NestJS" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" />
+                                <img alt="NestJS" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" />
+                                <img alt="OpenAPI" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openapi/openapi-original.svg" />
+
                             </div>
                         </div>
                         <div>
-                            <h3 class="font-semibold text-primary">Dados e Machine Learning</h3>
-                            <p class="italic text-xs">Python, Pandas, StatsModels</p>
+                            <h3 class="font-semibold text-primary">ML & IA</h3>
+                            <p class="italic text-xs">Python, Pandas, StatsModels, HuggingFaceHub, Ollama</p>
                             <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
-                                <img alt="Python" height="15" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
-                                <img alt="Pandas" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg">
-                                <img alt="StatsModels" height="15" width="20"src="https://www.statsmodels.org/stable/_images/statsmodels-logo-v2.svg">
+                                <img alt="Python" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg">
+                                <img alt="Pandas" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg">
+                                <img alt="StatsModels" height="15" width="20"
+                                    src="https://www.statsmodels.org/stable/_images/statsmodels-logo-v2.svg">
+                                <img alt="Smolagents" height="15" width="20"
+                                    src="https://cdn-avatars.huggingface.co/v1/production/uploads/63d10d4e8eaa4831005e92b5/a3R8vs2eGE578q4LEpaHB.png">
+                                <img alt="Ollama" height="15" width="20" src="https://ollama.com/public/ollama.png">
                             </div>
                         </div>
                         <div>
                             <h3 class="font-semibold text-primary">Banco de Dados</h3>
-                            <p class="italic text-xs">MySQL, PostgreSQL, SQLite</p>
+                            <p class="italic text-xs">MySQL, PostgreSQL, SQLite, Redis</p>
                             <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
-                                <img alt="MySQL" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg">
-                                <img alt="PosgreSQL" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
-                                <img alt="sqlite" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg">
+                                <img alt="MySQL" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg">
+                                <img alt="PosgreSQL" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                                <img alt="sqlite" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg">
+                                <img alt="redis" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" />
                             </div>
                         </div>
                         <div>
+                            <h3 class="font-semibold text-primary">Frontend e Mobile</h3>
+                            <p class="italic text-xs">React, HTML, CSS, Tailwind, Kotlin, AndroidStudio</p>
+                            <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
+                                <img alt="React" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg">
+                                <img alt="HTML" height="15" width="20"
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                <img alt="CSS" height="15" width="20"
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                                <img alt="Tailwind" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg">
+                                <img alt="Kotlin" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg">
+                                <img alt="AndroidStudio" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg">
+                            </div>
+                        </div>
+                        <!-- <div>
                             <h3 class="font-semibold text-primary">Desenvolvimento Web</h3>
                             <p class="italic text-xs">React, HTML, CSS, Tailwind</p>
                             <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
-                                <img alt="React" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg">
-                                <img alt="HTML" height="15" width="20"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                                <img alt="CSS" height="15" width="20"src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                                <img alt="Tailwind" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg">
+                                <img alt="React" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg">
+                                <img alt="HTML" height="15" width="20"
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                                <img alt="CSS" height="15" width="20"
+                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                                <img alt="Tailwind" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg">
                             </div>
                         </div>
                         <div>
                             <h3 class="font-semibold text-primary">Desenvolvimento Mobile</h3>
                             <p class="italic text-xs">Java, Kotlin, AndroidStudio</p>
                             <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
-                                <img alt="Java" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg">
-                                <img alt="Kotlin" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg">
-                                <img alt="AndroidStudio" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg">
+                                <img alt="Java" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg">
+                                <img alt="Kotlin" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg">
+                                <img alt="AndroidStudio" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg">
                             </div>
-                        </div>
+                        </div> -->
 
                         <div>
                             <h3 class="font-semibold text-primary">Cloud e DevOps</h3>
-                            <p class="italic text-xs">AWS, Linux, Git, GitHub</p>
+                            <p class="italic text-xs">Docker, AWS, Linux, Git, GitHub</p>
                             <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
-                                <img alt="aws" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg">
-                                <img alt="linux" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg">
-                                <img alt="Git" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
-                                <img alt="GitHub" height="15" width="20"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
+                                <img alt="docker" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                                <img alt="aws" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg">
+                                <img alt="linux" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg">
+                                <img alt="Git" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
+                                <img alt="GitHub" height="15" width="20"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
                             </div>
                         </div>
 
-                        <div>
+                        <!-- <div>
                             <h3 class="font-semibold text-primary"> IA </h3>
                             <div class="pb-2" style="display: flex; justify-content: left; flex-wrap: wrap; gap: 10px;">
                                 <p class="italic text-xs">HuggingFaceHub, smolagents, Ollama, TesseractOCR</p>
-                                <img alt="HuggingFace" height="15" width="20" src="https://cdn-lfs.hf.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/942cad1ccda905ac5a659dfd2d78b344fccfb84a8a3ac3721e08f488205638a0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo.svg%3B+filename%3D%22hf-logo.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1746577613&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NjU3NzYxM319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzk0MmNhZDFjY2RhOTA1YWM1YTY1OWRmZDJkNzhiMzQ0ZmNjZmI4NGE4YTNhYzM3MjFlMDhmNDg4MjA1NjM4YTA%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=PSmcr0pxbA8p%7EHlOtxeR%7EbuV%7Ee7sUKSRzQ84EqGjpJpftS-tPKnSi2Iv9HWOWOzG7rEMO504owhqMACNNvUbEURWJ62RAHmEpOequAWRjpraLAHo3p7yF6sqXMZv0NnvG%7ET6oMK1VaGq1sBrJZKGE8Ldj0XDqSp526jaAMwKxek6LC4ic4dXUPkVp9hfMNV8WEH4RBJ0sCiRrgAo199E19ojZhRyDo9l3GRcXzd6-Fpdr7B0at90fs98qsQZXpjhfdwLrraAwtzL0U7j4Dy1%7Ej%7EMBDOvaZ7BlgoQl43rhb%7Epp1yXfKICmmyGPBd6m8P9rbqm1ceZxxNo1usuU3dDvQ__&Key-Pair-Id=K3RPWS32NSSJCE">
-                                <img alt="Smolagents" height="15" width="20"src="https://cdn-avatars.huggingface.co/v1/production/uploads/63d10d4e8eaa4831005e92b5/a3R8vs2eGE578q4LEpaHB.png">
-                                <img alt="Ollama" height="15" width="20"src="https://ollama.com/public/ollama.png">
-                                <img alt="Tesseract" height="10" width="20"src="https://www.outsystems.com/Forge_CW/_image.aspx/Q8LvY--6WakOw9afDCuuGfyi8SnPCgmeaGDl3TZaUx4=/tesseractocr-2023-01-04%2000-00-00-2025-03-12%2014-11-47">
+                                <img alt="HuggingFace" height="15" width="20"
+                                    src="https://cdn-lfs.hf.co/repos/96/a2/96a2c8468c1546e660ac2609e49404b8588fcf5a748761fa72c154b2836b4c83/942cad1ccda905ac5a659dfd2d78b344fccfb84a8a3ac3721e08f488205638a0?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27hf-logo.svg%3B+filename%3D%22hf-logo.svg%22%3B&response-content-type=image%2Fsvg%2Bxml&Expires=1746577613&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NjU3NzYxM319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9yZXBvcy85Ni9hMi85NmEyYzg0NjhjMTU0NmU2NjBhYzI2MDllNDk0MDRiODU4OGZjZjVhNzQ4NzYxZmE3MmMxNTRiMjgzNmI0YzgzLzk0MmNhZDFjY2RhOTA1YWM1YTY1OWRmZDJkNzhiMzQ0ZmNjZmI4NGE4YTNhYzM3MjFlMDhmNDg4MjA1NjM4YTA%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=PSmcr0pxbA8p%7EHlOtxeR%7EbuV%7Ee7sUKSRzQ84EqGjpJpftS-tPKnSi2Iv9HWOWOzG7rEMO504owhqMACNNvUbEURWJ62RAHmEpOequAWRjpraLAHo3p7yF6sqXMZv0NnvG%7ET6oMK1VaGq1sBrJZKGE8Ldj0XDqSp526jaAMwKxek6LC4ic4dXUPkVp9hfMNV8WEH4RBJ0sCiRrgAo199E19ojZhRyDo9l3GRcXzd6-Fpdr7B0at90fs98qsQZXpjhfdwLrraAwtzL0U7j4Dy1%7Ej%7EMBDOvaZ7BlgoQl43rhb%7Epp1yXfKICmmyGPBd6m8P9rbqm1ceZxxNo1usuU3dDvQ__&Key-Pair-Id=K3RPWS32NSSJCE">
+                                <img alt="Smolagents" height="15" width="20"
+                                    src="https://cdn-avatars.huggingface.co/v1/production/uploads/63d10d4e8eaa4831005e92b5/a3R8vs2eGE578q4LEpaHB.png">
+                                <img alt="Ollama" height="15" width="20" src="https://ollama.com/public/ollama.png">
+                                <img alt="Tesseract" height="10" width="20"
+                                    src="https://www.outsystems.com/Forge_CW/_image.aspx/Q8LvY--6WakOw9afDCuuGfyi8SnPCgmeaGDl3TZaUx4=/tesseractocr-2023-01-04%2000-00-00-2025-03-12%2014-11-47">
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
             </div>
@@ -237,18 +308,21 @@
             <!-- Right Column (40%) -->
             <div class="w-2/5 space-y-4 no-break">
                 <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Sobre mim</h2>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Sobre mim</h2>
 
                     <div class="mb-3">
                         <p class="italic">Estudante de Análise e Desenvolvimento de Sistemas migrando com propósito da
                             área de Comunicação para Tecnologia. Tenho perfil autodidata e iniciativa constante de
                             aprendizagem. Busco aplicar meus conhecimentos em projetos reais, agregando valor a equipes
-                            e produtos.</p>
+                            e produtos.</p><br>
+                        <p>Disponível para remoto, presencial ou híbrido</p><br>
+                        <p>Portfólio completo em <a class="text-primary" href="http://pedrogarcia.space"
+                                target="blank_">pedrogarcia.space</a></p>
                     </div>
                 </section>
                 <!-- Education -->
                 <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Formação Acadêmica
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Formação Acadêmica
                     </h2>
 
                     <div class="mb-3">
@@ -263,7 +337,7 @@
                     <div>
                         <div class="flex justify-between">
                             <h3 class="font-semibold text-primary">Bacharel em Comunicação Social Publicidade e
-                            Propaganda</h3>
+                                Propaganda</h3>
                             <span class="text-gray-600">2017-2021</span>
                         </div>
                         <p class="italic">ECA/USP</p>
@@ -272,24 +346,45 @@
 
                 <!-- Languages -->
                 <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Idiomas</h2>
-                    <p><span class="font-semibold text-primary">Inglês:</span> Avançado (Leitura, escrita, conversação)</p>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Idiomas</h2>
+                    <p><span class="font-semibold text-primary">Inglês:</span> Avançado (Leitura, escrita, conversação)
+                    </p>
                 </section>
 
                 <!-- Additional Info -->
-                <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Informações
+                <!-- <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Informações
                         Adicionais</h2>
                     <ul class="list-disc list-inside pl-2">
                         <li>Disponível para remoto, presencial ou híbrido</li>
                         <li>Horário flexível (atualmente matutino)</li>
-                        <li>Portfólio completo em <a class="text-primary" href="http://pedrogarcia.space" target="blank_">pedrogarcia.space</a></li>
+                        <li>Portfólio completo em <a class="text-primary" href="http://pedrogarcia.space"
+                                target="blank_">pedrogarcia.space</a></li>
+                    </ul>
+                </section> -->
+
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Experiências
+                        Complementares</h2>
+                    <ul class="list-disc list-inside pl-2 columns-1">
+                        <li><span class="font-semibold text-primary">Padrões de projeto</span> aplicados em backend e
+                            full stack</li>
+                        <li><span class="font-semibold text-primary">Agile/Scrum & Jira</span>: gestão de sprints e
+                            acompanhamento de projetos</li>
+                        <li><span class="font-semibold text-primary">Maratonas de programação</span>: Trabalho em equipe
+                            e resolução de problemas sob pressão</li>
+                        <li><span class="font-semibold text-primary">Boas Práticas</span> de versionamento com Git e
+                            GitFlow</li>
+                        <li><span class="font-semibold text-primary">Documentação de APIs</span> com Swagger/OpenAPI
+                        </li>
+                        <li><span class="font-semibold text-primary">Testes</span> unitários e integração (Jest)
+                        </li>
                     </ul>
                 </section>
 
                 <!-- Soft Skills -->
-                <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-primary mb-2">Características</h2>
+                <!-- <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Características</h2>
                     <ul class="list-disc list-inside pl-2 columns-2">
                         <li>Autodidata</li>
                         <li>Proativo</li>
@@ -298,7 +393,7 @@
                         <li>Pensamento analítico</li>
                         <li>Resolução de problemas</li>
                     </ul>
-                </section>
+                </section> -->
             </div>
         </div>
 
@@ -306,7 +401,7 @@
         <!-- Experiencias -->
         <!-- <div class="pt-12">
             <section>
-                <h2 class="text-lg font-bold text-primary uppercase border-b border-primary mb-2">Experiência
+                <h2 class="text-lg font-bold text-primary uppercase border-b border-black mb-2">Experiência
                     Profissional</h2>
     
                 <div class="mb-3">
