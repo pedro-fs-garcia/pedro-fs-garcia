@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Pedro Felipe Sousa Garcia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+            }
+
+            .break-after {
+                page-break-after: always;
+            }
+
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#16386c',
+                        secondary: ' #1e88e5',
+                        accent: '#225625',
+                        light: ' #f5f5f5',
+                        dark: '#212121',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans text-sm leading-snug print:text-sm">
+    <div class="container mx-auto px-12 py-6 max-w-[210mm] min-h-[297mm]">
+        <section class="mb-2 border-black pb-2">
+            <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
+            <p class="text-lg font-medium">Desenvolvedor com Foco em Automação | Python, IA & LLMs</p>
+
+            <div class="grid grid-cols-3 gap-2 mt-3">
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-accent mr-2 w-4"></i>
+                    <a href="http://google.com/maps/place/S%C3%A3o+Jos%C3%A9+dos+Campos,+SP" target="blank_">
+                        <span>São José dos Campos - SP</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone text-accent mr-2 w-4"></i>
+                    <a href="tel:+5512982242629" target="blank_">
+                        <span>(12) 98224-2629</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-accent mr-2 w-4"></i>
+                    <a href="mailto:pedrofsgarcia.pro@gmail.com" target="blank_">
+                        <span class="text-blue-800">pedrofsgarcia.pro@gmail.com</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-globe text-accent mr-2 w-4"></i>
+                    <a href="http://pedrogarcia.space" target="blank_">
+                        <span class="text-blue-800">pedrogarcia.space</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-github text-accent mr-2 w-4"></i>
+                    <a href="http://github.com/pedro-fs-garcia" target="blank_">
+                        <span class="text-blue-800">github.com/pedro-fs-garcia</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin text-accent mr-2 w-4"></i>
+                    <a href="https://linkedin.com/in/pedro-fs-garcia" target="blank_">
+                        <span class="text-blue-800">linkedin.com/in/pedro-fs-garcia</span>
+                    </a>
+                </div>
+            </div>
+            <section class="pt-2">
+                <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Perfil Profissional</h2>
+                <p class="text-justify">
+                    Estudante de Análise e Desenvolvimento de Sistemas e entusiasta de automação de processos. Tenho
+                    experiência prática no desenvolvimento de <strong>scripts e soluções com Python</strong> para
+                    processamento de dados e integração de sistemas. Curioso e proativo, desenvolvi projetos pessoais
+                    utilizando <strong>Inteligência Artificial (LLMs)</strong> para automatizar tarefas complexas, como
+                    extração de dados de documentos e síntese de informações. Possuo conhecimento em metodologias ágeis e
+                    ferramentas de DevOps (Docker, Git). Busco uma oportunidade de estágio em <strong>automação e desenvolvimento</strong>, contribuindo com um time dinâmico e
+                    inovador.
+                </p>
+            </section>
+        </section>
+
+        <div class="flex w-100:flex-col flex-row gap-6">
+            <div class="w-3/5 space-y-4 no-break">
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Principais Projetos</h2>
+
+                    <div class="mb-4 no-break">
+                        <a href="https://github.com/pedro-fs-garcia/JurisBot" target="_blank" class="hover:underline">
+                            <h3 class="font-semibold text-primary">JurisBot – Automação de Pesquisa Jurídica com IA</h3>
+                        </a>
+                        <p class="italic text-xs">Protótipo que <strong>automatiza tarefas</strong> de pesquisa, análise e
+                            síntese de informações em bases de dados jurídicas usando Agentes Autônomos (LLMs).</p>
+                        <ul class="list-disc list-inside pl-2 mt-1 text-xs">
+                            <li>Orquestrei um <strong>pipeline de agentes de IA</strong> para executar tarefas complexas
+                                de forma autônoma.</li>
+                            <li>Integrei a solução com modelos de linguagem do Hugging Face para processamento de texto.
+                            </li>
+                        </ul>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Python, Hugging Face,
+                            Smol-Agents, Gradio.</p>
+                    </div>
+
+                    <div class="mb-4 no-break">
+                        <a href="https://github.com/pedro-fs-garcia/IdScan" target="_blank" class="hover:underline">
+                            <h3 class="font-semibold text-primary">IdScan – Automação de Extração de Dados de Documentos
+                            </h3>
+                        </a>
+                        <p class="italic text-xs">Solução que <strong>automatiza a extração de dados</strong> de RGs
+                            via OCR e IA (LLM) rodando localmente, otimizando o processo de cadastro e garantindo
+                            privacidade.</p>
+                        <ul class="list-disc list-inside pl-2 mt-1 text-xs">
+                            <li>Desenvolvi a orquestração do fluxo: leitura da imagem (Tesseract), interpretação com IA
+                                (Ollama) e estruturação dos dados.</li>
+                            <li>Implementei a persistência dos dados extraídos de forma organizada em banco de dados
+                                MySQL.</li>
+                        </ul>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Java, Ollama, MySQL,
+                            TesseractOCR.</p>
+                    </div>
+                    
+                    <div class="mb-4 no-break">
+                        <a href="https://github.com/Titus-System/InsightFlow" target="_blank" class="hover:underline">
+                            <h3 class="font-semibold text-primary">InsightFlow – Plataforma de Análise Preditiva de
+                                Comércio</h3>
+                        </a>
+                        <p class="italic text-xs">Solução de Big Data para analisar e prever tendências de comércio
+                            exterior a partir de dados públicos.</p>
+                        <ul class="list-disc list-inside pl-2 mt-1 text-xs">
+                            <li>Desenvolvi a API REST (Flask) para ingestão, <strong>processamento</strong> e consulta de
+                                grandes volumes de dados.</li>
+                            <li>Implementei modelos de séries temporais (StatsModels) para gerar previsões de mercado.
+                            </li>
+                            <li>Orquestrei a arquitetura com Docker e realizei o deploy em ambiente AWS.</li>
+                        </ul>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, Pandas, PostgreSQL,
+                            Redis, Docker, AWS.</p>
+                    </div>
+
+                    <div class="mb-4 no-break">
+                        <a href="https://github.com/pedro-fs-garcia/filmmash-android/releases/latest" target="_blank"
+                            class="hover:underline">
+                            <h3 class="font-semibold text-primary">FilmMash</h3>
+                        </a>
+                        <p class="italic text-xs">Solução full stack com API REST e cliente Android nativo para
+                            classificar filmes de forma interativa usando um sistema de ranking.</p>
+                        <ul class="list-disc list-inside pl-2 mt-1 text-xs">
+                            <li>Desenvolvi o backend (Flask) para servir os dados dos filmes e processar a lógica de
+                                pontuação.</li>
+                            <li>Implementei o algoritmo de classificação ELO para ranquear os filmes com base nas
+                                escolhas dos usuários.</li>
+                        </ul>
+                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, Kotlin, MySQL,
+                            SQLite, REST API.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="w-2/5 space-y-4 no-break">
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2 text-primary">
+                        Competências Técnicas
+                    </h2>
+
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-semibold">Automação & IA</h3>
+                            <p class="italic text-xs pb-1">
+                                Python, Pandas, Agentes de IA (LLMs), N8N (interesse em aprender)
+                            </p>
+                             <div class="pb-2 flex flex-wrap gap-2">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    height="15" width="20" alt="Python" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                                    height="15" width="20" alt="Pandas" />
+                                 <img src="https://cdn-avatars.huggingface.co/v1/production/uploads/63d10d4e8eaa4831005e92b5/a3R8vs2eGE578q4LEpaHB.png"
+                                    height="15" width="20" alt="Hugging Face" />
+                                 <img src="https://ollama.com/public/ollama.png" height="15" width="20" alt="Ollama" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold">Backend & Linguagens</h3>
+                            <p class="italic text-xs pb-1">
+                                Python (Flask, FastAPI), Java, Node.js, TypeScript (NestJS)
+                            </p>
+                            <div class="pb-2 flex flex-wrap gap-2">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                                    height="15" width="20" alt="Flask" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+                                    height="15" width="20" alt="FastAPI" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                    height="15" width="20" alt="Java" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                                    height="15" width="20" alt="Node.js" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                                    height="15" width="20" alt="TypeScript" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
+                                    height="15" width="20" alt="NestJS" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold">Bancos de Dados</h3>
+                            <p class="italic text-xs pb-1">PostgreSQL, MySQL, SQLite, Redis</p>
+                            <div class="pb-2 flex flex-wrap gap-2">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                                    height="15" width="20" alt="PostgreSQL" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    height="15" width="20" alt="MySQL" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+                                    height="15" width="20" alt="SQLite" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+                                    height="15" width="20" alt="Redis" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold">Cloud & DevOps</h3>
+                            <p class="italic text-xs pb-1">
+                                Docker, AWS, Linux, Git, GitHub, Scrum
+                            </p>
+                            <div class="pb-2 flex flex-wrap gap-2">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                                    height="15" width="20" alt="Docker" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                                    height="15" width="20" alt="AWS" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                                    height="15" width="20" alt="Linux" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                    height="15" width="20" alt="Git" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
+                                    height="15" width="20" alt="Jira" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Formação Acadêmica</h2>
+                    <div class="mb-3">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-semibold text-primary">Análise e Des. de Sistemas</h3>
+                            <span class="text-gray-600 text-xs">2024-2026</span>
+                        </div>
+                        <p class="italic">FATEC São José dos Campos</p>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-semibold text-primary">Comunicação Social</h3>
+                            <span class="text-gray-600 text-xs">2017-2021</span>
+                        </div>
+                        <p class="italic">ECA/USP</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Idiomas</h2>
+                    <p><span class="font-semibold text-primary">Inglês:</span> Avançado (C1 – CEFR). Capaz de
+                        compreender materiais técnicos, comunicar-se claramente e redigir documentação profissional.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div class="pt-12">
+             <section>
+                 <h2 class="text-lg font-bold text-primary uppercase border-b border-black mb-2">Experiência
+                     Profissional</h2>
+
+                 <div class="mb-3">
+                     <div class="flex justify-between">
+                         <h3 class="font-semibold text-secondary">IBGE - Agente Censitário Supervisor</h3>
+                         <span class="text-gray-600">06/2022 - 06/2023</span>
+                     </div>
+                     <ul class="list-disc list-inside pl-2 mt-1 space-y-1">
+                         <li>
+                             Liderei e treinei uma equipe de 15 recenseadores, otimizando rotas e garantindo a cobertura
+                             e qualidade dos dados coletados em 5 bairros.
+                         </li>
+                         <li>
+                             Gerenciei a integridade e a segurança dos dados, resolvendo conflitos e problemas logísticos
+                             em tempo real para assegurar o cumprimento de metas.
+                         </li>
+                     </ul>
+                 </div>
+
+                 <div>
+                     <div class="flex justify-between">
+                         <h3 class="font-semibold text-secondary">Produção Audiovisual e Publicitária</h3>
+                         <span class="text-gray-600">2018-2024</span>
+                     </div>
+                     <ul class="list-disc list-inside pl-2 mt-1 space-y-1">
+                         <li>
+                             Gerenciei projetos ponta a ponta, desde a interpretação do briefing do cliente até a entrega
+                             do produto final, cumprindo prazos e orçamentos.
+                         </li>
+                         <li>
+                             Atuei na tradução de requisitos de negócio em especificações técnicas e criativas para a
+                             produção de campanhas e vídeos institucionais.
+                         </li>
+                     </ul>
+                 </div>
+             </section>
+         </div>
+    </div>
+</body>
+
+</html>
