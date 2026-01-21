@@ -1,12 +1,12 @@
 # Pedro Garcia
 
-### Backend Developer | Python (Flask/FastAPI) & Java
+### Backend Developer | Python, Node.js, PostgreSQL, Redis
 
-I’m a student passionate about backend development and software architecture. For the past two years, I’ve been studying how to design systems that are efficient, scalable, and well-structured. My background in Advertising and Marketing helps me approach software with a focus on usability and real-world impact.
+Backend developer focused on APIs, automation, and distributed systems. Hands-on experience in **end-to-end** development: architecture, data modeling, asynchronous processing, and production deployment. Currently working as a Systems Development Intern at a software house.
 
-- 💻 **Currently:** Learning about software , Design Patterns, Architecture and cloud technologies
-- 🎓 **Education:** Systems Analysis and Development student (FATEC) | B.A. in Advertising and Marketing (USP)
-- 🌱 **Interests:** AI/ML, automation, and data privacy
+- 💻 **Currently:** Systems Development Intern at RCDNC, working with React, Express, NestJS, PostgreSQL, Redis
+- 🎓 **Education:** Systems Analysis and Development (FATEC) | B.A. in Social Communication (ECA/USP)
+- 🌱 **Interests:** AI/LLMs, automation, distributed systems, and cloud technologies
 
 ---
 
@@ -26,9 +26,10 @@ I’m a student passionate about backend development and software architecture. 
   <strong>Frameworks & Libraries:</strong><br>
   <img alt="Flask" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="30" width="40" alt="FastAPI" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="30" width="40" alt="Express" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" height="30" width="40" alt="NestJS" />
   <img alt="React" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-  <img alt="Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+  <img alt="Next.js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
   <img alt="Tailwind" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
 </p>
 
@@ -43,13 +44,13 @@ I’m a student passionate about backend development and software architecture. 
 <p align="center">
   <strong>Tools & Platforms:</strong><br>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" width="40" alt="Docker" />
-  <img alt="AndroidStudio" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg">
   <img alt="linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg">
   <img alt="aws" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
+  <img alt="Railway" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg" />
   <img alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
   <img alt="GitHub" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
+  <img alt="GitHub Actions" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg">
   <img alt="VSCode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg">
-  <img alt="Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
 </p>
 
 ---
@@ -68,10 +69,11 @@ Here are some projects I'm proud to have built. They represent my journey in bui
 
 | Project                                                               | Description                                                                                                                                                                                    | Key Technologies                                                          |
 | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| 📊 **[InsightFlow](https://github.com/Titus-System/InsightFlow)** | A Business Intelligence & Predictive Analytics platform designed to democratize access to foreign trade data, turning millions of public records into actionable insights for decision-makers. | `Python`, `Flask`, `Pandas`, `StatsModels`, `PostgreSQL`, `Docker`, `AWS` |
-| 🔒 **[IdScan](https://github.com/pedro-fs-garcia/IdScan)** | A secure desktop application for data extraction from ID documents, using a 100% offline pipeline with Tesseract (OCR) and Ollama (LLM) to ensure maximum data privacy.                             | `Java`, `Ollama`, `TesseractOCR`, `MySQL`                                 |
-| 🎮 **[FilmMash](https://github.com/pedro-fs-garcia/filmmash-android)** | A full-stack solution that gamifies movie ratings. It combines a Flask API with a native Android client (Kotlin) and uses the ELO algorithm to create a dynamic and accurate ranking system.      | `Python`, `Flask`, `Kotlin`, `MySQL`, `REST API`                          |
-| 🤖 **[JurisBot](https://github.com/pedro-fs-garcia/JurisBot)** | A prototype of a legal AI assistant that uses Autonomous Agents (LLMs) to research, analyze, and synthesize information from legal databases, showcasing advanced AI orchestration.             | `Python`, `Hugging Face`, `Smol-Agents`                                   |
+| 📊 **[InsightFlow](https://github.com/Titus-System/InsightFlow)** | A Predictive Analytics platform with a data pipeline and REST API for ingestion and querying of large volumes, time series models for forecasting. | `Python`, `Flask`, `PostgreSQL`, `Redis`, `Docker`, `AWS` |
+| 🏷️ **[Nexa](https://github.com/Titus-System/Nexa)** | Automated Tax Classification from part-numbers and PDF documents. Features WebSockets, asynchronous processing with Celery using Redis as broker and pub/sub communication. | `Python`, `Flask`, `PostgreSQL`, `Redis`, `Celery`, `Docker`, `WebSockets` |
+| 🔒 **[IdScan](https://github.com/pedro-fs-garcia/IdScan)** | AI-powered document processing system that orchestrates OCR (Tesseract) and local LLM (Ollama) for structured data extraction from ID cards, ensuring maximum data privacy. | `Java`, `Ollama`, `TesseractOCR`, `MySQL`                                 |
+| 🎮 **[FilmMash](https://github.com/pedro-fs-garcia/filmmash-android)** | Backend with REST API and ELO algorithm for movie ranking, with a native Android client built in Kotlin. | `Python`, `Flask`, `Kotlin`, `MySQL`, `REST API`                          |
+| 🤖 **[JurisBot](https://github.com/pedro-fs-garcia/JurisBot)** | Legal AI assistant using Autonomous Agents (LLMs) to research, analyze, and synthesize information from legal databases. | `Python`, `Hugging Face`, `Smol-Agents`                                   |
 
 ---
 
