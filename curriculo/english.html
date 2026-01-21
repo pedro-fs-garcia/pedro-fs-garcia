@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Pedro Felipe Sousa Garcia</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @page {
             size: A4;
@@ -17,10 +16,6 @@
             body {
                 width: 210mm;
                 height: 297mm;
-            }
-
-            .break-after {
-                page-break-after: always;
             }
 
             .no-break {
@@ -34,9 +29,7 @@
                 extend: {
                     colors: {
                         primary: '#16386c',
-                        secondary: ' #1e88e5',
-                        accent: '#225625',
-                        light: ' #f5f5f5',
+                        secondary: '#1e88e5',
                         dark: '#212121',
                     }
                 }
@@ -46,246 +39,174 @@
 </head>
 
 <body class="bg-white text-gray-800 font-sans text-sm leading-snug print:text-sm">
-    <div class="container mx-auto px-12 py-6 max-w-[210mm] min-h-[297mm]">
-        <section class="mb-2 border-black pb-2">
-            <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
-            <p class="text-lg font-medium">Backend Developer | Seeking Internship/Junior Roles | Python, Java, TypeScript & Node.js</p>
+    <div class="container mx-auto px-10 py-6 max-w-[210mm] min-h-[297mm]">
 
-            <div class="grid grid-cols-3 gap-2 mt-3">
-                <div class="flex items-center">
-                    <i class="fas fa-map-marker-alt text-accent mr-2 w-4"></i>
-                    <a href="#" target="blank_">
-                        <span>São José dos Campos, SP, Brazil</span>
-                    </a>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-phone text-accent mr-2 w-4"></i>
-                    <a href="tel:+5512982242629" target="blank_">
-                        <span>+55 (12) 98224-2629</span>
-                    </a>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-envelope text-accent mr-2 w-4"></i>
-                    <a href="mailto:pedrofsgarcia.pro@gmail.com" target="blank_">
-                        <span class="text-blue-800">pedrofsgarcia.pro@gmail.com</span>
-                    </a>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-globe text-accent mr-2 w-4"></i>
-                    <a href="http://pedrogarcia.space" target="blank_">
-                        <span class="text-blue-800">pedrogarcia.space</span>
-                    </a>
-                </div>
-                <div class="flex items-center">
-                    <i class="fab fa-github text-accent mr-2 w-4"></i>
-                    <a href="http://github.com/pedro-fs-garcia" target="blank_">
-                        <span class="text-blue-800">github.com/pedro-fs-garcia</span>
-                    </a>
-                </div>
-                <div class="flex items-center">
-                    <i class="fab fa-linkedin text-accent mr-2 w-4"></i>
-                    <a href="http://linkedin.com/in/pedro-fs-garcia" target="blank_">
-                        <span class="text-blue-800">linkedin.com/in/pedro-fs-garcia</span>
-                    </a>
-                </div>
+        <!-- HEADER -->
+        <header class="mb-4 border-b border-black pb-3">
+            <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
+            <p class="text-base font-medium text-primary">Backend Developer | Python, Node.js, PostgreSQL, Redis</p>
+
+            <div class="flex flex-wrap gap-x-6 gap-y-1 mt-2 text-sm">
+                <span>São José dos Campos - SP, Brazil</span>
+                <span>+55 12 98224-2629</span>
+                <a href="mailto:pedrofsgarcia.pro@gmail.com" class="text-blue-700">pedrofsgarcia.pro@gmail.com</a>
+                <a href="https://github.com/pedro-fs-garcia" class="text-blue-700">github.com/pedro-fs-garcia</a>
+                <a href="https://linkedin.com/in/pedro-fs-garcia"
+                    class="text-blue-700">linkedin.com/in/pedro-fs-garcia</a>
             </div>
-            <section class="pt-2">
-                <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Professional Summary</h2>
-                <p class="text-justify">
-                    A student of Systems Analysis and Development with a strong focus on backend engineering and a passion for scalable, high-performance software architecture. I have hands-on experience developing RESTful APIs using <strong>Python, TypeScript, and Java</strong>, integrating with <strong>relational databases</strong>, applying object-oriented design principles, and following best practices like version control, testing, and documentation. I am seeking an <strong>internship or junior developer</strong> role to actively contribute to building robust and efficient solutions by combining clean code, performance, and a strong architectural vision.
-                </p>
-            </section>
+        </header>
+
+        <!-- PROFILE - 4 lines -->
+        <section class="mb-4">
+            <!-- <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Profile</h2> -->
+            <p>
+                Backend developer focused on APIs, automation, and distributed systems.
+                Hands-on experience in <strong>end-to-end</strong> development: architecture, data modeling,
+                asynchronous processing, and production deployment.
+                Working with <strong>Python, Node.js, PostgreSQL, Redis</strong> and external service integration.
+                Systems development intern at a software house.
+            </p>
         </section>
 
-        <div class="flex w-100:flex-col flex-row gap-6">
-            <div class="w-3/5 space-y-4 no-break">
-                <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Key Projects</h2>
+        <!-- PROFESSIONAL EXPERIENCE (FIRST) -->
+        <section class="mb-4 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Professional Experience</h2>
 
-                    <div class="mb-4 no-break">
-                        <a href="https://github.com/Titus-System/InsightFlow" target="_blank" class="hover:underline">
-                            <h3 class="font-semibold text-primary">InsightFlow – Predictive Trade Analysis Platform</h3>
-                        </a>
-                        <p class="italic text-xs">A Big Data solution to analyze and forecast foreign trade trends using public datasets.</p>
-                        <ul class="list-disc list-inside pl-2 mt-1 text-xs">
-                            <li>Engineered a REST API (Flask) for ingesting, processing, and querying large volumes of data.</li>
-                            <li>Implemented time-series models (StatsModels) to generate accurate market forecasts.</li>
-                            <li>Orchestrated the microservices architecture using Docker and deployed to an AWS environment.</li>
-                        </ul>
-                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, Pandas, PostgreSQL, Redis, Docker, AWS.</p>
-                    </div>
-                    <div class="mb-4 no-break">
-                        <a href="https://github.com/pedro-fs-garcia/filmmash-android/releases/latest" target="_blank" class="hover:underline">
-                            <h3 class="font-semibold text-primary">FilmMash</h3>
-                        </a>
-                        <p class="italic text-xs">A full-stack application featuring a REST API and a native Android client to rank movies interactively.</p>
-                        <ul class="list-disc list-inside pl-2 mt-1 text-xs">
-                            <li>Developed the backend (Flask) to serve movie data and process the scoring logic.</li>
-                            <li>Implemented the ELO rating algorithm to rank films based on user choices.</li>
-                            <li>Built the native Android app in Kotlin, consuming the API to provide a fluid user experience.</li>
-                        </ul>
-                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Flask, Kotlin, MySQL, SQLite, REST API.</p>
-                    </div>
-
-                    <div class="mb-4 no-break">
-                        <a href="https://github.com/pedro-fs-garcia/JurisBot" target="_blank" class="hover:underline">
-                            <h3 class="font-semibold text-primary">JurisBot – Generative AI Legal Assistant</h3>
-                        </a>
-                        <p class="italic text-xs">An AI prototype that uses Autonomous Agents (LLMs) to research, analyze, and synthesize information from legal databases.</p>
-                        <ul class="list-disc list-inside pl-2 mt-1 text-xs">
-                            <li>Orchestrated a pipeline of AI agents to execute complex research and summarization tasks.</li>
-                            <li>Integrated the solution with language models from the Hugging Face Hub for text processing.</li>
-                        </ul>
-                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Python, Hugging Face, Smol-Agents, Gradio.</p>
-                    </div>
-
-                    <div class="mb-4 no-break">
-                        <a href="https://github.com/pedro-fs-garcia/IdScan" target="_blank" class="hover:underline">
-                            <h3 class="font-semibold text-primary">IdScan – Local AI Document Processing</h3>
-                        </a>
-                        <p class="italic text-xs">A desktop application for extracting data from ID cards via OCR and a locally-run LLM, ensuring data privacy.</p>
-                        <ul class="list-disc list-inside pl-2 mt-1 text-xs">
-                            <li>Developed a Java-based solution to orchestrate text extraction (Tesseract) and interpretation with AI (Ollama).</li>
-                            <li>Implemented the logic to structure the extracted data and persist it in a MySQL database.</li>
-                        </ul>
-                        <p class="mt-1"><span class="font-semibold text-accent">Stack:</span> Java, Ollama, MySQL, TesseractOCR.</p>
-                    </div>
-                </section>
-            </div>
-
-            <div class="w-2/5 space-y-4 no-break">
-                <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2 text-primary">
-                        Technical Skills
-                    </h2>
-                    <div class="space-y-3">
-                        <div>
-                            <h3 class="font-semibold">Backend & Languages</h3>
-                            <p class="italic text-xs pb-1">
-                                Python (Flask, FastAPI), Java, Node.js, TypeScript (NestJS), Kotlin
-                            </p>
-                            <div class="pb-2 flex flex-wrap gap-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="15" width="20" alt="Python" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" height="15" width="20" alt="Flask" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="15" width="20" alt="FastAPI" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="15" width="20" alt="Java" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="15" width="20" alt="Node.js" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="15" width="20" alt="TypeScript" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" height="15" width="20" alt="NestJS" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" height="15" width="20" alt="Kotlin" />
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold">Databases</h3>
-                            <p class="italic text-xs pb-1">PostgreSQL, MySQL, SQLite, Redis</p>
-                            <div class="pb-2 flex flex-wrap gap-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="15" width="20" alt="PostgreSQL" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="15" width="20" alt="MySQL" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="15" width="20" alt="SQLite" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="15" width="20" alt="Redis" />
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold">Cloud & DevOps</h3>
-                            <p class="italic text-xs pb-1">
-                                Docker, AWS, Linux, Git, GitHub
-                            </p>
-                            <div class="pb-2 flex flex-wrap gap-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="15" width="20" alt="Docker" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" height="15" width="20" alt="AWS" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="15" width="20" alt="Linux" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="15" width="20" alt="Git" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="15" width="20" alt="GitHub" />
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold">Tools & Concepts</h3>
-                            <p class="italic text-xs pb-1">
-                                Scrum, Jira, Slack, Pytest, Jest, Swagger, REST API, Pandas, Smol-Agents, Ollama
-                            </p>
-                            <div class="pb-2 flex flex-wrap gap-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" height="15" width="20" alt="Jira" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" height="15" width="20" alt="Slack" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="15" width="20" alt="Pandas" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" height="15" width="20" alt="Pytest" />
-                                <img src="https://cdn-avatars.huggingface.co/v1/production/uploads/63d10d4e8eaa4831005e92b5/a3R8vs2eGE578q4LEpaHB.png" height="15" width="20" alt="Smol-Agents" />
-                                <img src="https://ollama.com/public/ollama.png" height="15" width="20" alt="Ollama" />
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold">Frontend (Familiar)</h3>
-                            <p class="italic text-xs pb-1">
-                                React, TypeScript, Kotlin (Android), TailwindCSS
-                            </p>
-                            <div class="pb-2 flex flex-wrap gap-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="15" width="20" alt="HTML5" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="15" width="20" alt="CSS3" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" height="15" width="20" alt="TailwindCSS" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="15" width="20" alt="React" />
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" height="15" width="20" alt="Android Studio" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Education</h2>
-                    <div class="mb-3">
-                        <div class="flex justify-between items-baseline">
-                            <h3 class="font-semibold text-primary">Technologist in Analysis and Systems Development</h3>
-                            <span class="text-gray-600 text-xs">2024-2026</span>
-                        </div>
-                        <p class="italic">FATEC (Faculty of Technology) São José dos Campos</p>
-                    </div>
-                    <div>
-                        <div class="flex justify-between items-baseline">
-                            <h3 class="font-semibold text-primary">Bachelor in Communications: Advertising</h3>
-                            <span class="text-gray-600 text-xs">2017-2021</span>
-                        </div>
-                        <p class="italic">School of Communications and Arts, University of São Paulo (ECA/USP)</p>
-                    </div>
-                </section>
-
-                <section>
-                    <h2 class="text-lg font-bold uppercase border-b border-black mb-2">Languages</h2>
-                    <p><span class="font-semibold text-primary">Portuguese:</span> Native</p>
-                    <p><span class="font-semibold text-primary">English:</span> Advanced (C1 – CEFR). Proficient in technical communication and documentation.</p>
-                </section>
-            </div>
-        </div>
-
-        <div class="pt-12">
-            <section>
-                <h2 class="text-lg font-bold text-primary uppercase border-b border-black mb-2">Professional Experience</h2>
-
-                <div class="mb-3">
-                    <div class="flex justify-between">
-                        <h3 class="font-semibold text-secondary">Census Supervisor – IBGE (Brazilian Institute of Geography and Statistics)</h3>
-                        <span class="text-gray-600">06/2022 - 06/2023</span>
-                    </div>
-                    <ul class="list-disc list-inside pl-2 mt-1 space-y-1">
-                        <li>
-                            Led and trained a team of 15 census takers, optimizing routes and ensuring the quality and coverage of data collected across 5 districts.
-                        </li>
-                        <li>
-                            Managed data integrity and security, resolving logistical issues and conflicts in real-time to meet collection targets and deadlines.
-                        </li>
-                    </ul>
+            <div class="mb-3">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="font-semibold">RCDNC — Systems Development Intern</h3>
+                    <span class="text-gray-600 text-xs">11/2025 – Present</span>
                 </div>
+                <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                    <li><strong>End-to-end</strong> development of internal system: architecture, modeling, backend,
+                        frontend, and deployment. Stack: React, Express, PostgreSQL, Redis, async queues.</li>
+                    <li><strong>PostgreSQL</strong> database modeling and versioning with migrations, business rules
+                        definition, and external service integration.</li>
+                    <li>Implementation of <strong>asynchronous processing</strong> with queues and Redis for caching and
+                        decoupling.</li>
+                    <li>New system in development: architecture definition. Stack: <strong>Next.js, NestJS,
+                            PostgreSQL</strong>.</li>
+                    <li><strong>CI/CD</strong> configuration with GitHub Actions and deployment via Railway.</li>
+                </ul>
+            </div>
 
+            <div class="mb-3">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="font-semibold">IBGE — Census Supervisor Agent</h3>
+                    <span class="text-gray-600 text-xs">06/2022 – 06/2023</span>
+                </div>
+                <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                    <li>Managed data collection for a team of 15 people, ensuring 100% coverage across 5 neighborhoods.
+                    </li>
+                    <li>Quality control and integrity of collected data.</li>
+                </ul>
+            </div>
+
+            <!-- <div>
+                <div class="flex justify-between items-baseline">
+                    <h3 class="font-semibold">Audiovisual and Advertising Production</h3>
+                    <span class="text-gray-600 text-xs">2018 – 2024</span>
+                </div>
+                <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                    <li>Project manager: translating business requirements into technical specifications.</li>
+                    <li>Delivery pipeline management across multiple simultaneous projects.</li>
+                </ul>
+            </div> -->
+        </section>
+
+        <!-- PROJECTS (shorter) -->
+        <section class="mb-4 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Projects</h2>
+
+            <div class="mb-2">
+                <a href="https://github.com/Titus-System/InsightFlow" target="_blank"
+                    class="font-semibold text-primary hover:underline">InsightFlow</a>
+                <span class="text-gray-600">— Predictive analysis platform</span>
+                <p class="pl-2">Data pipeline with REST API for ingestion and querying of large volumes, time series
+                    models for forecasting. <strong>Stack:</strong> Flask, PostgreSQL, Redis, Docker, AWS.</p>
+            </div>
+
+            <div class="mb-2">
+                <a href="https://github.com/pedro-fs-garcia/IdScan" target="_blank"
+                    class="font-semibold text-primary hover:underline">IdScan</a>
+                <span class="text-gray-600">— AI-powered document processing</span>
+                <p class="pl-2">System that orchestrates OCR (Tesseract) and local LLM (Ollama) for structured data
+                    extraction from ID cards. <strong>Stack:</strong> Java, MySQL, Ollama.</p>
+            </div>
+
+            <div class="mb-2">
+                <a href="https://github.com/pedro-fs-garcia/filmmash-android/releases/latest" target="_blank"
+                    class="font-semibold text-primary hover:underline">FilmMash</a>
+                <span class="text-gray-600">— Movie ranking system</span>
+                <p class="pl-2">Backend with REST API and ELO algorithm for ranking, native Android client.
+                    <strong>Stack:</strong> Flask, Kotlin, MySQL.
+                </p>
+            </div>
+
+            <div class="mb-2">
+                <a href="https://github.com/Titus-System/Nexa" target="_blank"
+                    class="font-semibold text-primary hover:underline">Nexa</a>
+                <span class="text-gray-600">— Automated Tax Classification from
+                    part-numbers and PDF documents</span>
+
+                    <p class="pl-2">
+                        WebSockets, asynchronous processing with Celery using Redis as broker and
+                        pub/sub communication.
+                    </p>
+
+                <p class="pl-2 mt-1">
+                    <strong>Stack:</strong> Python, Flask, PostgreSQL, Redis (broker/pub-sub), Celery, Docker, REST
+                    APIs, WebSockets.
+                </p>
+            </div>
+
+            <!-- <div>
+                <a href="https://github.com/pedro-fs-garcia/JurisBot" target="_blank"
+                    class="font-semibold text-primary hover:underline">JurisBot</a>
+                <span class="text-gray-600">— Legal assistant with AI agents</span>
+                <p class="pl-2">Pipeline of autonomous agents for research and synthesis in legal databases.
+                    <strong>Stack:</strong> Python, Hugging Face, SmolAgents.</p>
+            </div> -->
+        </section>
+
+        <!-- SKILLS -->
+        <section class="mb-4 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Technical Skills</h2>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-1">
+                <div><strong>Languages:</strong> Python, JavaScript/TypeScript, Java</div>
+                <div><strong>Frameworks:</strong> Flask, FastAPI, Express, NestJS</div>
+                <div><strong>Databases:</strong> PostgreSQL, MySQL, Redis</div>
+                <div><strong>DevOps:</strong> Docker, GitHub Actions, Railway, AWS</div>
+                <div><strong>Tools:</strong> Git, Linux, Pytest, Swagger</div>
+                <div><strong>Concepts:</strong> REST APIs, Queues, CI/CD, Migrations</div>
+            </div>
+        </section>
+
+        <!-- EDUCATION AND LANGUAGES side by side -->
+        <div class="flex gap-8">
+            <section class="flex-1 no-break">
+                <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Education</h2>
+                <div class="mb-1">
+                    <div class="flex justify-between items-baseline">
+                        <span class="font-semibold">Systems Analysis and Development</span>
+                        <span class="text-gray-600 text-xs">2024 – 2026</span>
+                    </div>
+                    <p class="text-gray-600">FATEC São José dos Campos</p>
+                </div>
                 <div>
-                    <div class="flex justify-between">
-                        <h3 class="font-semibold text-secondary">Freelance Audiovisual & Advertising Production</h3>
-                        <span class="text-gray-600">2018-2024</span>
+                    <div class="flex justify-between items-baseline">
+                        <span class="font-semibold">Social Communication</span>
+                        <span class="text-gray-600 text-xs">2017 – 2021</span>
                     </div>
-                    <ul class="list-disc list-inside pl-2 mt-1 space-y-1">
-                        <li>
-                            Managed end-to-end projects from client briefing to final delivery, consistently meeting deadlines and budget constraints.
-                        </li>
-                        <li>
-                            Translated business requirements into technical and creative specifications for the production of advertising campaigns and corporate videos.
-                        </li>
-                    </ul>
+                    <p class="text-gray-600">ECA/USP</p>
                 </div>
+            </section>
+
+            <section class="w-1/3 no-break">
+                <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Languages</h2>
+                <p><strong>Portuguese:</strong> Native</p>
+                <p><strong>English:</strong> Advanced (C1)</p>
+                <p class="text-xs text-gray-600">Technical reading, communication, and documentation.</p>
             </section>
         </div>
     </div>

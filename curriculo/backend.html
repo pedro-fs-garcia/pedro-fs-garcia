@@ -44,8 +44,7 @@
         <!-- HEADER -->
         <header class="mb-4 border-b border-black pb-3">
             <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
-            <p class="text-base font-medium text-primary">Desenvolvedor com Foco em Automação | Python, Pipelines,
-                Integração de Sistemas</p>
+            <p class="text-base font-medium text-primary">Desenvolvedor Backend | Python, Node.js, PostgreSQL, Redis</p>
 
             <div class="flex flex-wrap gap-x-6 gap-y-1 mt-2 text-sm">
                 <span>São José dos Campos - SP</span>
@@ -59,12 +58,12 @@
 
         <!-- PERFIL - 4 linhas -->
         <section class="mb-4">
+            <!-- <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Perfil</h2> -->
             <p>
-                Desenvolvedor com foco em automação de processos, pipelines de dados e integração de sistemas.
-                Experiência prática com <strong>Python, processamento assíncrono, filas</strong> e orquestração de
-                tarefas.
-                Projetos pessoais utilizando <strong>IA (LLMs)</strong> para automatizar extração de dados e síntese de
-                informações.
+                Desenvolvedor backend com foco em APIs, automação e sistemas distribuídos.
+                Experiência prática em desenvolvimento <strong>end-to-end</strong>: arquitetura, modelagem de dados,
+                processamento assíncrono e deploy em produção.
+                Atuação com <strong>Python, Node.js, PostgreSQL, Redis</strong> e integração de serviços externos.
                 Estagiário em desenvolvimento de sistemas em software house.
             </p>
         </section>
@@ -79,14 +78,15 @@
                     <span class="text-gray-600 text-xs">11/2025 – Atual</span>
                 </div>
                 <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
-                    <li>Implementação de <strong>processamento assíncrono</strong> com filas e Redis para desacoplamento
-                        de componentes.</li>
-                    <li>Integração com serviços externos (Resend, APIs de terceiros) e automação de fluxos de negócio.
-                    </li>
-                    <li>Modelagem de banco <strong>PostgreSQL</strong> com migrations para evolução controlada do
-                        schema.</li>
-                    <li>Configuração de <strong>CI/CD</strong> com GitHub Actions e deploy contínuo via Railway.</li>
-                    <li>Desenvolvimento end-to-end de sistema interno: arquitetura, backend, frontend e deploy.</li>
+                    <li>Desenvolvimento <strong>end-to-end</strong> de sistema interno: arquitetura, modelagem, backend,
+                        frontend e deploy. Stack: React, Express, PostgreSQL, Redis, filas assíncronas.</li>
+                    <li>Modelagem e versionamento de banco <strong>PostgreSQL</strong> com migrations, definição de
+                        regras de negócio e integração com serviços externos.</li>
+                    <li>Implementação de <strong>processamento assíncrono</strong> com filas e Redis para cache e
+                        desacoplamento.</li>
+                    <li>Novo sistema em desenvolvimento: definição de arquitetura. Stack: <strong>Next.js, NestJS,
+                            PostgreSQL</strong>.</li>
+                    <li>Configuração de <strong>CI/CD</strong> com GitHub Actions e deploy via Railway.</li>
                 </ul>
             </div>
 
@@ -96,38 +96,51 @@
                     <span class="text-gray-600 text-xs">06/2022 – 06/2023</span>
                 </div>
                 <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
-                    <li>Gerenciei coleta de dados para equipe de 15 pessoas, otimizando processos logísticos.</li>
+                    <li>Gerenciei coleta de dados para equipe de 15 pessoas, garantindo 100% de cobertura em 5 bairros.
+                    </li>
                     <li>Controle de qualidade e integridade dos dados coletados.</li>
                 </ul>
             </div>
+
+            <!-- <div>
+                <div class="flex justify-between items-baseline">
+                    <h3 class="font-semibold">Produção Audiovisual e Publicitária</h3>
+                    <span class="text-gray-600 text-xs">2018 – 2024</span>
+                </div>
+                <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                    <li>Gerente de projetos: tradução de requisitos de negócio em especificações técnicas.</li>
+                    <li>Gestão de pipeline de entrega em múltiplos projetos simultâneos.</li>
+                </ul>
+            </div> -->
         </section>
 
-        <!-- PROJETOS -->
+        <!-- PROJETOS (mais curtos) -->
         <section class="mb-4 no-break">
             <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Projetos</h2>
 
             <div class="mb-2">
-                <a href="https://github.com/pedro-fs-garcia/JurisBot" target="_blank"
-                    class="font-semibold text-primary hover:underline">JurisBot</a>
-                <span class="text-gray-600">— Automação de pesquisa jurídica com IA</span>
-                <p class="pl-2">Pipeline de agentes autônomos (LLMs) para pesquisa, análise e síntese de informações
-                    jurídicas. <strong>Stack:</strong> Python, Hugging Face, SmolAgents.</p>
+                <a href="https://github.com/Titus-System/InsightFlow" target="_blank"
+                    class="font-semibold text-primary hover:underline">InsightFlow</a>
+                <span class="text-gray-600">— Plataforma de análise preditiva</span>
+                <p class="pl-2">Pipeline de dados com API REST para ingestão e consulta de grandes volumes, modelos de
+                    séries temporais para previsão. <strong>Stack:</strong> Flask, PostgreSQL, Redis, Docker, AWS.</p>
             </div>
 
             <div class="mb-2">
                 <a href="https://github.com/pedro-fs-garcia/IdScan" target="_blank"
                     class="font-semibold text-primary hover:underline">IdScan</a>
-                <span class="text-gray-600">— Automação de extração de documentos</span>
-                <p class="pl-2">Orquestração de OCR (Tesseract) + LLM local (Ollama) para extrair e estruturar dados de
-                    RGs automaticamente. <strong>Stack:</strong> Java, MySQL, Ollama.</p>
+                <span class="text-gray-600">— Processamento de documentos com IA</span>
+                <p class="pl-2">Sistema que orquestra OCR (Tesseract) e LLM local (Ollama) para extração estruturada de
+                    dados de RGs. <strong>Stack:</strong> Java, MySQL, Ollama.</p>
             </div>
 
             <div class="mb-2">
-                <a href="https://github.com/Titus-System/InsightFlow" target="_blank"
-                    class="font-semibold text-primary hover:underline">InsightFlow</a>
-                <span class="text-gray-600">— Pipeline de dados com previsão</span>
-                <p class="pl-2">API REST para ingestão e processamento de grandes volumes, modelos de séries temporais
-                    para previsão. <strong>Stack:</strong> Flask, Pandas, PostgreSQL, Docker, AWS.</p>
+                <a href="https://github.com/pedro-fs-garcia/filmmash-android/releases/latest" target="_blank"
+                    class="font-semibold text-primary hover:underline">FilmMash</a>
+                <span class="text-gray-600">— Sistema de ranking de filmes</span>
+                <p class="pl-2">Backend com API REST e algoritmo ELO para ranking, cliente Android nativo.
+                    <strong>Stack:</strong> Flask, Kotlin, MySQL.
+                </p>
             </div>
 
             <div class="mb-2">
@@ -136,29 +149,40 @@
                 <span class="text-gray-600">— Classificação Fiscal Automatizada a partir de
                     part-numbers e documentos PDF</span>
 
-                <p class="pl-2">
-                    WebSockets, processamento assíncrono com Celery utilizando Redis como broker e
-                    comunicação pub/sub.
+                    <p class="pl-2">
+                        WebSockets, processamento assíncrono com Celery utilizando Redis como broker e
+                        comunicação pub/sub.
+                    </p>
+
+                <p class="pl-2 mt-1">
                     <strong>Stack:</strong> Python, Flask, PostgreSQL, Redis (broker/pub-sub), Celery, Docker, REST
                     APIs, WebSockets.
                 </p>
             </div>
+
+            <!-- <div>
+                <a href="https://github.com/pedro-fs-garcia/JurisBot" target="_blank"
+                    class="font-semibold text-primary hover:underline">JurisBot</a>
+                <span class="text-gray-600">— Assistente jurídico com agentes de IA</span>
+                <p class="pl-2">Pipeline de agentes autônomos para pesquisa e síntese em bases jurídicas.
+                    <strong>Stack:</strong> Python, Hugging Face, SmolAgents.</p>
+            </div> -->
         </section>
 
         <!-- COMPETÊNCIAS -->
         <section class="mb-4 no-break">
             <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Competências Técnicas</h2>
             <div class="grid grid-cols-2 gap-x-6 gap-y-1">
-                <div><strong>Automação:</strong> Python, Pandas, Filas, Redis</div>
-                <div><strong>IA/LLMs:</strong> Hugging Face, SmolAgents, Ollama</div>
-                <div><strong>Backend:</strong> Flask, FastAPI, Node.js, NestJS</div>
+                <div><strong>Linguagens:</strong> Python, JavaScript/TypeScript, Java</div>
+                <div><strong>Frameworks:</strong> Flask, FastAPI, Express, NestJS</div>
                 <div><strong>Bancos de dados:</strong> PostgreSQL, MySQL, Redis</div>
-                <div><strong>DevOps:</strong> Docker, GitHub Actions, AWS, Linux</div>
-                <div><strong>Conceitos:</strong> Pipelines, CI/CD, Processamento assíncrono</div>
+                <div><strong>DevOps:</strong> Docker, GitHub Actions, Railway, AWS</div>
+                <div><strong>Ferramentas:</strong> Git, Linux, Pytest, Jest, Swagger</div>
+                <div><strong>Conceitos:</strong> REST APIs, Filas, CI/CD, Migrations</div>
             </div>
         </section>
 
-        <!-- FORMAÇÃO E IDIOMAS -->
+        <!-- FORMAÇÃO E IDIOMAS lado a lado -->
         <div class="flex gap-8">
             <section class="flex-1 no-break">
                 <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Formação</h2>
@@ -184,7 +208,6 @@
                 <p class="text-xs text-gray-600">Leitura técnica, comunicação e documentação.</p>
             </section>
         </div>
-
     </div>
 </body>
 
