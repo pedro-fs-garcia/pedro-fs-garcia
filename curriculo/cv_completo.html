@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Completo - Pedro Felipe Sousa Garcia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                width: 210mm;
+            }
+
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#16386c',
+                        secondary: '#1e88e5',
+                        dark: '#212121',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans text-sm leading-snug print:text-sm">
+    <div class="container mx-auto px-10 py-6 max-w-[210mm]">
+
+        <!-- HEADER -->
+        <header class="mb-4 border-b border-black pb-3">
+            <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
+            <p class="text-base font-medium text-primary">Desenvolvedor Backend | APIs, Sistemas, Automação e Testes</p>
+
+            <div class="flex flex-wrap gap-x-6 gap-y-1 mt-2 text-sm">
+                <span>São José dos Campos - SP</span>
+                <span>(12) 98224-2629</span>
+                <a href="mailto:pedrofsgarcia.pro@gmail.com" class="text-blue-700">pedrofsgarcia.pro@gmail.com</a>
+                <a href="https://github.com/pedro-fs-garcia" class="text-blue-700">github.com/pedro-fs-garcia</a>
+                <a href="https://linkedin.com/in/pedro-fs-garcia" class="text-blue-700">linkedin.com/in/pedro-fs-garcia</a>
+                <a href="https://pedrogarcia.space" class="text-blue-700">pedrogarcia.space</a>
+            </div>
+        </header>
+
+        <!-- PERFIL -->
+        <section class="mb-4">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Perfil</h2>
+            <p>
+                Desenvolvedor backend com foco em <strong>APIs, sistemas, automação e testes</strong>. Experiência
+                prática em desenvolvimento <strong>end-to-end</strong> de sistemas em produção, cobrindo arquitetura,
+                modelagem de dados, processamento assíncrono, integração com serviços externos, deploy e suporte
+                pós-entrega.
+            </p>
+            <p class="mt-1">
+                Atuação consistente com <strong>Python, Node.js, PostgreSQL e Redis</strong>, bem como em arquiteturas
+                orientadas a eventos (NestJS), pipelines de dados, CI/CD e validação funcional. Vivência prévia em
+                gestão de equipes e <strong>controle de qualidade</strong> de dados em campo, somada a formação em
+                Comunicação que reforça a capacidade de traduzir requisitos de negócio em especificações técnicas.
+            </p>
+        </section>
+
+        <!-- EXPERIÊNCIA PROFISSIONAL -->
+        <section class="mb-4">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Experiência Profissional</h2>
+
+            <div class="mb-4 no-break">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="font-semibold">RCDNC — Estagiário em Desenvolvimento de Sistemas</h3>
+                    <span class="text-gray-600 text-xs">11/2025 - Atual</span>
+                </div>
+                <p class="text-xs text-gray-600 mt-0.5">
+                    Software house com atuação em projetos voltados ao setor público e fiscal. Stack predominante:
+                    Python, Node.js (Express/NestJS), PostgreSQL, Redis, Docker e GitHub Actions.
+                </p>
+
+                <div class="mt-2">
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="font-medium text-primary">VigieEditais — Gerenciamento de licitações públicas</h4>
+                    </div>
+                    <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                        <li>Conduzi o desenvolvimento <strong>end-to-end</strong> do sistema em produção, cobrindo
+                            arquitetura, modelagem de dados, backend, frontend e deploy. Stack: React, Express,
+                            PostgreSQL, Redis e filas assíncronas.</li>
+                        <li>Atuei na detecção e correção de bugs, resolvendo gargalos de performance e garantindo
+                            aderência às regras de negócio.</li>
+                        <li>Traduzi especificações de editais <strong>públicos</strong> em regras de negócio e
+                            requisitos de software, reduzindo ambiguidades na implementação.</li>
+                        <li>Implementei <strong>processamento assíncrono</strong> com filas e Redis (cache), reduzindo
+                            acoplamento entre componentes e melhorando a resiliência dos fluxos críticos.</li>
+                        <li>Estruturei e versionei o banco <strong>PostgreSQL</strong> com migrations em ambientes de
+                            desenvolvimento e produção, garantindo evolução segura do schema e menor risco em releases.</li>
+                        <li>Automatizei integrações com serviços externos e fluxos de negócio, diminuindo etapas
+                            manuais e melhorando a confiabilidade operacional.</li>
+                        <li>Configurei e mantive pipeline de <strong>CI/CD</strong> com GitHub Actions e deploy via
+                            Railway, ampliando previsibilidade e frequência de publicação.</li>
+                        <li>Atuei em <strong>testes manuais</strong> e reporte estruturado de bugs críticos via
+                            <strong>GitHub Issues</strong>, com evidências e passos de reprodução, em contexto
+                            emergencial de entrega.</li>
+                        <li>Validei correções pós-deploy com base em critérios de aceite, reduzindo risco de regressão
+                            em produção.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="font-medium text-primary">CriptoDeclara — Análise e arquitetura de sistema fiscal</h4>
+                        <span class="text-gray-600 text-xs">04/2026 - Atual</span>
+                    </div>
+                    <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                        <li>Atuei na <strong>interpretação de requisitos fiscais e arquiteturais</strong>, desmembrando
+                            documentos técnicos (RFCs) em Épicos e <em>Sub-issues</em> acionáveis com rigorosos
+                            Critérios de Aceite (DoD).</li>
+                        <li>Mapeei e especifiquei a <strong>refatoração</strong> para uma arquitetura orientada a
+                            eventos (<em>Event-Driven</em> com NestJS), eliminando gargalos de concorrência
+                            (<em>Race Conditions</em>) e garantindo conciliação atômica de dados.</li>
+                        <li>Identifiquei falhas estruturais como silos de dados e <em>weak linking</em>, definindo a
+                            modelagem de um <strong>motor de normalização e sanitização de entradas</strong> para
+                            garantir a integridade da <em>Single Source of Truth</em> do banco de dados.</li>
+                        <li>Defini cenários de validação e critérios de testabilidade ainda na fase de especificação,
+                            estabelecendo a base de qualidade do projeto antes da implementação.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-3 no-break">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="font-semibold">IBGE — Agente Censitário Supervisor</h3>
+                    <span class="text-gray-600 text-xs">06/2022 - 06/2023</span>
+                </div>
+                <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                    <li>Gerenciei a operação de coleta de dados de uma equipe de 15 pessoas, garantindo 100% de
+                        cobertura em 5 bairros dentro do prazo definido.</li>
+                    <li>Implementei rotina de <strong>controle de qualidade</strong> dos dados em campo, reduzindo
+                        inconsistências e aumentando a confiabilidade das entregas.</li>
+                    <li>Prestei suporte técnico e operacional à equipe, conduzindo diagnóstico e resolução de problemas
+                        em sistemas de coleta e treinando recenseadores no uso correto das ferramentas.</li>
+                </ul>
+            </div>
+
+            <div class="mb-3 no-break">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="font-semibold">Produção Audiovisual e Publicitária — Atuação independente</h3>
+                    <span class="text-gray-600 text-xs">2018 - 2024</span>
+                </div>
+                <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                    <li>Atuei como gerente de projetos, traduzindo requisitos de negócio em especificações técnicas e
+                        cronogramas executáveis.</li>
+                    <li>Geri pipeline de entrega em múltiplos projetos simultâneos, com prazos rígidos e revisão de
+                        qualidade ao final de cada etapa.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="mb-4">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Projetos</h2>
+
+            <div class="mb-3 no-break">
+                <div class="flex justify-between items-baseline">
+                    <a href="https://github.com/Titus-System/InsightFlow" target="_blank"
+                        class="font-semibold text-primary hover:underline">InsightFlow</a>
+                    <span class="text-gray-600 text-xs">Plataforma de análise preditiva</span>
+                </div>
+                <p class="pl-2 mt-1">Pipeline de dados com API REST para ingestão e consulta de grandes volumes,
+                    incluindo modelos de séries temporais para previsão. Backend desenhado para isolar processamento
+                    pesado da camada de consulta, com cache em Redis e deploy containerizado em AWS.</p>
+                <p class="pl-2"><strong>Stack:</strong> Flask, Pandas, PostgreSQL, Redis, Docker, AWS, REST APIs.</p>
+            </div>
+
+            <div class="mb-3 no-break">
+                <div class="flex justify-between items-baseline">
+                    <a href="https://github.com/Titus-System/Nexa" target="_blank"
+                        class="font-semibold text-primary hover:underline">Nexa</a>
+                    <span class="text-gray-600 text-xs">Classificação fiscal automatizada</span>
+                </div>
+                <p class="pl-2 mt-1">Sistema de classificação fiscal automatizada a partir de <em>part-numbers</em> e
+                    documentos PDF. Processamento assíncrono com Celery utilizando Redis como broker e canal de
+                    comunicação <em>pub/sub</em>; status de processamento exposto em tempo real via WebSockets.</p>
+                <p class="pl-2"><strong>Stack:</strong> Python, Flask, PostgreSQL, Redis (broker/pub-sub), Celery,
+                    Docker, REST APIs, WebSockets.</p>
+            </div>
+
+            <div class="mb-3 no-break">
+                <div class="flex justify-between items-baseline">
+                    <a href="https://github.com/pedro-fs-garcia/IdScan" target="_blank"
+                        class="font-semibold text-primary hover:underline">IdScan</a>
+                    <span class="text-gray-600 text-xs">Processamento de documentos com IA</span>
+                </div>
+                <p class="pl-2 mt-1">Backend que orquestra OCR (Tesseract) e LLM local (Ollama) para extração
+                    estruturada de dados de RGs, com testes de integração cobrindo o fluxo de extração e validação
+                    pós-processamento.</p>
+                <p class="pl-2"><strong>Stack:</strong> Java, MySQL, Tesseract, Ollama.</p>
+            </div>
+
+            <div class="mb-3 no-break">
+                <div class="flex justify-between items-baseline">
+                    <a href="https://github.com/pedro-fs-garcia/filmmash-android/releases/latest" target="_blank"
+                        class="font-semibold text-primary hover:underline">FilmMash</a>
+                    <span class="text-gray-600 text-xs">Sistema de ranking de filmes</span>
+                </div>
+                <p class="pl-2 mt-1">Backend com API REST e algoritmo ELO para ranking, consumido por cliente Android
+                    nativo. Modelagem relacional do domínio de filmes e usuários, com endpoints documentados.</p>
+                <p class="pl-2"><strong>Stack:</strong> Flask, MySQL, Kotlin, SQLite.</p>
+            </div>
+
+            <div class="mb-3 no-break">
+                <div class="flex justify-between items-baseline">
+                    <a href="https://github.com/pedro-fs-garcia/JurisBot" target="_blank"
+                        class="font-semibold text-primary hover:underline">JurisBot</a>
+                    <span class="text-gray-600 text-xs">Automação de pesquisa jurídica com agentes de IA</span>
+                </div>
+                <p class="pl-2 mt-1">Pipeline de agentes autônomos (LLMs) para pesquisa, análise e síntese de
+                    informações em bases jurídicas, com orquestração de chamadas e composição de respostas.</p>
+                <p class="pl-2"><strong>Stack:</strong> Python, Hugging Face, SmolAgents.</p>
+            </div>
+
+            <div class="mb-3 no-break">
+                <div class="flex justify-between items-baseline">
+                    <a href="https://pedrogarcia.space" target="_blank"
+                        class="font-semibold text-primary hover:underline">Portfólio Pessoal</a>
+                    <span class="text-gray-600 text-xs">SPA responsiva</span>
+                </div>
+                <p class="pl-2 mt-1">Single Page Application com integração à API do GitHub para listagem dinâmica de
+                    repositórios e projetos.</p>
+                <p class="pl-2"><strong>Stack:</strong> React, TypeScript, TailwindCSS.</p>
+            </div>
+        </section>
+
+        <!-- COMPETÊNCIAS -->
+        <section class="mb-4 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Competências Técnicas</h2>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-1">
+                <div><strong>Linguagens:</strong> Python, JavaScript/TypeScript, Java, Kotlin</div>
+                <div><strong>Backend:</strong> Flask, FastAPI, Express, NestJS</div>
+                <div><strong>Bancos de dados:</strong> PostgreSQL, MySQL, Redis, SQLite</div>
+                <div><strong>Frontend:</strong> React, Next.js, TailwindCSS</div>
+                <div><strong>Processamento assíncrono:</strong> Celery, filas, Redis (broker/pub-sub), WebSockets</div>
+                <div><strong>DevOps:</strong> Docker, GitHub Actions, Railway, AWS, Linux</div>
+                <div><strong>Testes:</strong> Pytest, Jest, testes manuais, GitHub Issues, validação pós-deploy</div>
+                <div><strong>IA/LLMs:</strong> Hugging Face, SmolAgents, Ollama, Tesseract</div>
+                <div><strong>Ferramentas:</strong> Git, Swagger, Postman</div>
+                <div><strong>Conceitos:</strong> REST APIs, Event-Driven, Migrations, CI/CD, DoD/Critérios de Aceite</div>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO -->
+        <section class="mb-4 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Formação</h2>
+            <div class="mb-2">
+                <div class="flex justify-between items-baseline">
+                    <span class="font-semibold">Análise e Desenvolvimento de Sistemas</span>
+                    <span class="text-gray-600 text-xs">2024 - 2026</span>
+                </div>
+                <p class="text-gray-600">FATEC São José dos Campos</p>
+            </div>
+            <div>
+                <div class="flex justify-between items-baseline">
+                    <span class="font-semibold">Comunicação Social</span>
+                    <span class="text-gray-600 text-xs">2017 - 2021</span>
+                </div>
+                <p class="text-gray-600">ECA/USP — Escola de Comunicações e Artes da Universidade de São Paulo</p>
+            </div>
+        </section>
+
+        <!-- IDIOMAS -->
+        <section class="mb-4 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Idiomas</h2>
+            <p><strong>Português:</strong> Nativo</p>
+            <p><strong>Inglês:</strong> Avançado (C1) — leitura técnica, comunicação e documentação.</p>
+        </section>
+
+    </div>
+</body>
+
+</html>

@@ -44,33 +44,31 @@
         <!-- HEADER -->
         <header class="mb-4 border-b border-black pb-3">
             <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
-            <p class="text-base font-medium text-primary">Desenvolvedor Frontend | React, TypeScript, TailwindCSS</p>
+            <p class="text-base font-medium text-primary">Quality Assurance | Testes de Sistema, Validação Funcional, Report de Bugs — foco em validação de migração e testes em sistemas corporativos</p>
 
             <div class="flex flex-wrap gap-x-6 gap-y-1 mt-2 text-sm">
                 <span>São José dos Campos - SP</span>
                 <span>(12) 98224-2629</span>
                 <a href="mailto:pedrofsgarcia.pro@gmail.com" class="text-blue-700">pedrofsgarcia.pro@gmail.com</a>
                 <a href="https://github.com/pedro-fs-garcia" class="text-blue-700">github.com/pedro-fs-garcia</a>
-                <a href="https://linkedin.com/in/pedro-fs-garcia" class="text-blue-700">linkedin.com/in/pedro-fs-garcia</a>
+                <a href="https://linkedin.com/in/pedro-fs-garcia"
+                    class="text-blue-700">linkedin.com/in/pedro-fs-garcia</a>
             </div>
         </header>
 
-        <!-- PERFIL - 4 linhas -->
-        <section class="mb-4">
-            <p>
-                Desenvolvedor frontend com foco em interfaces responsivas, componentização e integração com APIs.
-                Experiência prática com <strong>React, TypeScript, TailwindCSS</strong> e desenvolvimento mobile com <strong>Kotlin (Jetpack Compose)</strong>.
-                Estagiário em desenvolvimento de sistemas em software house.
-            </p>
+        <!-- PERFIL -->
+        <section class="mb-3">
+            <p>Profissional de tecnologia com experiência em <strong>testes funcionais, identificação de falhas e validação de correções</strong> em sistemas web. Atuação recente como QA: execução de casos de teste, report estruturado via <strong>GitHub Issues</strong> e validação de correções. Vivência com <strong>bancos de dados, APIs e fluxos de negócio</strong>.</p>
+            <p class="mt-1"><strong>Foco:</strong> QA em migração e validação de sistemas corporativos (ERP). Estudando SAP HANA.</p>
         </section>
 
-        <!-- EXPERIÊNCIA PROFISSIONAL (PRIMEIRO) -->
+        <!-- EXPERIÊNCIA PROFISSIONAL -->
         <section class="mb-4 no-break">
             <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Experiência Profissional</h2>
 
             <div class="mb-3">
                 <div class="flex justify-between items-baseline">
-                    <h3 class="font-semibold">RCDNC — Estagiário em Desenvolvimento de Sistemas</h3>
+                    <h3 class="font-semibold">RCDNC — Estagiário em Desenvolvimento de Sistemas / QA</h3>
                     <span class="text-gray-600 text-xs">11/2025 – Atual</span>
                 </div>
                 <p class="text-xs text-gray-600 mt-0.5">Atuação em projetos voltados ao setor público e fiscal.</p>
@@ -80,14 +78,15 @@
                         <h4 class="font-medium text-primary">VigieEditais — Gerenciamento de licitações públicas</h4>
                     </div>
                     <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
-                        <li>Conduzi o desenvolvimento <strong>end-to-end</strong> do sistema em produção, implementando
-                            interfaces em <strong>React</strong> integradas ao backend Express.</li>
-                        <li>Integrei o frontend com APIs REST, filas assíncronas e serviços externos, garantindo fluidez
-                            em fluxos críticos da aplicação.</li>
-                        <li>Atuei na detecção e correção de bugs, com foco em performance da interface e aderência às
-                            regras de negócio.</li>
-                        <li>Automatizei pipeline de <strong>CI/CD</strong> com GitHub Actions e deploy via Railway,
-                            reduzindo etapas manuais de publicação.</li>
+                        <li>Atuei como QA em projeto com prazo curto, executando testes funcionais e reportando bugs via
+                            <strong>GitHub Issues</strong> com evidências e passos de reprodução.</li>
+                        <li>Conduzi validação de correções pós-deploy com base em critérios de aceite, reduzindo risco
+                            de regressão em produção.</li>
+                        <li>Validei fluxos ponta a ponta, assegurando aderência às regras de negócio.</li>
+                        <li>Traduzi especificações de editais <strong>públicos</strong> em cenários de teste e
+                            requisitos, diminuindo ambiguidades entre negócio e desenvolvimento.</li>
+                        <li>Como suporte técnico ao time, atuei também no contexto <strong>end-to-end</strong> (React,
+                            Express, PostgreSQL, Redis), acelerando diagnóstico e correção de falhas.</li>
                     </ul>
                 </div>
 
@@ -97,11 +96,12 @@
                         <span class="text-gray-600 text-xs">04/2026 – Atual</span>
                     </div>
                     <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
-                        <li>Atuei na <strong>interpretação de requisitos</strong>, desmembrando documentos técnicos
-                            (RFCs) em Épicos e <em>Sub-issues</em> acionáveis com Critérios de Aceite (DoD).</li>
-                        <li>Mapeei e especifiquei a <strong>refatoração</strong> para uma arquitetura orientada a eventos
-                            (<em>Event-Driven</em> com NestJS), com impacto em integrações de frontend e contratos de
-                            API.</li>
+                        <li>Defini <strong>Critérios de Aceite (DoD)</strong> ao desmembrar documentos técnicos (RFCs)
+                            em Épicos e <em>Sub-issues</em>, estabelecendo a base de testabilidade do projeto.</li>
+                        <li>Identifiquei falhas estruturais como silos de dados e <em>weak linking</em>, mapeando
+                            cenários críticos para validação de integridade da <em>Single Source of Truth</em>.</li>
+                        <li>Apoiei a definição de uma arquitetura orientada a eventos (NestJS) com foco em eliminar
+                            <em>Race Conditions</em> e garantir conciliação atômica de dados.</li>
                     </ul>
                 </div>
             </div>
@@ -113,8 +113,9 @@
                 </div>
                 <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
                     <li>Gerenciei a operação de coleta de dados de uma equipe de 15 pessoas, garantindo 100% de
-                        cobertura em 5 bairros dentro do prazo definido. Implementei rotina de controle de qualidade
-                        dos dados, reduzindo inconsistências e aumentando a confiabilidade das entregas.</li>
+                        cobertura em 5 bairros dentro do prazo definido. Implementei rotina de <strong>controle de
+                        qualidade</strong> dos dados, reduzindo inconsistências e aumentando a confiabilidade das
+                        entregas.</li>
                 </ul>
             </div>
 
@@ -123,10 +124,7 @@
                     <h3 class="font-semibold">Produção Audiovisual e Publicitária</h3>
                     <span class="text-gray-600 text-xs">2018 – 2024</span>
                 </div>
-                <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
-                    <li>Gerente de projetos criativos: tradução de requisitos de negócio em especificações visuais.</li>
-                    <li>Gestão de pipeline de entrega em múltiplos projetos simultâneos.</li>
-                </ul>
+                <p class="text-sm">Gerente de projetos — tradução de requisitos de negócio em especificações técnicas; revisão de entregas.</p>
             </div> -->
         </section>
 
@@ -135,40 +133,30 @@
             <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Projetos</h2>
 
             <div class="mb-2">
-                <a href="https://pedrogarcia.space" target="_blank" class="font-semibold text-primary hover:underline">Portfólio Pessoal</a>
-                <span class="text-gray-600">— SPA responsiva</span>
-                <p class="pl-2">Single Page Application com React e TypeScript, design responsivo com TailwindCSS e integração com API do GitHub. <strong>Stack:</strong> React, TypeScript, TailwindCSS.</p>
+                <a href="https://github.com/pedro-fs-garcia/IdScan" target="_blank" class="font-semibold text-primary hover:underline">IdScan</a>
+                <span class="text-gray-600">— Extração de documentos com IA</span>
+                <p class="pl-2">OCR + LLM local para extração de dados de RGs. <strong>Stack:</strong> Java, MySQL, Ollama.</p>
+                <p class="pl-2 text-sm text-gray-700"><strong>QA:</strong> Testes de integração, cenários de teste, validação de correções.</p>
             </div>
 
-            <div class="mb-2">
-                <a href="https://github.com/Titus-System/InsightFlow" target="_blank" class="font-semibold text-primary hover:underline">InsightFlow</a>
-                <span class="text-gray-600">— Dashboards interativos</span>
-                <p class="pl-2">Interfaces de visualização de dados com gráficos interativos, consumo de API REST para grandes volumes de dados. <strong>Stack:</strong> React, TypeScript, Chart.js.</p>
-            </div>
-
-            <div class="mb-2">
-                <a href="https://github.com/pedro-fs-garcia/filmmash-android/releases/latest" target="_blank" class="font-semibold text-primary hover:underline">FilmMash</a>
-                <span class="text-gray-600">— App Android nativo</span>
-                <p class="pl-2">Interface nativa em Kotlin com Jetpack Compose, navegação fluida, animações e consumo de API REST. <strong>Stack:</strong> Kotlin, Jetpack Compose, SQLite.</p>
-            </div>
-
-            <div class="mb-2">
+            <div>
                 <a href="https://github.com/Titus-System/Nexa" target="_blank" class="font-semibold text-primary hover:underline">Nexa</a>
-                <span class="text-gray-600">— Classificação fiscal automatizada</span>
-                <p class="pl-2">React e comunicação via WebSockets e exibição de status de processamento. <strong>Stack:</strong> React, TypeScript, SocketIo</p>
+                <span class="text-gray-600">— Classificação Fiscal Automatizada</span>
+                <p class="pl-2">Sistema com processamento assíncrono, WebSockets e filas. <strong>Stack:</strong> Flask, PostgreSQL, Redis, Celery, Docker.</p>
+                <p class="pl-2 text-sm text-gray-700"><strong>QA:</strong> Validação de fluxos, testes de regressão, documentação de repro steps.</p>
             </div>
         </section>
 
         <!-- COMPETÊNCIAS -->
-        <section class="mb-4 no-break">
-            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Competências Técnicas</h2>
-            <div class="grid grid-cols-2 gap-x-6 gap-y-1">
-                <div><strong>Frontend Web:</strong> React, Next.js, TypeScript, HTML5, CSS3</div>
-                <div><strong>Estilização:</strong> TailwindCSS, CSS Modules, Responsividade</div>
-                <div><strong>Mobile:</strong> Kotlin, Jetpack Compose, Android Studio</div>
-                <div><strong>Ferramentas:</strong> Git, GitHub Actions, Figma, Jest</div>
-                <div><strong>Integração:</strong> REST APIs, Fetch/Axios, JSON</div>
-                <div><strong>Conceitos:</strong> Componentização, SPA, UI/UX</div>
+        <section class="mb-3 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-1">Competências Técnicas</h2>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-0.5">
+                <div><strong>QA:</strong> Testes funcionais, Regressão, GitHub Issues</div>
+                <div><strong>Técnico:</strong> SQL, APIs REST, Fluxos de sistema</div>
+                <div><strong>Bancos:</strong> PostgreSQL, MySQL, Redis</div>
+                <div><strong>Ferramentas:</strong> Git, Linux, Docker</div>
+                <div><strong>ERP:</strong> SAP GUI, Fiori (conceitual); SAP HANA (em estudo)</div>
+                <div><strong>Conceitos:</strong> CI/CD, Regras de negócio</div>
             </div>
         </section>
 
@@ -198,7 +186,6 @@
                 <p class="text-xs text-gray-600">Leitura técnica, comunicação e documentação.</p>
             </section>
         </div>
-
     </div>
 </body>
 
