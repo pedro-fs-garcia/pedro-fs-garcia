@@ -43,7 +43,7 @@
         <!-- HEADER -->
         <header class="mb-4 border-b border-black pb-3">
             <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
-            <p class="text-base font-medium text-primary">Desenvolvedor Backend | APIs, Sistemas, Automação e Testes</p>
+            <p class="text-base font-medium text-primary">Desenvolvedor de Software | Python, Agentes de IA, React, APIs e Sistemas Orientados a Eventos</p>
 
             <div class="flex flex-wrap gap-x-6 gap-y-1 mt-2 text-sm">
                 <span>São José dos Campos - SP</span>
@@ -59,16 +59,27 @@
         <section class="mb-4">
             <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Perfil</h2>
             <p>
-                Desenvolvedor backend com foco em <strong>APIs, sistemas, automação e testes</strong>. Experiência
-                prática em desenvolvimento <strong>end-to-end</strong> de sistemas em produção, cobrindo arquitetura,
-                modelagem de dados, processamento assíncrono, integração com serviços externos, deploy e suporte
-                pós-entrega.
+                Desenvolvedor de software com atuação <strong>full-stack</strong> e <strong>end-to-end</strong>: do
+                desenho de arquitetura e modelagem de dados ao backend, frontend, deploy e suporte pós-entrega. Constrói
+                <strong>APIs REST</strong>, <strong>agentes de IA/LLM</strong>, backends orientados a eventos e
+                microsserviços, aplicações <strong>React</strong> (web) e <strong>React Native</strong> (mobile), com
+                comunicação em tempo real via WebSockets.
             </p>
             <p class="mt-1">
-                Atuação consistente com <strong>Python, Node.js, PostgreSQL e Redis</strong>, bem como em arquiteturas
-                orientadas a eventos (NestJS), pipelines de dados, CI/CD e validação funcional. Vivência prévia em
-                gestão de equipes e <strong>controle de qualidade</strong> de dados em campo, somada a formação em
-                Comunicação que reforça a capacidade de traduzir requisitos de negócio em especificações técnicas.
+                Experiência consistente com <strong>Python (FastAPI, Flask)</strong>, <strong>Node.js
+                (Express/NestJS)</strong>, <strong>PostgreSQL, MongoDB e Redis</strong>. Trabalha com arquiteturas
+                <strong>orientadas a eventos</strong> (Event Dispatcher, pub/sub, filas com Celery), padrão
+                <em>outbox</em>, <strong>integração entre serviços</strong> e contratos de API compartilhados, além de
+                integrações com APIs de terceiros e governamentais (ex.: PNCP). Atua em DevOps e observabilidade —
+                Docker, CI/CD com GitHub Actions, deploy em Railway/Digital Ocean/AWS e monitoramento com
+                Grafana/Prometheus/Loki.
+            </p>
+            <p class="mt-1">
+                Forte em <strong>controle de qualidade (QA)</strong> e testes (Pytest, Jest, testes manuais, validação
+                pós-deploy) e na <strong>tradução de requisitos de negócio em especificações técnicas</strong> —
+                interpretando documentos regulatórios e editais e desmembrando-os em épicos e sub-issues com critérios
+                de aceite. Vivência prévia em gestão de equipes e controle de qualidade de dados em campo, somada a
+                formação em Comunicação.
             </p>
         </section>
 
@@ -78,22 +89,44 @@
 
             <div class="mb-4 no-break">
                 <div class="flex justify-between items-baseline">
-                    <h3 class="font-semibold">RCDNC — Estagiário em Desenvolvimento de Sistemas</h3>
+                    <h3 class="font-semibold">RCDNC — Desenvolvedor de Software</h3>
                     <span class="text-gray-600 text-xs">11/2025 - Atual</span>
                 </div>
                 <p class="text-xs text-gray-600 mt-0.5">
                     Software house com atuação em projetos voltados ao setor público e fiscal. Stack predominante:
-                    Python, Node.js (Express/NestJS), PostgreSQL, Redis, Docker e GitHub Actions.
+                    Python, Node.js (Express/NestJS), React, PostgreSQL, Redis, Docker e GitHub Actions.
                 </p>
 
                 <div class="mt-2">
                     <div class="flex justify-between items-baseline">
+                        <h4 class="font-medium text-primary">Sistema de Gestão de Pessoas — projeto interno</h4>
+                    </div>
+                    <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                        <li>Desenvolvi e publiquei o sistema <strong>end-to-end</strong> de forma autônoma, cobrindo
+                            arquitetura, modelagem de dados, frontend <strong>React</strong>, backend Express e deploy
+                            em produção na Railway.</li>
+                        <li>Implementei <strong>filas de tarefas assíncronas</strong> com Redis para descarregar
+                            processamento em background. Stack: React, Express, PostgreSQL, Redis.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-3">
+                    <div class="flex justify-between items-baseline">
                         <h4 class="font-medium text-primary">VigieEditais — Gerenciamento de licitações públicas</h4>
                     </div>
                     <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
-                        <li>Conduzi o desenvolvimento <strong>end-to-end</strong> do sistema em produção, cobrindo
-                            arquitetura, modelagem de dados, backend, frontend e deploy. Stack: React, Express,
-                            PostgreSQL, Redis e filas assíncronas.</li>
+                        <li>Contribuí amplamente em um produto de grande porte voltado à administração pública — sistema
+                            para gerir e executar <strong>licitações</strong>, permitindo que órgãos públicos (como
+                            prefeituras) pesquisem preços, componham documentos e encontrem fornecedores. Stack: React,
+                            Express, PostgreSQL, Redis e filas assíncronas.</li>
+                        <li>Construí <strong>integrações</strong> com dados públicos de compras governamentais de
+                            diversas fontes estaduais e federais — cada estado com sua própria plataforma, com destaque
+                            para o <strong>PNCP</strong> (Portal Nacional de Contratações Públicas) —, consultando
+                            aquisições públicas passadas para comparação e estimativa de preços futuros.</li>
+                        <li>Desenvolvi o <strong>módulo de documentos</strong>, definindo requisitos e garantindo que a
+                            implementação estivesse em conformidade com a legislação de licitações.</li>
+                        <li>Automatizei integrações com serviços externos e fluxos de negócio, diminuindo etapas
+                            manuais e melhorando a confiabilidade operacional.</li>
                         <li>Atuei na detecção e correção de bugs, resolvendo gargalos de performance e garantindo
                             aderência às regras de negócio.</li>
                         <li>Traduzi especificações de editais <strong>públicos</strong> em regras de negócio e
@@ -102,13 +135,11 @@
                             acoplamento entre componentes e melhorando a resiliência dos fluxos críticos.</li>
                         <li>Estruturei e versionei o banco <strong>PostgreSQL</strong> com migrations em ambientes de
                             desenvolvimento e produção, garantindo evolução segura do schema e menor risco em releases.</li>
-                        <li>Automatizei integrações com serviços externos e fluxos de negócio, diminuindo etapas
-                            manuais e melhorando a confiabilidade operacional.</li>
                         <li>Configurei e mantive pipeline de <strong>CI/CD</strong> com GitHub Actions e deploy via
                             Railway, ampliando previsibilidade e frequência de publicação.</li>
-                        <li>Atuei em <strong>testes manuais</strong> e reporte estruturado de bugs críticos via
-                            <strong>GitHub Issues</strong>, com evidências e passos de reprodução, em contexto
-                            emergencial de entrega.</li>
+                        <li>Realizei <strong>QA</strong> de ponta a ponta dos fluxos: testes manuais e reporte
+                            estruturado de bugs críticos via <strong>GitHub Issues</strong>, com evidências e passos de
+                            reprodução, validando integridade de dados e conformidade legal e de negócio.</li>
                         <li>Validei correções pós-deploy com base em critérios de aceite, reduzindo risco de regressão
                             em produção.</li>
                     </ul>
@@ -170,6 +201,30 @@
 
             <div class="mb-3 no-break">
                 <div class="flex justify-between items-baseline">
+                    <a href="https://github.com/Titus-System/syncdesk-api" target="_blank"
+                        class="font-semibold text-primary hover:underline">SyncDesk</a>
+                    <span class="text-gray-600 text-xs">Plataforma de help desk (web + mobile, tempo real)</span>
+                </div>
+                <p class="pl-2 mt-1">Sistema de help desk multi-repositório dividido em quatro projetos: API
+                    (<strong>FastAPI</strong>), painel web para atendentes e administradores (<strong>React</strong> +
+                    Vite), aplicativo cliente em <strong>React Native (Expo)</strong> e uma <strong>biblioteca
+                    compartilhada</strong> publicada como pacote npm que padroniza os contratos de API consumidos por
+                    web e mobile. Inclui autenticação JWT com controle de acesso por perfil (solicitante, atendente,
+                    administrador), triagem automatizada do atendimento inicial, chat em tempo real, armazenamento de
+                    arquivos em MinIO e observabilidade com Grafana/Loki/Prometheus.</p>
+                <p class="pl-2 mt-1"><strong>Minhas contribuições:</strong> projetei o backend <strong>orientado a
+                    eventos</strong> com domínios minimamente acoplados, construindo um <strong>Event Dispatcher</strong>
+                    para operações <em>fire-and-forget</em> assíncronas; implementei o <strong>chat ao vivo</strong> via
+                    <strong>WebSockets</strong>; e desenvolvi a <strong>integração de e-mail transacional (Resend)</strong>
+                    usando um padrão de <strong>outbox</strong> com jobs em background e cronjobs, garantindo entrega
+                    confiável.</p>
+                <p class="pl-2"><strong>Stack:</strong> Python, FastAPI, SQLAlchemy, React, React Native (Expo),
+                    TypeScript, PostgreSQL, MongoDB, Redis, WebSockets/Socket.IO, Resend, MinIO, Docker, Docker Compose,
+                    Grafana, Loki, Prometheus, GitHub Actions, Digital Ocean.</p>
+            </div>
+
+            <div class="mb-3 no-break">
+                <div class="flex justify-between items-baseline">
                     <a href="https://github.com/Titus-System/InsightFlow" target="_blank"
                         class="font-semibold text-primary hover:underline">InsightFlow</a>
                     <span class="text-gray-600 text-xs">Plataforma de análise preditiva</span>
@@ -186,9 +241,10 @@
                         class="font-semibold text-primary hover:underline">Nexa</a>
                     <span class="text-gray-600 text-xs">Classificação fiscal automatizada</span>
                 </div>
-                <p class="pl-2 mt-1">Sistema de classificação fiscal automatizada a partir de <em>part-numbers</em> e
-                    documentos PDF. Processamento assíncrono com Celery utilizando Redis como broker e canal de
-                    comunicação <em>pub/sub</em>; status de processamento exposto em tempo real via WebSockets.</p>
+                <p class="pl-2 mt-1">Backend desacoplado e <strong>orientado a eventos</strong> para classificação
+                    fiscal automatizada a partir de <em>part-numbers</em> e documentos PDF. Processamento assíncrono com
+                    Celery e <strong>Redis Pub/Sub para comunicação entre serviços</strong>; status de processamento
+                    exposto em tempo real via WebSockets.</p>
                 <p class="pl-2"><strong>Stack:</strong> Python, Flask, PostgreSQL, Redis (broker/pub-sub), Celery,
                     Docker, REST APIs, WebSockets.</p>
             </div>
@@ -244,15 +300,22 @@
             <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Competências Técnicas</h2>
             <div class="grid grid-cols-2 gap-x-6 gap-y-1">
                 <div><strong>Linguagens:</strong> Python, JavaScript/TypeScript, Java, Kotlin</div>
-                <div><strong>Backend:</strong> Flask, FastAPI, Express, NestJS</div>
-                <div><strong>Bancos de dados:</strong> PostgreSQL, MySQL, Redis, SQLite</div>
-                <div><strong>Frontend:</strong> React, Next.js, TailwindCSS</div>
-                <div><strong>Processamento assíncrono:</strong> Celery, filas, Redis (broker/pub-sub), WebSockets</div>
-                <div><strong>DevOps:</strong> Docker, GitHub Actions, Railway, AWS, Linux</div>
-                <div><strong>Testes:</strong> Pytest, Jest, testes manuais, GitHub Issues, validação pós-deploy</div>
-                <div><strong>IA/LLMs:</strong> Hugging Face, SmolAgents, Ollama, Tesseract</div>
-                <div><strong>Ferramentas:</strong> Git, Swagger, Postman</div>
-                <div><strong>Conceitos:</strong> REST APIs, Event-Driven, Migrations, CI/CD, DoD/Critérios de Aceite</div>
+                <div><strong>Backend:</strong> FastAPI, Flask, Express, NestJS, SQLAlchemy</div>
+                <div><strong>Frontend:</strong> React, React Native (Expo), Next.js, Vite, TypeScript, TailwindCSS</div>
+                <div><strong>Bancos de dados:</strong> PostgreSQL, MongoDB, MySQL, Redis, SQLite</div>
+                <div><strong>Assíncrono / Microsserviços:</strong> arquitetura orientada a eventos, Event Dispatcher,
+                    Celery, filas, Redis (broker/pub-sub), padrão outbox, WebSockets/Socket.IO</div>
+                <div><strong>Integrações:</strong> integração entre serviços, contratos de API compartilhados (lib npm),
+                    REST APIs, APIs governamentais (PNCP), Resend, Webhooks</div>
+                <div><strong>DevOps:</strong> Docker, Docker Compose, GitHub Actions, Railway, Digital Ocean, AWS,
+                    Linux</div>
+                <div><strong>Observabilidade:</strong> Grafana, Loki, Prometheus, Promtail</div>
+                <div><strong>Armazenamento / Mensageria:</strong> MinIO, Redis Pub/Sub, cronjobs e jobs em background</div>
+                <div><strong>IA/LLMs:</strong> Agentes de IA (LLMs), Hugging Face, SmolAgents, Ollama, OCR (Tesseract)</div>
+                <div><strong>Testes / QA:</strong> Pytest, Jest, testes manuais, GitHub Issues, validação pós-deploy</div>
+                <div><strong>Ferramentas:</strong> Git, Swagger, Postman, Figma, Poetry, npm</div>
+                <div><strong>Conceitos:</strong> REST APIs, Event-Driven, Microsserviços, Pub/Sub, Outbox, JWT/RBAC,
+                    Migrations, CI/CD, DoD/Critérios de Aceite</div>
             </div>
         </section>
 

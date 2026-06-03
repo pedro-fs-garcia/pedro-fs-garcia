@@ -1,12 +1,12 @@
 # Pedro Garcia
 
-### Backend Developer | Python, Node.js, PostgreSQL, Redis
+### Software Developer | Python, AI Agents, React, FastAPI
 
-Backend developer focused on APIs, automation, and distributed systems. Hands-on experience in **end-to-end** development: architecture, data modeling, asynchronous processing, and production deployment. Currently working as a Systems Development Intern at a software house.
+Software developer focused on APIs, AI agents, automation, and event-driven/distributed systems. Hands-on experience in **end-to-end** development: architecture, data modeling, asynchronous processing, and production deployment. Currently working as a Software Developer at a software house.
 
-- 💻 **Currently:** Systems Development Intern at RCDNC, working with React, Express, NestJS, PostgreSQL, Redis
+- 💻 **Currently:** Software Developer at RCDNC, working with Python, React, Express, NestJS, PostgreSQL, Redis
 - 🎓 **Education:** Systems Analysis and Development (FATEC) | B.A. in Social Communication (ECA/USP)
-- 🌱 **Interests:** AI/LLMs, automation, distributed systems, and cloud technologies
+- 🌱 **Interests:** AI/LLMs & agents, event-driven & distributed systems, automation, and cloud technologies
 
 ---
 
@@ -29,14 +29,17 @@ Backend developer focused on APIs, automation, and distributed systems. Hands-on
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="30" width="40" alt="Express" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" height="30" width="40" alt="NestJS" />
   <img alt="React" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+  <img alt="React Native (Expo)" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/expo/expo-original.svg" />
   <img alt="Next.js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
   <img alt="Tailwind" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+  <img alt="Socket.IO" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg" />
 </p>
 
 <p align="center">
   <strong>Databases:</strong><br>
   <img alt="MySQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg">
   <img alt="PostgreSQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+  <img alt="MongoDB" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
   <img alt="SQLite" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="30" width="40" alt="Redis" />
 </p>
@@ -47,9 +50,12 @@ Backend developer focused on APIs, automation, and distributed systems. Hands-on
   <img alt="linux" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg">
   <img alt="aws" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
   <img alt="Railway" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg" />
+  <img alt="Digital Ocean" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original.svg" />
   <img alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
   <img alt="GitHub" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
   <img alt="GitHub Actions" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg">
+  <img alt="Grafana" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg">
+  <img alt="Prometheus" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg">
   <img alt="VSCode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg">
 </p>
 
@@ -69,6 +75,7 @@ Here are some projects I'm proud to have built. They represent my journey in bui
 
 | Project                                                               | Description                                                                                                                                                                                    | Key Technologies                                                          |
 | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| 🎫 **[SyncDesk](https://github.com/Titus-System/syncdesk-api)** | Full-stack help desk platform: a FastAPI backend serving a React agent dashboard and a React Native (Expo) client app, with real-time chat over WebSockets, an event-driven architecture, and transactional email (Resend) via an outbox pattern. | `Python`, `FastAPI`, `React`, `React Native`, `PostgreSQL`, `MongoDB`, `WebSockets`, `Docker` |
 | 📊 **[InsightFlow](https://github.com/Titus-System/InsightFlow)** | A Predictive Analytics platform with a data pipeline and REST API for ingestion and querying of large volumes, time series models for forecasting. | `Python`, `Flask`, `PostgreSQL`, `Redis`, `Docker`, `AWS` |
 | 🏷️ **[Nexa](https://github.com/Titus-System/Nexa)** | Automated Tax Classification from part-numbers and PDF documents. Features WebSockets, asynchronous processing with Celery using Redis as broker and pub/sub communication. | `Python`, `Flask`, `PostgreSQL`, `Redis`, `Celery`, `Docker`, `WebSockets` |
 | 🔒 **[IdScan](https://github.com/pedro-fs-garcia/IdScan)** | AI-powered document processing system that orchestrates OCR (Tesseract) and local LLM (Ollama) for structured data extraction from ID cards, ensuring maximum data privacy. | `Java`, `Ollama`, `TesseractOCR`, `MySQL`                                 |
