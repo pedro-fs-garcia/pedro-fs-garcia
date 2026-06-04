@@ -9,12 +9,19 @@
     <style>
         @page {
             size: A4;
-            margin: 0;
+            margin: 12mm 0;
         }
 
         @media print {
             body {
                 width: 210mm;
+            }
+
+            /* @page already applies top/bottom margin to every page;
+               zero the container's vertical padding so page 1 isn't doubled. */
+            body>div {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
             }
 
             .no-break {
@@ -37,195 +44,184 @@
     </script>
 </head>
 
-<body class="bg-white text-gray-800 font-sans text-sm leading-snug print:text-sm">
-    <div class="container mx-auto px-10 py-6 max-w-[210mm]">
+<body class="bg-white text-gray-800 font-sans text-sm leading-normal print:text-sm">
+    <div class="container mx-auto px-10 py-8 max-w-[210mm]">
 
         <!-- HEADER -->
-        <header class="mb-4 border-b border-black pb-3">
+        <header class="mb-6 border-b border-black pb-4">
             <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
             <p class="text-base font-medium text-primary">Software Developer | Python, AI Agents, React</p>
 
-            <div class="flex flex-wrap gap-x-6 gap-y-1 mt-2 text-sm">
-                <span>São José dos Campos - SP, Brazil</span>
+            <div class="flex flex-wrap gap-x-3 gap-y-2 mt-2 text-sm">
                 <span>+55 12 98224-2629</span>
                 <a href="mailto:pedrofsgarcia.pro@gmail.com" class="text-blue-700">pedrofsgarcia.pro@gmail.com</a>
                 <a href="https://github.com/pedro-fs-garcia" class="text-blue-700">github.com/pedro-fs-garcia</a>
                 <a href="https://linkedin.com/in/pedro-fs-garcia" class="text-blue-700">linkedin.com/in/pedro-fs-garcia</a>
-                <a href="https://pedrogarcia.space" class="text-blue-700">pedrogarcia.space</a>
             </div>
         </header>
 
         <!-- PROFILE -->
-        <section class="mb-4">
+        <section class="mb-6">
             <p>
                 Software developer focused on <strong>Python, AI/LLM agents, and React</strong>. Hands-on
-                <strong>end-to-end</strong> experience: REST APIs, data modeling, asynchronous processing,
-                <strong>integration between services</strong> and with third-party/government APIs, and production
-                deployment. Builds autonomous AI agents and
-                microservice-oriented backends with <strong>Flask, Express/NestJS, PostgreSQL, and Redis</strong>.
-                Software developer at a software house.
+                end-to-end experience: REST APIs, data modeling, asynchronous processing,
+                <strong>integration between services</strong> and with <strong>third-party/government APIs</strong>, and production
+                deployment. Builds <strong>autonomous AI agents</strong> and
+                <strong>microservice-oriented</strong> backends with <strong>Flask</strong>, Express/NestJS, <strong>PostgreSQL</strong>, and Redis.
             </p>
         </section>
 
         <!-- PROFESSIONAL EXPERIENCE -->
-        <section class="mb-4 no-break">
-            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Professional Experience</h2>
+        <section class="mb-6 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-3">Professional Experience</h2>
 
-            <div class="mb-3">
+            <div class="mb-5">
                 <div class="flex justify-between items-baseline">
                     <h3 class="font-semibold">RCDNC - Software Developer</h3>
                     <span class="text-gray-600 text-xs">11/2025 – Present</span>
                 </div>
-                <p class="text-xs text-gray-600 mt-0.5">Software house delivering projects for the public-sector and tax
+                <p class="text-xs text-gray-600 mt-1">Software house delivering projects for the public-sector and tax
                     domains. Stack: Python, Node.js (Express/NestJS), React, PostgreSQL, Redis, Docker, GitHub Actions.</p>
 
-                <div class="mt-2">
+                <div class="mt-4">
                     <div class="flex justify-between items-baseline">
                         <h4 class="font-medium text-primary">People-Management System (internal)</h4>
                     </div>
-                    <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
-                        <li>Developed and deployed the system <strong>end-to-end</strong> on my own — architecture, data
+                    <ul class="list-disc list-inside pl-2 mt-2 space-y-1.5">
+                        <li>Developed and deployed the system end-to-end single-handedly - architecture, data
                             modeling, <strong>React</strong> frontend, Express backend, and production deployment on
-                            Railway.</li>
-                        <li>Implemented <strong>asynchronous task queues</strong> with Redis to offload background
+                            <strong>Railway</strong>.</li>
+                        <li>Implemented asynchronous task queues with Redis to offload background
                             processing. Stack: React, Express, PostgreSQL, Redis.</li>
                     </ul>
                 </div>
 
-                <div class="mt-2">
+                <div class="mt-4">
                     <div class="flex justify-between items-baseline">
                         <h4 class="font-medium text-primary">VigieEditais - Public procurement management</h4>
                     </div>
-                    <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
-                        <li>Contributed across backend, <strong>React</strong> frontend, and data integrations of a
-                            platform that lets public administrations run procurement processes (<em>licitações</em>):
+                    <ul class="list-disc list-inside pl-2 mt-2 space-y-1.5">
+                        <li>Contributed across the backend, frontend, and <strong>data integrations</strong> of a
+                            platform that enables public administrations to run procurement processes (<em>licitações</em>):
                             researching prices, composing documents, and finding suppliers.</li>
-                        <li>Built <strong>integrations</strong> with government procurement data across numerous state
-                            and federal sources — chiefly the federal <strong>PNCP</strong> (Portal Nacional de
-                            Contratações Públicas) — querying historical public purchases to benchmark and estimate
+                        <li>Built <strong>integrations with government procurement data</strong> across numerous state
+                            and federal sources - chiefly the federal <strong>PNCP</strong> (Portal Nacional de
+                            Contratações Públicas) - querying historical public purchases to benchmark and estimate
                             procurement prices.</li>
-                        <li>Designed and implemented the <strong>documents module</strong>, ensuring the implementation
-                            complied with public-procurement legislation.</li>
-                        <li>Performed <strong>QA</strong> across these flows, validating data integrity and
+                        <li>Designed and implemented the Documents Management module, ensuring compliance
+                            with public-procurement legislation.</li>
+                        <li>Performed QA across these flows, validating data integrity and
                             business-rule/legal compliance.</li>
                     </ul>
                 </div>
 
-                <div class="mt-2">
+                <div class="mt-4">
                     <div class="flex justify-between items-baseline">
                         <h4 class="font-medium text-primary">CriptoDeclara - Tax system analysis and architecture</h4>
                         <span class="text-gray-600 text-xs">04/2026 – Present</span>
                     </div>
-                    <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
-                        <li>Interpreted <strong>tax and architectural requirements</strong>, breaking down technical
+                    <ul class="list-disc list-inside pl-2 mt-2 space-y-1.5">
+                        <li>Interpreted tax and architectural requirements, breaking down technical
                             documents (RFCs) into Epics and actionable <em>Sub-issues</em> with strict Acceptance
                             Criteria (DoD).</li>
-                        <li>Mapped and specified the <strong>refactoring</strong> toward an <em>Event-Driven</em>,
-                            microservice-oriented architecture (NestJS), eliminating concurrency bottlenecks (<em>race
+                        <li>Mapped and specified the refactoring toward an <em>Event-Driven</em>,
+                            <strong>microservice-oriented architecture (NestJS)</strong>, eliminating concurrency bottlenecks (<em>race
                             conditions</em>) and ensuring atomic data reconciliation.</li>
-                        <li>Defined the modeling of a <strong>normalization and input-sanitization engine</strong> to
+                        <li>Implemented a normalization and input-sanitization engine to
                             enforce database <em>Single Source of Truth</em> integrity.</li>
+                        <li>Integrated with <strong>cryptocurrency exchange APIs</strong> (Binance,
+                            Coinbase, Kraken) to ingest users' transaction histories for crypto tax calculation and
+                            reconciliation.</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="mb-3">
+            <!-- <div class="mb-5">
                 <div class="flex justify-between items-baseline">
                     <h3 class="font-semibold">IBGE - Census Supervisor Agent</h3>
                     <span class="text-gray-600 text-xs">06/2022 – 06/2023</span>
                 </div>
-                <ul class="list-disc list-inside pl-2 mt-1 space-y-0.5">
+                <ul class="list-disc list-inside pl-2 mt-2 space-y-1.5">
                     <li>Managed data collection operations for a 15-person team, ensuring 100% coverage across 5
                         neighborhoods within deadline. Implemented data quality-control routines, reducing
                         inconsistencies and increasing reliability of deliverables.</li>
                 </ul>
-            </div>
+            </div> -->
         </section>
 
         <!-- PROJECTS -->
-        <section class="mb-4 no-break">
-            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Projects</h2>
+        <section class="mb-6 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-3">Projects</h2>
 
-            <div class="mb-2">
+            <div class="mb-4">
                 <a href="https://github.com/Titus-System/syncdesk-api" target="_blank"
                     class="font-semibold text-primary hover:underline">SyncDesk</a>
                 <span class="text-gray-600">- Full-stack help desk platform (web + mobile, real-time)</span>
-                <p class="pl-2">Multi-repository help desk system: a <strong>FastAPI</strong> backend serving a
-                    <strong>React</strong> agent/admin dashboard and a <strong>React Native (Expo)</strong> client app,
-                    with JWT auth and role-based access, automated ticket triage, and a shared <strong>npm library
-                    standardizing API contracts</strong> across both frontends. <strong>Stack:</strong> Python,
-                    FastAPI, React, React Native, PostgreSQL, MongoDB, WebSockets, Resend, MinIO, Docker,
-                    Grafana/Prometheus, GitHub Actions.</p>
-                <ul class="list-disc list-inside pl-4 mt-1 space-y-0.5">
+                <p class="pl-2 mt-1">Multi-repository help desk platform for managing support tickets with
+                    real-time live chat between clients, agents, and an automated triage assistant.
+                    <strong>Stack:</strong> Python, FastAPI, React, React Native, PostgreSQL, MongoDB, WebSockets,
+                    Resend, MinIO, Docker, Grafana/Prometheus, GitHub Actions.</p>
+                <ul class="list-disc list-inside pl-4 mt-2 space-y-1.5">
                     <li>Designed an <strong>event-driven</strong> backend with minimally coupled domains, building an
-                        <strong>Event Dispatcher</strong> to run fire-and-forget operations asynchronously.</li>
-                    <li>Implemented the real-time <strong>live chat</strong> over <strong>WebSockets</strong>.</li>
-                    <li>Built <strong>transactional email integration</strong> (Resend) using an <strong>email
-                        outbox</strong> with background jobs and cron, ensuring reliable delivery.</li>
+                        Event Dispatcher to run fire-and-forget operations asynchronously.</li>
+                    <li>Implemented the real-time live chat over WebSockets.</li>
+                    <li>Built <strong>transactional email integration</strong> (Resend) using an email
+                        outbox with background jobs and cron, ensuring reliable delivery.</li>
                 </ul>
             </div>
 
-            <div class="mb-2">
+            <div class="mb-4">
                 <a href="https://github.com/pedro-fs-garcia/JurisBot" target="_blank"
                     class="font-semibold text-primary hover:underline">JurisBot</a>
                 <span class="text-gray-600">- Autonomous AI agents for legal research</span>
-                <p class="pl-2">Pipeline of autonomous <strong>AI agents (LLMs)</strong> for research, analysis, and
+                <p class="pl-2 mt-1">Pipeline of <strong>autonomous AI agents (LLMs)</strong> for research, analysis, and
                     synthesis over legal databases, orchestrating agent calls and composing final responses.
                     <strong>Stack:</strong> Python, Hugging Face, SmolAgents.</p>
             </div>
 
-            <div class="mb-2">
+            <div class="mb-4">
                 <a href="https://github.com/Titus-System/InsightFlow" target="_blank"
                     class="font-semibold text-primary hover:underline">InsightFlow</a>
                 <span class="text-gray-600">- Predictive analysis platform on government data</span>
-                <p class="pl-2">REST API for ingestion and querying of large volumes from <strong>government/public
+                <p class="pl-2 mt-1">REST API for ingestion and querying of large volumes of data from <strong>government/public
                     APIs</strong>, with time-series forecasting models, Redis cache, and containerized deployment.
                     <strong>Stack:</strong> Flask, Pandas, PostgreSQL, Redis, Docker, AWS, REST APIs.</p>
             </div>
 
-            <div class="mb-2">
+            <div class="mb-4">
                 <a href="https://github.com/Titus-System/Nexa" target="_blank"
                     class="font-semibold text-primary hover:underline">Nexa</a>
                 <span class="text-gray-600">- Automated tax classification (microservice-oriented)</span>
-                <p class="pl-2">Decoupled, <strong>event-driven</strong> <strong>microservice-oriented</strong>
+                <p class="pl-2 mt-1">Decoupled, <strong>event-driven</strong> <strong>microservice-oriented</strong>
                     backend: asynchronous processing with Celery workers and <strong>Redis Pub/Sub for communication
                     between services</strong>, with real-time status via WebSockets. <strong>Stack:</strong> Python,
                     Flask, PostgreSQL, Redis (broker/pub-sub), Celery, Docker, REST APIs, WebSockets.</p>
             </div>
 
-            <div class="mb-2">
+            <div class="mb-4">
                 <a href="https://github.com/pedro-fs-garcia/IdScan" target="_blank"
                     class="font-semibold text-primary hover:underline">IdScan</a>
                 <span class="text-gray-600">- AI-powered document processing</span>
-                <p class="pl-2">Backend that orchestrates OCR (Tesseract) and a local <strong>LLM</strong> (Ollama) for
+                <p class="pl-2 mt-1">Backend that orchestrates OCR (Tesseract) and a local <strong>LLM</strong> (Ollama) for
                     structured data extraction from ID documents. <strong>Stack:</strong> Java, MySQL, Tesseract,
                     Ollama.</p>
-            </div>
-
-            <div class="mb-2">
-                <a href="https://pedrogarcia.space" target="_blank"
-                    class="font-semibold text-primary hover:underline">Personal Portfolio</a>
-                <span class="text-gray-600">- Responsive SPA</span>
-                <p class="pl-2">Single Page Application with <strong>React</strong> and TypeScript, integrating the
-                    GitHub API for dynamic listing of repositories and projects. <strong>Stack:</strong> React,
-                    TypeScript, TailwindCSS.</p>
             </div>
         </section>
         
         <!-- SKILLS -->
-        <section class="mb-4 no-break">
-            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Technical Skills</h2>
-            <div class="grid grid-cols-2 gap-x-6 gap-y-1">
-                <div><strong>Languages:</strong> Python, JavaScript/TypeScript, Java</div>
-                <div><strong>AI / LLMs:</strong> AI Agents, Hugging Face, SmolAgents, Ollama, OCR (Tesseract)</div>
+        <section class="mb-6 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-3">Technical Skills</h2>
+            <div class="grid grid-cols-2 gap-x-6 gap-y-2">
+                <div><strong>Languages:</strong> Python, JavaScript/TypeScript</div>
+                <div><strong>AI:</strong> AI Agents, Hugging Face, SmolAgents, Ollama, OCR</div>
                 <div><strong>Backend:</strong> Flask, FastAPI, Express, NestJS</div>
-                <div><strong>Frontend:</strong> React, React Native (Expo), Next.js, TypeScript, TailwindCSS</div>
+                <div><strong>Frontend:</strong> React, React Native (Expo), Next.js</div>
                 <div><strong>Databases:</strong> PostgreSQL, MongoDB, MySQL, Redis</div>
-                <div><strong>Async / Microservices:</strong> Celery, queues, Redis (broker/pub-sub), WebSockets,
-                    Event-Driven</div>
+                <div><strong>Microservices:</strong> Event-Driven, Redis (pub/sub), WebSockets
+                    </div>
                 <div><strong>Integrations:</strong> Service-to-service integration, shared API contracts, REST APIs,
                     government/public APIs, Google Maps API, Webhooks</div>
-                <div><strong>DevOps:</strong> Docker, GitHub Actions, Railway, Digital Ocean, AWS,
+                <div><strong>DevOps:</strong> Docker, GitHub Actions, Railway, DigitalOcean, AWS,
                     Grafana/Prometheus, Linux</div>
             </div>
         </section>
@@ -233,27 +229,28 @@
         <!-- EDUCATION AND LANGUAGES side by side -->
         <div class="flex gap-8">
             <section class="flex-1 no-break">
-                <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Education</h2>
-                <div class="mb-1">
+                <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-3">Education</h2>
+                <div class="mb-3">
                     <div class="flex justify-between items-baseline">
-                        <span class="font-semibold">Systems Analysis and Development</span>
+                        <span class="font-semibold">FATEC</span>
                         <span class="text-gray-600 text-xs">2024 – 2026</span>
                     </div>
-                    <p class="text-gray-600">FATEC São José dos Campos</p>
+                    <p class="text-gray-600">Systems Analysis and Development</p>
                 </div>
                 <div>
                     <div class="flex justify-between items-baseline">
-                        <span class="font-semibold">Social Communication</span>
+                        <span class="font-semibold">Universidade de São Paulo (USP)</span>
                         <span class="text-gray-600 text-xs">2017 – 2021</span>
                     </div>
-                    <p class="text-gray-600">ECA/USP</p>
+                    <p class="text-gray-600">B.A. in Social Communication - technical writing, documentation, and
+                        requirements communication</p>
                 </div>
             </section>
 
             <section class="w-1/3 no-break">
-                <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-2">Languages</h2>
+                <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-3">Languages</h2>
                 <p><strong>Portuguese:</strong> Native</p>
-                <p><strong>English:</strong> Advanced (C1)</p>
+                <p class="pt-2"><strong>English:</strong> Advanced (C1)</p>
                 <p class="text-xs text-gray-600">Technical reading, communication, and documentation.</p>
             </section>
         </div>
