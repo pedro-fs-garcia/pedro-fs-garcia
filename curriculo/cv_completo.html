@@ -167,6 +167,37 @@
                             conciliação de impostos sobre criptoativos.</li>
                     </ul>
                 </div>
+
+                <div class="mt-4">
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="font-medium text-primary">Sistema de Trading Algorítmico — Gestão de risco em cripto</h4>
+                    </div>
+                    <ul class="list-disc list-inside pl-2 mt-2 space-y-1.5">
+                        <li>Projetei e implementei um <strong>sistema modular de trading algorítmico</strong> cobrindo o
+                            pipeline completo (dados de mercado → estratégia → sinais → risco → execução → portfólio →
+                            notificações), com <strong>lógica de domínio pura</strong> separada do framework, reutilizada
+                            entre <em>runtime</em> e <em>backtesting</em>.</li>
+                        <li>Construí <strong>engine de backtest</strong> sem <em>look-ahead</em> (sinal no fechamento,
+                            execução na abertura seguinte), com custos por perna, <em>stops</em> <em>gap-aware</em> e
+                            relatório bruto vs. líquido.</li>
+                        <li>Implementei <strong>validação estatística de nível institucional</strong>:
+                            <em>walk-forward</em> com parâmetros fixos, <em>block bootstrap</em> para IC95% do Sharpe e
+                            correção de <strong>viés de sobrevivência</strong> via universo <em>point-in-time</em>
+                            (incluindo moedas deslistadas).</li>
+                        <li>A validação refutou a hipótese de <em>alpha</em>; <strong>reposicionei o produto como gestor
+                            de risco</strong> em <em>majors</em> líquidos — reduzindo o <em>drawdown</em> do
+                            <em>buy-and-hold</em> de ~77% para ~44% em BTC —, com decisões registradas em
+                            <strong>ADRs</strong>.</li>
+                        <li>Implementei <strong>infraestrutura de risco em produção</strong>: porta única de execução,
+                            <strong>circuit breaker</strong> ao vivo (perda diária + <em>max drawdown</em>),
+                            <strong>idempotência</strong> de sinais e ordens, e <em>paper trading</em> com
+                            <em>slippage</em> medido a preço real — fechando o loop <em>backtest</em> → realidade.</li>
+                        <li>Desenvolvi <strong>camada de contexto para decisão humana</strong>: ingestão de dados macro
+                            (FRED), microestrutura de mercado (<em>taker flow</em>), calendário de eventos econômicos e
+                            painel web <em>server-rendered</em>.</li>
+                        <li><strong>Stack:</strong> Python, Django 5.1, Django Ninja, APScheduler, NumPy.</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="mb-5 no-break">
@@ -303,7 +334,7 @@
             <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-3">Competências Técnicas</h2>
             <div class="grid grid-cols-2 gap-x-6 gap-y-2">
                 <div><strong>Linguagens:</strong> Python, JavaScript/TypeScript, Java, Kotlin</div>
-                <div><strong>Backend:</strong> FastAPI, Flask, Express, NestJS, SQLAlchemy</div>
+                <div><strong>Backend:</strong> FastAPI, Flask, Django, Django Ninja, Express, NestJS, SQLAlchemy</div>
                 <div><strong>Frontend:</strong> React, React Native (Expo), Next.js, Vite, TypeScript, TailwindCSS</div>
                 <div><strong>Bancos de dados:</strong> PostgreSQL, MongoDB, MySQL, Redis, SQLite</div>
                 <div><strong>Assíncrono / Microsserviços:</strong> arquitetura orientada a eventos, Event Dispatcher,
