@@ -318,13 +318,17 @@
 
             <div class="mb-5 no-break">
                 <div class="flex justify-between items-baseline">
-                    <a href="https://github.com/pedro-fs-garcia/filmmash-android/releases/latest" target="_blank"
+                    <a href="https://github.com/pedro-fs-garcia/filmmash-go" target="_blank"
                         class="font-semibold text-primary hover:underline">FilmMash</a>
-                    <span class="text-gray-600 text-xs">Sistema de ranking de filmes</span>
+                    <span class="text-gray-600 text-xs">Ranking de filmes por duelos (Elo) · <a
+                            href="https://filmmash.pedrogarcia.space/ui/" target="_blank"
+                            class="text-primary hover:underline">demo ao vivo</a></span>
                 </div>
-                <p class="pl-2 mt-1">Backend com API REST e algoritmo ELO para ranking, consumido por cliente Android
-                    nativo. Modelagem relacional do domínio de filmes e usuários, com endpoints documentados.</p>
-                <p class="pl-2 mt-1"><strong>Stack:</strong> Flask, MySQL, Kotlin, SQLite.</p>
+                <p class="pl-2 mt-1">Aplicação full-stack solo em Go (chi, HTMX server-rendered) em vertical slices;
+                    catálogo de ~500 filmes da API TMDB re-ranqueados por Elo com atualização transacional (SELECT ...
+                    FOR UPDATE) por duelo. Autenticação OAuth 2.0 + PKCE / OIDC provider-agnóstica via discovery,
+                    sessões próprias em PostgreSQL, observabilidade completa e Docker Compose para dev/produção.</p>
+                <p class="pl-2 mt-1"><strong>Stack:</strong> Go, chi, HTMX, PostgreSQL, OIDC, Docker.</p>
             </div>
 
             <div class="mb-5 no-break">

@@ -63,7 +63,7 @@
         <!-- RESUMO -->
         <section class="mb-3">
             <p>
-                Autor principal de uma API FastAPI com <strong>117 endpoints</strong> e 963 funções de teste,
+                Desenvolveu uma API em Python/FastAPI com <strong>117 endpoints</strong> e 963 funções de teste,
                 e de uma suíte E2E em Go com <strong>113 testes</strong> acoplada ao CI/CD de um produto em produção.
                 Docker, PostgreSQL e arquitetura orientada a eventos.
             </p>
@@ -78,12 +78,12 @@
                     <h3 class="font-semibold text-[14px]">RCDNC - Desenvolvedor de Software (estágio)</h3>
                     <span class="text-gray-600 text-xs">11/2025 - Atual</span>
                 </div>
-                <p class="text-xs text-gray-600">Software house com produtos B2G, B2B e B2C.</p>
+                <!-- <p class="text-xs text-gray-600">Software house com produtos B2G, B2B e B2C.</p> -->
                 
                 <!-- Auditoria -->
                 <div class="mt-2 pl-3 border-l-2 border-gray-200">
                     <p class="font-medium text-primary">Segurança de aplicação e automação de testes
-                        <span class="text-gray-500 font-normal text-xs">(07/2026 - Atual)</span>
+                        <!-- <span class="text-gray-500 font-normal text-xs">(07/2026)</span> -->
                     </p>
                     <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
                         <li>Identifiquei 22 falhas de controle de acesso (BOLA/IDOR)
@@ -95,33 +95,33 @@
                         <li>Desenvolvi em Go uma suíte de regressão
                             E2E com 113 testes (~16 min) que valida as correções de forma
                             determinística e a acoplei ao CI/CD do projeto,
-                            substituindo uma suíte anterior que reportava falso verde em staging.
+                            substituindo uma suíte anterior que reportava falso positivo em staging.
                         </li>
                         <!-- <li>36 bugs (vulnerabilidades e violações de contrato de API) reportados e corrigidos.</li> -->
                     </ul>
                 </div>
                 <div class="mt-2 pl-3 border-l-2 border-gray-200">
                     <p class="font-medium text-primary">Trading algorítmico e gestão de risco em cripto
-                        <span class="text-gray-500 font-normal text-xs">(06/2026)</span>
+                        <!-- <span class="text-gray-500 font-normal text-xs">(06/2026)</span> -->
                     </p>
                     <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>Construí em dupla (<strong>77 de 133 commits</strong> meus)
-                            um pipeline em Python/Django Ninja e NumPy: ingestão de dados de mercado, sinais, risco, execução e portfólio,
+                        <li>Construí um pipeline
+                            em Python/Django Ninja e NumPy: ingestão de dados de mercado, sinais, risco, execução e portfólio,
                             com engine de backtest sem look-ahead.</li>
 
-                        <li>A validação estatística refutou a hipótese de alpha fora da amostra; decisões e encerramento documentados em ADRs.</li>
+                        <li>A validação estatística refutou a viabilidade do produto em produção, evitando a alocação em estratégia com desempenho 40% inferior em relação ao benchmark (buy and hold); decisões técnicas registradas em ADRs.</li>
                     </ul>
                 </div>
 
                 <div class="mt-2 pl-3 border-l-2 border-gray-200">
                     <p class="font-medium text-primary">Especificação técnica e correção de produtos em produção
-                        <span class="text-gray-500 font-normal text-xs">(01/2026 - Atual)</span>
+                        <!-- <span class="text-gray-500 font-normal text-xs">(01/2026)</span> -->
                     </p>
                     <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
                         <li>
-                            Especifiquei issues técnicas executáveis, acompanhadas até produção, em dois produtos: 
-                            VigieEditais (licitações públicas - requisitos legais DFD/ETP/TR/Mapa de Risco e correção da integração com a API do PNCP) e 
-                            CriptoDeclara (migração para arquitetura orientada a eventos em NestJS, endereçando race conditions no cálculo fiscal e silos de dados).
+                            Dirigi o ciclo de correção de defeitos em produção (reproduzi as falhas, isolei a causa, especifiquei a correção e revalidei): 
+                            VigieEditais (licitações públicas — requisitos DFD/ETP/TR/Mapa de Risco e integração com a API do PNCP) e 
+                            CriptoDeclara (arquitetura orientada a eventos em NestJS, race conditions no cálculo fiscal e silos de dados).
                             </li>
                     </ul>
                 </div>
@@ -142,14 +142,13 @@
                 <p class="text-xs">
                     <a href="https://github.com/Titus-System/syncdesk-api" class="text-blue-700">github.com/Titus-System/syncdesk-api</a>
                 </p>
-                <p class="pl-2 mt-0.5">Principal autor do backend (<strong>177 de 238 commits</strong>) em equipe de 6: API em
-                    Python/FastAPI com 117 endpoints, 9 migrations Alembic e 963 funções de teste em pytest (unit + integração + E2E). 
+                <p class="pl-2 mt-0.5">Liderei 6 pessoas no desenvolvimento de uma API em
+                    Python/FastAPI com 117 endpoints, 9 migrations Alembic e 963 funções de teste em pytest (unitário + integração + E2E). 
                     Projetei o Event Dispatcher que desacopla os domínios; implementei chat ao vivo (armazenado em MongoDB) por websocket
                     e e-mail transacional no padrão outbox.
                 </p>
                 <p class="pl-2 mt-0.5">Montei o deploy contínuo: GitHub Actions publica a imagem no GHCR e faz deploy em VPS com Prometheus,
                     Alertmanager, Loki, Promtail e dashboard no Grafana.
-                    Stack: Python, FastAPI, SQLAlchemy, PostgreSQL, MongoDB, Docker, GitHub Actions.</p>
             </div>
 
             <div class="no-break">
@@ -160,13 +159,15 @@
                     <span class="text-gray-500 text-xs"> (projeto individual)</span>
                 </p>
                 <p class="text-xs">
+                    <a href="https://filmmash.pedrogarcia.space" class="text-blue-700">filmmash.pedrogarcia.space - demo ao vivo</a>
+                    <span class="text-gray-500"> · </span>
                     <a href="https://github.com/pedro-fs-garcia/filmmash-go" class="text-blue-700">github.com/pedro-fs-garcia/filmmash-go</a>
                 </p>
                 <p class="pl-2 mt-0.5">
                     Aplicação full-stack em Go (chi, HTMX server-rendered) em vertical slices; 
-                    catálogo de filmes semeados da API TMDB re-ranqueados por Elo com atualização transacional (SELECT ... FOR UPDATE) por duelo. 
+                    catálogo de filmes populados a partir da API TMDB ranqueados por Elo com atualização transacional (SELECT ... FOR UPDATE) por duelo. 
                     Autenticação OAuth 2.0 Authorization Code + PKCE / OpenID Connect provider-agnóstica (OIDC discovery), 
-                    sessões próprias em PostgreSQL; sqlc/pgx/goose, observabilidade (Prometheus, Alertmanager, Loki, Grafana), nginx e Docker Compose para dev e produção.
+                    sessões próprias em PostgreSQL; sqlc/pgx/goose, observabilidade (Prometheus, Alertmanager, Loki, Grafana), caddy e Docker Compose para dev e produção.
 <!-- 
                     Aplicação full-stack em Go (chi, HTMX server-rendered) com arquitetura em vertical slices, sqlc, pgx e migrations goose.
                     Implementei OAuth 2.0 + PKCE com OpenID Connect e
@@ -194,11 +195,11 @@
         <section class="mb-3 no-break">
             <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Competências Técnicas</h2>
             <div class="space-y-1">
-                <div><strong>Linguagens e Frameworks:</strong> Python (FastAPI, Django), Go, TypeScript/Node.js (NestJS)</div>
-                <div><strong>Dados, assíncrono e infra:</strong> PostgreSQL, MongoDB, WebSockets, Docker, GitHub Actions</div>
-                <div><strong>Observabilidade:</strong> Prometheus, Grafana, Loki</div>
+                <div><strong>Linguagens e Frameworks:</strong> Python (FastAPI, Django), Go, TypeScript/Node.js </div>
+                <div><strong>Dados, infra e observabilidade:</strong> PostgreSQL, MongoDB, WebSockets, Docker, GitHub Actions, Prometheus, Grafana, Loki</div>
+                <!-- <div><strong>Observabilidade:</strong> Prometheus, Grafana, Loki</div> -->
                 <div><strong>Práticas:</strong> Orientação a eventos,
-                    testes automatizados (pytest, Go), testes de autorização (BOLA/IDOR). MITMProxy, LGPD</div>
+                    testes automatizados (pytest, Go), testes de autorização (BOLA/IDOR), MITMProxy, LGPD</div>
             </div>
         </section>
 
@@ -207,7 +208,7 @@
             <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Formação</h2>
             <div class="flex justify-between items-baseline">
                 <span class="font-semibold">Análise e Desenvolvimento de Sistemas - FATEC São José dos Campos</span>
-                <span class="text-gray-600 text-xs">Conclusão prev. 12/2026</span>
+                <span class="text-gray-600 text-xs">Conclusão prevista: 12/2026</span>
             </div>
             <div class="flex justify-between items-baseline mt-0.5">
                 <span class="font-semibold">Comunicação Social - ECA/USP</span>
