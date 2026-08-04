@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Resume - Pedro Felipe Sousa Garcia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+            }
+
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#16386c',
+                        secondary: '#1e88e5',
+                        dark: '#212121',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans text-[13px] leading-snug">
+    <div class="container mx-auto px-9 py-6 max-w-[210mm] min-h-[297mm]">
+
+        <!-- HEADER -->
+        <header class="mb-3 border-b border-black pb-2.5">
+            <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
+            <p class="text-[15px] font-medium text-primary">Backend Developer | Python &amp; Go | REST APIs,
+                Asynchronous Processing and Automated Testing</p>
+
+            <div class="flex flex-wrap items-center gap-x-2.5 gap-y-0.5 mt-1.5">
+                <span>São José dos Campos, Brazil (Remote)</span>
+                <span class="text-gray-400">|</span>
+                <span>+55 12 98224-2629</span>
+                <span class="text-gray-400">|</span>
+                <a href="mailto:pedrofsgarcia.pro@gmail.com" class="text-blue-700">pedrofsgarcia.pro@gmail.com</a>
+                <span class="text-gray-400">|</span>
+                <a href="https://github.com/pedro-fs-garcia" class="text-blue-700">github.com/pedro-fs-garcia</a>
+                <span class="text-gray-400">|</span>
+                <a href="https://linkedin.com/in/pedro-fs-garcia" class="text-blue-700">linkedin.com/in/pedro-fs-garcia</a>
+            </div>
+        </header>
+
+        <!-- RESUMO -->
+        <section class="mb-3">
+            <p>
+                Developed a Python/FastAPI API with <strong>117 endpoints</strong> and 963 test functions,
+                and a Go E2E test suite with <strong>113 tests</strong> wired into the CI/CD of a product in production.
+                Docker, PostgreSQL, and event-driven architecture.
+            </p>
+        </section>
+
+        <!-- EXPERIÊNCIA PROFISSIONAL -->
+        <section class="mb-3">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Professional Experience</h2>
+
+            <div class="no-break">
+                <div class="flex justify-between items-baseline">
+                    <h3 class="font-semibold text-[14px]">RCDNC - Software Developer (Intern)</h3>
+                    <span class="text-gray-600 text-xs">11/2025 - Present</span>
+                </div>
+
+                <!-- Auditoria -->
+                <div class="mt-2 pl-3 border-l-2 border-gray-200">
+                    <p class="font-medium text-primary">Application security and test automation</p>
+                    <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+                        <li>Identified 22 access-control flaws (BOLA/IDOR) and personal-data handling issues (LGPD
+                            compliance) through black-box auditing of backend authorization via MITM proxy; all
+                            reported and fixed. Found another 14 API contract violations, also fixed -
+                            <strong>36 defects</strong> in total.
+                        </li>
+                        <li>Built a Go E2E regression suite with 113 tests (~16 min) that deterministically
+                            validates the fixes, and wired it into the project's CI/CD, replacing a previous
+                            suite that reported false positives in staging.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-2 pl-3 border-l-2 border-gray-200">
+                    <p class="font-medium text-primary">Algorithmic trading and crypto risk management</p>
+                    <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+                        <li>Built a pipeline
+                            in Python/Django Ninja and NumPy: market-data ingestion, signals, risk, execution and
+                            portfolio, with a look-ahead-free backtest engine.</li>
+
+                        <li>Statistical validation disproved the product's viability for production, avoiding
+                            allocation to a strategy that underperformed the benchmark (buy and hold) by 40%;
+                            technical decisions recorded in ADRs.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-2 pl-3 border-l-2 border-gray-200">
+                    <p class="font-medium text-primary">Technical specification and bug fixing for products in production</p>
+                    <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+                        <li>
+                            Led the production defect-correction cycle (reproduced failures, isolated the root
+                            cause, specified the fix, and revalidated):
+                            VigieEditais (public procurement platform — DFD/ETP/TR/Risk Map requirements and
+                            integration with the PNCP API) and
+                            CriptoDeclara (event-driven architecture in NestJS, race conditions in tax
+                            calculations, and data silos).
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="mb-3">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Projects</h2>
+
+            <div class="mb-2 no-break">
+                <p>
+                    <a href="https://github.com/Titus-System/syncdesk-api"
+                        class="font-semibold text-primary hover:underline">SyncDesk</a>
+                    <span class="text-gray-600">- Backend for a web and mobile help desk platform</span>
+                    <span class="text-gray-500 text-xs"> (Team academic project - FATEC | Client: Pro4Tech)</span>
+                </p>
+                <p class="text-xs">
+                    <a href="https://github.com/Titus-System/syncdesk-api" class="text-blue-700">github.com/Titus-System/syncdesk-api</a>
+                </p>
+                <p class="pl-2 mt-0.5">Led 6 people in building a Python/FastAPI API with 117 endpoints,
+                    9 Alembic migrations, and 963 pytest test functions (unit + integration + E2E).
+                    Designed the Event Dispatcher that decouples the domains; implemented live chat
+                    (stored in MongoDB) over websocket and transactional email using the outbox pattern.
+                </p>
+                <p class="pl-2 mt-0.5">Set up continuous deployment: GitHub Actions publishes the image to GHCR
+                    and deploys it to a VPS, with Prometheus, Alertmanager, Loki, Promtail, and a Grafana dashboard.
+            </div>
+
+            <div class="no-break">
+                <p>
+                    <a href="https://github.com/pedro-fs-garcia/filmmash-go"
+                        class="font-semibold text-primary hover:underline">FilmMash</a>
+                    <span class="text-gray-600">- Movie ranking via head-to-head duels with Elo rating</span>
+                    <span class="text-gray-500 text-xs"> (personal project)</span>
+                </p>
+                <p class="text-xs">
+                    <a href="https://filmmash.pedrogarcia.space" class="text-blue-700">filmmash.pedrogarcia.space - live demo</a>
+                    <span class="text-gray-500"> · </span>
+                    <a href="https://github.com/pedro-fs-garcia/filmmash-go" class="text-blue-700">github.com/pedro-fs-garcia/filmmash-go</a>
+                </p>
+                <p class="pl-2 mt-0.5">
+                    Full-stack Go application (chi, server-rendered HTMX) built in vertical slices;
+                    movie catalog populated from the TMDB API and ranked by Elo with transactional updates
+                    (SELECT ... FOR UPDATE) per duel.
+                    Provider-agnostic OAuth 2.0 Authorization Code + PKCE / OpenID Connect authentication
+                    (OIDC discovery), first-party sessions in PostgreSQL; sqlc/pgx/goose, observability stack
+                    (Prometheus, Alertmanager, Loki, Grafana), Caddy and Docker Compose for dev and production.
+                </p>
+            </div>
+        </section>
+
+        <!-- COMPETÊNCIAS -->
+        <section class="mb-3 no-break">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Technical Skills</h2>
+            <div class="space-y-1">
+                <div><strong>Languages &amp; Frameworks:</strong> Python (FastAPI, Django), Go, TypeScript/Node.js </div>
+                <div><strong>Data, infra &amp; observability:</strong> PostgreSQL, MongoDB, WebSockets, Docker, GitHub Actions, Prometheus, Grafana, Loki</div>
+                <div><strong>Practices:</strong> Event-driven design,
+                    automated testing (pytest, Go), authorization testing (BOLA/IDOR), MITMProxy, LGPD compliance</div>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO -->
+        <section class="mb-3 no-break">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Education</h2>
+            <div class="flex justify-between items-baseline">
+                <span class="font-semibold">Systems Analysis and Development - FATEC São José dos Campos</span>
+                <span class="text-gray-600 text-xs">Expected: 12/2026</span>
+            </div>
+            <div class="flex justify-between items-baseline mt-0.5">
+                <span class="font-semibold">Social Communication - ECA/USP</span>
+                <span class="text-gray-600 text-xs">2021</span>
+            </div>
+        </section>
+
+        <!-- IDIOMAS -->
+        <section class="no-break">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Languages</h2>
+            <p><strong>Portuguese:</strong> Native &nbsp;·&nbsp; <strong>English:</strong> Advanced - technical
+                reading, documentation, and communication.</p>
+        </section>
+    </div>
+</body>
+
+</html>
