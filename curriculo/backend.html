@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo Backend - Pedro Felipe Sousa Garcia</title>
+    <title>Currículo - Pedro Felipe Sousa Garcia</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @page {
@@ -38,14 +38,13 @@
     </script>
 </head>
 
-<body class="bg-white text-gray-800 font-sans text-[13px] leading-snug">
-    <div class="container mx-auto px-9 py-6 max-w-[210mm] min-h-[297mm]">
+<body class="bg-white text-gray-800 font-sans text-[12.5px] leading-snug">
+    <div class="container mx-auto px-9 py-5 max-w-[210mm] min-h-[297mm]">
 
         <!-- HEADER -->
-        <header class="mb-3 border-b border-black pb-2.5">
+        <header class="mb-2 border-b border-black pb-2">
             <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
-            <p class="text-[15px] font-medium text-primary">Desenvolvedor Backend | Python e Go | APIs REST,
-                Processamento Assíncrono e Testes Automatizados</p>
+            <p class="text-[15px] font-medium text-primary">Desenvolvedor de Software | Python, Java e Go | OCR e LLM, Segurança de API e Integração de Sistemas</p>
 
             <div class="flex flex-wrap items-center gap-x-2.5 gap-y-0.5 mt-1.5">
                 <span>São José dos Campos - SP</span>
@@ -61,94 +60,102 @@
         </header>
 
         <!-- RESUMO -->
-        <section class="mb-3">
+        <section class="mb-2">
             <p>
-                Desenvolveu uma API em Python/FastAPI com <strong>117 endpoints</strong> e 963 funções de teste,
-                e de uma suíte E2E em Go com <strong>113 testes</strong> acoplada ao CI/CD de um produto em produção.
-                Docker, PostgreSQL e arquitetura orientada a eventos.
+                Estudante de Análise e Desenvolvimento de Sistemas (FATEC São José dos Campos, conclusão em 12/2027), em
+                estágio numa software house. Propus e conduzi a auditoria de segurança da API de um produto em produção:
+                <strong>36 defeitos</strong> corrigidos, e a frente foi estendida a um segundo produto da casa.
             </p>
         </section>
 
         <!-- EXPERIÊNCIA PROFISSIONAL -->
-        <section class="mb-3">
-            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Experiência Profissional</h2>
+        <section class="mb-2">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-1.5">Experiência Profissional</h2>
 
             <div class="no-break">
                 <div class="flex justify-between items-baseline">
                     <h3 class="font-semibold text-[14px]">RCDNC - Desenvolvedor de Software (estágio)</h3>
                     <span class="text-gray-600 text-xs">11/2025 - Atual</span>
                 </div>
-                <!-- <p class="text-xs text-gray-600">Software house com produtos B2G, B2B e B2C.</p> -->
-                
-                <!-- Auditoria -->
-                <div class="mt-2 pl-3 border-l-2 border-gray-200">
-                    <p class="font-medium text-primary">Segurança de aplicação e automação de testes
-                        <!-- <span class="text-gray-500 font-normal text-xs">(07/2026)</span> -->
-                    </p>
-                    <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>Identifiquei 22 falhas de controle de acesso (BOLA/IDOR)
-                            e de tratamento de dados pessoais (LGPD)
-                            auditando em caixa-preta a autorização do backend via
-                            proxy MITM; todas reportadas e corrigidas.
-                            Outras 14 violações de contrato de API, também corrigidas - <strong>36 defeitos</strong> ao todo.
-                        </li>
-                        <li>Desenvolvi em Go uma suíte de regressão
-                            E2E com 113 testes (~16 min) que valida as correções de forma
-                            determinística e a acoplei ao CI/CD do projeto,
-                            substituindo uma suíte anterior que reportava falso positivo em staging.
-                        </li>
-                        <!-- <li>36 bugs (vulnerabilidades e violações de contrato de API) reportados e corrigidos.</li> -->
-                    </ul>
-                </div>
-                <div class="mt-2 pl-3 border-l-2 border-gray-200">
-                    <p class="font-medium text-primary">Trading algorítmico e gestão de risco em cripto
-                        <!-- <span class="text-gray-500 font-normal text-xs">(06/2026)</span> -->
-                    </p>
-                    <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>Construí um pipeline
-                            em Python/Django Ninja e NumPy: ingestão de dados de mercado, sinais, risco, execução e portfólio,
-                            com engine de backtest sem look-ahead.</li>
 
-                        <li>A validação estatística refutou a viabilidade do produto em produção, evitando a alocação em estratégia com desempenho 40% inferior em relação ao benchmark (buy and hold); decisões técnicas registradas em ADRs.</li>
+                <div class="mt-1.5 pl-3 border-l-2 border-gray-200">
+                    <p class="font-medium text-primary">Segurança de API, QA e automação de testes (LGPD)</p>
+                    <ul class="list-disc list-outside pl-5 mt-0.5 space-y-1">
+                        <li>Notei um indício de falha na autorização, propus a auditoria e a conduzi com autorização do
+                            time: montei a interceptação TLS local (mitmproxy) e testei a API em caixa-preta em staging,
+                            reportando 36 defeitos com prova de conceito e passos de reprodução - 22 de controle de
+                            acesso (BOLA/IDOR, exfiltração de dados de terceiros, account takeover) e 14 de contrato de
+                            API. Todos corrigidos.</li>
+                        <li>Escrevi em Go uma suíte de regressão E2E com <strong>113 testes</strong> (~16 min) e a
+                            acoplei ao CI/CD, substituindo uma suíte que reportava falso positivo em staging; no mesmo
+                            pipeline, um verificador que desenvolvi rejeita PRs cujo tráfego contenha dados pessoais
+                            vazados por SDK de terceiros.</li>
+                        <li>O resultado foi bem recebido e o escopo ampliado: sigo responsável pela auditoria contínua
+                            desse produto e a mesma frente me foi atribuída para um segundo produto da casa.</li>
                     </ul>
                 </div>
 
-                <div class="mt-2 pl-3 border-l-2 border-gray-200">
-                    <p class="font-medium text-primary">Especificação técnica e correção de produtos em produção
-                        <!-- <span class="text-gray-500 font-normal text-xs">(01/2026)</span> -->
-                    </p>
-                    <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>
-                            Dirigi o ciclo de correção de defeitos em produção (reproduzi as falhas, isolei a causa, especifiquei a correção e revalidei): 
-                            VigieEditais (licitações públicas — requisitos DFD/ETP/TR/Mapa de Risco e integração com a API do PNCP) e 
-                            CriptoDeclara (arquitetura orientada a eventos em NestJS, race conditions no cálculo fiscal e silos de dados).
-                            </li>
+                <div class="mt-1.5 pl-3 border-l-2 border-gray-200">
+                    <p class="font-medium text-primary">Sustentação, integração de sistemas e entrega</p>
+                    <ul class="list-disc list-outside pl-5 mt-0.5 space-y-1">
+                        <li>Dirigi o ciclo de correção de defeitos em produção - reproduzi, isolei a causa, especifiquei
+                            a correção e revalidei pós-deploy - em VigieEditais (API do PNCP) e CriptoDeclara (NestJS
+                            orientado a eventos; ingestão de transações pelas APIs da Binance, Coinbase e Kraken).</li>
+                        <li>Implementei a geração de documentos de licitação (ETP e termo de referência) no
+                            VigieEditais: li a legislação aplicável, levantei os requisitos obrigatórios de cada
+                            documento e os traduzi em regras de composição no código.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <!-- PROJETOS -->
-        <section class="mb-3">
-            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Projetos</h2>
+        <section class="mb-2">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-1.5">Projetos</h2>
 
-            <div class="mb-2 no-break">
+            <div class="mb-1.5 no-break">
+                <p>
+                    <a href="https://github.com/pedro-fs-garcia/IdScan"
+                        class="font-semibold text-primary hover:underline">IdScan</a>
+                    <span class="text-gray-600">- Extração de dados de documentos com OCR e IA</span>
+                    <span class="text-gray-500 text-xs">(individual)</span>
+                    <span class="text-gray-400">·</span>
+                    <a href="https://github.com/pedro-fs-garcia/IdScan"
+                        class="text-blue-700 text-xs">github.com/pedro-fs-garcia/IdScan</a>
+                </p>
+                <p class="pl-2 mt-0.5">Orquestra OCR (Tesseract) e um LLM local (Ollama) para transformar a foto de um RG
+                    em campos estruturados, sem template por layout, com validação que rejeita campo malformado antes da
+                    gravação. Java, MySQL.</p>
+            </div>
+
+            <div class="mb-1.5 no-break">
+                <p>
+                    <a href="https://github.com/Titus-System/Nexa-api"
+                        class="font-semibold text-primary hover:underline">Nexa</a>
+                    <span class="text-gray-600">- Classificação fiscal automatizada de documentos</span>
+                    <span class="text-gray-500 text-xs">(FATEC | cliente: TecSys)</span>
+                    <span class="text-gray-400">·</span>
+                    <a href="https://github.com/Titus-System/Nexa-api"
+                        class="text-blue-700 text-xs">github.com/Titus-System/Nexa-api</a>
+                </p>
+                <p class="pl-2 mt-0.5">Autor de <strong>~94% dos commits</strong> do backend. Cada PDF percorre um
+                    workflow de etapas assíncronas em workers Celery, com Redis como broker e pub/sub entre serviços e
+                    status exposto em tempo real por WebSocket. Python, Flask, PostgreSQL, Docker.</p>
+            </div>
+
+            <div class="mb-1.5 no-break">
                 <p>
                     <a href="https://github.com/Titus-System/syncdesk-api"
                         class="font-semibold text-primary hover:underline">SyncDesk</a>
-                    <span class="text-gray-600">- Backend web e mobile de plataforma de help desk</span>
-                    <span class="text-gray-500 text-xs"> (Projeto acadêmico em equipe - FATEC | Cliente: Pro4Tech)</span>
+                    <span class="text-gray-600">- Backend de plataforma de help desk</span>
+                    <span class="text-gray-500 text-xs">(FATEC | cliente: Pro4Tech)</span>
+                    <span class="text-gray-400">·</span>
+                    <a href="https://github.com/Titus-System/syncdesk-api"
+                        class="text-blue-700 text-xs">github.com/Titus-System/syncdesk-api</a>
                 </p>
-                <p class="text-xs">
-                    <a href="https://github.com/Titus-System/syncdesk-api" class="text-blue-700">github.com/Titus-System/syncdesk-api</a>
-                </p>
-                <p class="pl-2 mt-0.5">Liderei 6 pessoas no desenvolvimento de uma API em
-                    Python/FastAPI com 117 endpoints, 9 migrations Alembic e 963 funções de teste em pytest (unitário + integração + E2E). 
-                    Projetei o Event Dispatcher que desacopla os domínios; implementei chat ao vivo (armazenado em MongoDB) por websocket
-                    e e-mail transacional no padrão outbox.
-                </p>
-                <p class="pl-2 mt-0.5">Montei o deploy contínuo: GitHub Actions publica a imagem no GHCR e faz deploy em VPS com Prometheus,
-                    Alertmanager, Loki, Promtail e dashboard no Grafana.
+                <p class="pl-2 mt-0.5">Liderei tecnicamente 6 pessoas na construção de uma API Python/FastAPI com
+                    <strong>117 endpoints</strong> e 963 funções de teste em pytest. Projetei o Event Dispatcher que
+                    desacopla os domínios, o chat por WebSocket e o e-mail no padrão outbox. CI/CD com GitHub Actions.</p>
             </div>
 
             <div class="no-break">
@@ -156,70 +163,48 @@
                     <a href="https://github.com/pedro-fs-garcia/filmmash-go"
                         class="font-semibold text-primary hover:underline">FilmMash</a>
                     <span class="text-gray-600">- Ranking de filmes por duelos com rating Elo</span>
-                    <span class="text-gray-500 text-xs"> (projeto individual)</span>
+                    <span class="text-gray-500 text-xs">(individual)</span>
+                    <span class="text-gray-400">·</span>
+                    <a href="https://filmmash.pedrogarcia.space"
+                        class="text-blue-700 text-xs">filmmash.pedrogarcia.space (demo)</a>
+                    <span class="text-gray-400">·</span>
+                    <a href="https://github.com/pedro-fs-garcia/filmmash-go"
+                        class="text-blue-700 text-xs">github.com/pedro-fs-garcia/filmmash-go</a>
                 </p>
-                <p class="text-xs">
-                    <a href="https://filmmash.pedrogarcia.space" class="text-blue-700">filmmash.pedrogarcia.space - demo ao vivo</a>
-                    <span class="text-gray-500"> · </span>
-                    <a href="https://github.com/pedro-fs-garcia/filmmash-go" class="text-blue-700">github.com/pedro-fs-garcia/filmmash-go</a>
-                </p>
-                <p class="pl-2 mt-0.5">
-                    Aplicação full-stack em Go (chi, HTMX server-rendered) em vertical slices; 
-                    catálogo de filmes populados a partir da API TMDB ranqueados por Elo com atualização transacional (SELECT ... FOR UPDATE) por duelo. 
-                    Autenticação OAuth 2.0 Authorization Code + PKCE / OpenID Connect provider-agnóstica (OIDC discovery), 
-                    sessões próprias em PostgreSQL; sqlc/pgx/goose, observabilidade (Prometheus, Alertmanager, Loki, Grafana), caddy e Docker Compose para dev e produção.
-<!-- 
-                    Aplicação full-stack em Go (chi, HTMX server-rendered) com arquitetura em vertical slices, sqlc, pgx e migrations goose.
-                    Implementei OAuth 2.0 + PKCE com OpenID Connect e
-                    stack de observabilidade (Prometheus, Alertmanager, Loki, Grafana).</p> -->
-                </p>
+                <p class="pl-2 mt-0.5">Full-stack em Go (chi, HTMX) publicado e em uso: catálogo da API TMDB re-ranqueado
+                    por Elo com atualização transacional (SELECT ... FOR UPDATE) sob duelos concorrentes, login OAuth 2.0
+                    + PKCE / OIDC via discovery, PostgreSQL e Docker Compose.</p>
             </div>
-
-            <!-- <div class="no-break">
-                <p>
-                    <a href="https://github.com/Titus-System/Nexa-api"
-                        class="font-semibold text-primary hover:underline">Nexa</a>
-                    <span class="text-gray-600">- Classificação fiscal automatizada de part-numbers</span>
-                    <span class="text-gray-500 text-xs">(projeto acadêmico em equipe - FATEC / cliente TecSys, 2025)</span>
-                </p>
-                <p class="text-xs">
-                    <a href="https://github.com/Titus-System/Nexa-api" class="text-blue-700">github.com/Titus-System/Nexa-api</a>
-                </p>
-                <p class="pl-2 mt-0.5">Autor de ~94% dos commits do backend: processamento assíncrono em Celery com Redis (broker pub/sub)
-                    e status em tempo real por Websockets. <strong>Stack:</strong> Python, Flask, PostgreSQL, Redis, Docker.</p>
-                </p>
-            </div> -->
         </section>
-
+        <br>
         <!-- COMPETÊNCIAS -->
-        <section class="mb-3 no-break">
-            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Competências Técnicas</h2>
-            <div class="space-y-1">
-                <div><strong>Linguagens e Frameworks:</strong> Python (FastAPI, Django), Go, TypeScript/Node.js </div>
-                <div><strong>Dados, infra e observabilidade:</strong> PostgreSQL, MongoDB, WebSockets, Docker, GitHub Actions, Prometheus, Grafana, Loki</div>
-                <!-- <div><strong>Observabilidade:</strong> Prometheus, Grafana, Loki</div> -->
-                <div><strong>Práticas:</strong> Orientação a eventos,
-                    testes automatizados (pytest, Go), testes de autorização (BOLA/IDOR), MITMProxy, LGPD</div>
+        <section class="mb-2 no-break">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-1.5">Competências Técnicas</h2>
+            <div class="space-y-0.5">
+                <div><strong>Linguagens:</strong> Python, Java, Go, TypeScript/Node.js, SQL</div>
+                <div><strong>Segurança e testes:</strong> testes de autorização (BOLA/IDOR), mitmproxy, dados pessoais e
+                    LGPD, pytest, testes E2E em Go</div>
+                <div><strong>IA e documentos:</strong> OCR (Tesseract), LLM local (Ollama), extração e validação de dados
+                    de documentos</div>
+                <div><strong>Backend e infra:</strong> FastAPI, Flask, NestJS/Express, PostgreSQL, MySQL, Redis, APIs
+                    REST, Docker, Git, , CI/CD com GitHub Actions</div>
             </div>
         </section>
-
-        <!-- FORMAÇÃO -->
-        <section class="mb-3 no-break">
-            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Formação</h2>
+        <br>
+        <!-- FORMAÇÃO E IDIOMAS -->
+        <section class="no-break">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-1.5">Formação e Idiomas</h2>
             <div class="flex justify-between items-baseline">
                 <span class="font-semibold">Análise e Desenvolvimento de Sistemas - FATEC São José dos Campos</span>
-                <span class="text-gray-600 text-xs">Conclusão prevista: 12/2026</span>
+                <span class="text-gray-600 text-xs">Conclusão prevista: 12/2027</span>
             </div>
             <div class="flex justify-between items-baseline mt-0.5">
                 <span class="font-semibold">Comunicação Social - ECA/USP</span>
                 <span class="text-gray-600 text-xs">2021</span>
             </div>
-        </section>
-
-        <!-- IDIOMAS -->
-        <section class="no-break">
-            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Idiomas</h2>
-            <p><strong>Inglês:</strong> Avançado - leitura técnica, documentação e comunicação.</p>
+            <p class="mt-0.5">Maratona SBC de Programação - participante da primeira fase (08/2026)</p> 
+            <p class="mt-0.5"><strong>Inglês avançado</strong>:
+                leitura técnica, documentação e comunicação.</p>
         </section>
     </div>
 </body>
