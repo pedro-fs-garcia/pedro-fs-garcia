@@ -184,6 +184,49 @@
 
                 <div class="mt-4">
                     <div class="flex justify-between items-baseline">
+                        <h4 class="font-medium text-primary">Cafezinho - Motor de classificação e análise de fotos de perfil</h4>
+                    </div>
+                    <ul class="list-disc list-inside pl-2 mt-2 space-y-1.5">
+                        <li>Desenvolvi um <strong>componente Python independente</strong> para análise de fotos de
+                            perfil: classificação em quatro categorias (sem rosto, rosto inutilizável, foto de grupo e
+                            rosto individual aproveitável), avaliação de qualidade facial, estimativa de idade aparente e
+                            comparação entre fotos do mesmo perfil. Entregue como biblioteca, <strong>CLI</strong> e
+                            processamento em lote (CSV → JSONL, com escrita atômica).</li>
+                        <li>Integrei <strong>modelos pré-treinados de visão computacional</strong> -
+                            <strong>YuNet</strong> (detecção facial), <strong>SFace</strong> (<em>embeddings</em>) e
+                            <strong>MiVOLO v2</strong> (idade aparente) - com inferência local em CPU, implementando o
+                            pré-processamento (recorte, <em>padding</em>, normalização ImageNet) e adaptando o MiVOLO para
+                            entrada somente com rosto.</li>
+                        <li>Implementei a <strong>avaliação de qualidade facial</strong> (tamanho, bordas, iluminação,
+                            nitidez e pose), normalizando o recorte para 112×112 antes da variância do Laplaciano, e a
+                            <strong>comparação facial</strong> por similaridade de cosseno (sim/não/incerto), com vetores
+                            mantidos apenas em memória e sem cruzamento entre perfis.</li>
+                        <li>Modelei o <strong>tratamento explícito de incerteza</strong>, separando classificação,
+                            abstenção e falha de medição para não confundir erro técnico com ausência de rosto ou
+                            identidade diferente. A suspeita de menoridade é apenas sinalizada para <strong>revisão
+                            humana</strong>, e controles positivo e negativo validam o pipeline antes de cada lote,
+                            interrompendo a execução em caso de falha.</li>
+                        <li>Integrei um descritor multimodal opcional via <strong>API do Claude Haiku 4.5</strong> para
+                            imagens sem rosto aproveitável, com saída estruturada validada, tratamento de
+                            <em>timeouts</em> e remoção de EXIF.</li>
+                        <li>Construí uma <strong>ferramenta de calibração</strong> (precisão e recall por classe, matriz
+                            de confusão, MAE de idade e pares rotulados de comparação facial), mantendo erros e
+                            abstenções nos denominadores para não inflar as métricas.</li>
+                        <li>Garanti a <strong>reprodutibilidade dos modelos</strong>: pesos com versões fixadas e
+                            verificação <strong>SHA-256</strong>, carregamento <em>safetensors</em> com correspondência
+                            estrita de chaves e inferência sem acesso à rede. Empacotei em wheel/sdist com <strong>CI no
+                            GitHub Actions</strong> (Python 3.11 e 3.12).</li>
+                        <li>Cobri o pipeline com <strong>80 testes automatizados</strong> (78 offline e 2 de integração
+                            com pesos reais, todos com sockets bloqueados). Em <em>benchmark</em> em CPU de notebook
+                            (1 thread), obtive mediana de <strong>1,39 s</strong> na imagem de controle com rosto, sem
+                            falhas em 40 chamadas.</li>
+                        <li><strong>Stack:</strong> Python, PyTorch, OpenCV, NumPy, Pillow, timm, safetensors, API
+                            Anthropic, pytest, Ruff, GitHub Actions.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <div class="flex justify-between items-baseline">
                         <h4 class="font-medium text-primary">CriptoDeclara - Análise e arquitetura de sistema fiscal</h4>
                         <span class="text-gray-600 text-xs">04/2026 - Atual</span>
                     </div>
@@ -370,12 +413,14 @@
                     Linux</div>
                 <div><strong>Observabilidade:</strong> Grafana, Loki, Prometheus, Promtail</div>
                 <div><strong>Armazenamento / Mensageria:</strong> MinIO, Redis Pub/Sub, cronjobs e jobs em background</div>
-                <div><strong>IA/LLMs:</strong> Agentes de IA (LLMs), Hugging Face, SmolAgents, Ollama, OCR (Tesseract)</div>
+                <div><strong>IA/LLMs:</strong> Agentes de IA (LLMs), API Anthropic (Claude), Hugging Face, SmolAgents,
+                    Ollama, OCR (Tesseract)</div>
+                <div><strong>Visão computacional:</strong> OpenCV, PyTorch, torchvision, timm, YuNet, SFace, MiVOLO v2</div>
                 <div><strong>Testes / QA:</strong> Pytest, Jest, Maestro, Go, testes manuais, testes de regressão,
                     GitHub Issues, validação pós-deploy</div>
                 <div><strong>Segurança:</strong> auditoria caixa-preta, proxy MITM/TLS, BOLA/IDOR, Broken Access
                     Control, mass assignment, análise de tráfego, LGPD/PII</div>
-                <div><strong>Ferramentas:</strong> Git, Swagger, Postman, Figma, Poetry, npm</div>
+                <div><strong>Ferramentas:</strong> Git, Swagger, Postman, Figma, Poetry, npm, Ruff, Makefile</div>
                 <div><strong>Conceitos:</strong> REST APIs, Event-Driven, Microsserviços, Pub/Sub, Outbox, JWT/RBAC,
                     Migrations, CI/CD, DoD/Critérios de Aceite</div>
             </div>
