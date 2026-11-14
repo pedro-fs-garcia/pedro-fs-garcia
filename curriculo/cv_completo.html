@@ -59,27 +59,25 @@
         <section class="mb-6">
             <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-3">Perfil</h2>
             <p>
-                Desenvolvedor de software com atuação <strong>full-stack</strong> e <strong>end-to-end</strong>: do
-                desenho de arquitetura e modelagem de dados ao backend, frontend, deploy e suporte pós-entrega. Constrói
-                <strong>APIs REST</strong>, <strong>agentes de IA/LLM</strong>, backends orientados a eventos e
-                microsserviços, aplicações <strong>React</strong> (web) e <strong>React Native</strong> (mobile), com
-                comunicação em tempo real via WebSockets.
+                Desenvolvedor de software com foco em <strong>backend, integração de IA e sistemas orientados a
+                eventos</strong>, com atuação do levantamento de requisitos ao deploy. Na RCDNC, desenvolvi soluções
+                para licitações públicas, análise de fotos e gestão de risco, combinando implementação,
+                <strong>testes automatizados</strong> e validação das regras de negócio.
             </p>
             <p class="mt-2">
-                Experiência consistente com <strong>Python (FastAPI, Flask)</strong>, <strong>Node.js
-                (Express/NestJS)</strong>, <strong>PostgreSQL, MongoDB e Redis</strong>. Trabalha com arquiteturas
-                <strong>orientadas a eventos</strong> (Event Dispatcher, pub/sub, filas com Celery), padrão
-                <em>outbox</em>, <strong>integração entre serviços</strong> e contratos de API compartilhados, além de
-                integrações com APIs de terceiros e governamentais (ex.: PNCP). Atua em DevOps e observabilidade -
-                Docker, CI/CD com GitHub Actions, deploy em Railway/Digital Ocean/AWS e monitoramento com
-                Grafana/Prometheus/Loki.
+                Experiência com <strong>Python e Node.js</strong> em projetos profissionais e com <strong>Java/Spring
+                Boot</strong> em projetos acadêmicos. Projetei APIs, contratos entre serviços e fluxos assíncronos com
+                filas, <strong>outbox transacional e idempotência</strong>. Integrei modelos de visão computacional e
+                LLMs, com atenção à qualidade dos dados, ao tratamento de incerteza, à revisão humana e à execução
+                isolada de código gerado. Também desenvolvi interfaces web e mobile e configurei CI/CD e
+                observabilidade para acompanhar as aplicações após o deploy.
             </p>
             <p class="mt-2">
-                Forte em <strong>controle de qualidade (QA)</strong> e testes (Pytest, Jest, testes manuais, validação
-                pós-deploy) e na <strong>tradução de requisitos de negócio em especificações técnicas</strong> -
-                interpretando documentos regulatórios e editais e desmembrando-os em épicos e sub-issues com critérios
-                de aceite. Vivência prévia em gestão de equipes e controle de qualidade de dados em campo, somada a
-                formação em Comunicação.
+                Traduzi requisitos de negócio e documentos regulatórios em especificações técnicas e critérios de
+                aceite. Testei hipóteses antes de incorporá-las aos produtos e documentei decisões e limites das
+                soluções. Formação em Comunicação pela USP e experiência anterior em gestão de equipes e qualidade
+                de dados no IBGE complementam a formação em <strong>Análise e Desenvolvimento de Sistemas na
+                FATEC</strong>.
             </p>
         </section>
 
@@ -179,6 +177,29 @@
                             consolidando periodicamente os achados em relatório com <strong>diretrizes
                             arquiteturais</strong> (<em>Never trust the client</em>, autorização no backend, validação de
                             recibo <em>server-side</em>).</li>
+                    </ul>
+                </div>
+
+                <div class="mt-4">
+                    <div class="flex justify-between items-baseline">
+                        <h4 class="font-medium text-primary">Ferramenta de triagem de candidaturas para agência de modelos</h4>
+                    </div>
+                    <ul class="list-disc list-inside pl-2 mt-2 space-y-1.5">
+                        <li>Desenvolvi um <strong>avaliador de rosto em Python</strong> (MediaPipe, OpenCV, Pydantic)
+                            que mede três proporções faciais numa malha de pontos densos e calcula uma nota com faixa e
+                            margem por medida, a partir de uma <strong>régua versionada em JSON</strong>. Fotos
+                            inadequadas recebem o resultado “não medida”, e a nota nunca recusa ninguém.</li>
+                        <li>Propus uma <strong>régua provisória</strong> e documentei seus limites.
+                            Ela foi aprovada pelo responsável do projeto e adotada como padrão,
+                            com testes que detectam mudanças nas faixas, nos pesos e na cobertura mínima.</li>
+                        <li>Refatorei o serviço de classificação em <strong>4 PRs</strong>: configuração única,
+                            organização do código por domínio, logs JSON por pedido sem dados da foto, endpoint
+                            <code>/pronto</code> e limite de tempo por foto. Conferi a <strong>paridade byte a byte em
+                            200 fotos</strong>, com <strong>809 testes offline</strong>.</li>
+                        <li>Testei as hipóteses antes de implementar: retirei a simetria da v1 após um teste próprio e
+                            estabeleci a <strong>medição de viés como condição para qualquer uso com pessoas
+                            reais</strong>.</li>
+                        <li><strong>Stack:</strong> Python, MediaPipe, OpenCV, Pydantic, JSON.</li>
                     </ul>
                 </div>
 
@@ -297,6 +318,47 @@
 
             <div class="mb-5 no-break">
                 <div class="flex justify-between items-baseline">
+                    <a href="https://github.com/Titus-System/synapse" target="_blank"
+                        class="font-semibold text-primary hover:underline">Synapse</a>
+                    <span class="text-gray-600 text-xs">Simulação de regras de comissionamento com IA · projeto acadêmico em equipe (FATEC / parceiro Dom Rock)</span>
+                </div>
+                <p class="pl-2 mt-1">Aplicação web em desenvolvimento para transformar regras de comissionamento
+                    descritas por texto ou voz em código Python e simular seu impacto financeiro em relação ao
+                    cenário de referência da empresa. Inclui revisão humana dos parâmetros e sugestões de adaptação
+                    ao orçamento, com separação entre geração por IA e cálculo executado pelo worker.</p>
+                <p class="pl-2 mt-1"><strong>Minhas contribuições:</strong></p>
+                <ul class="list-disc list-inside pl-2 mt-2 space-y-1.5">
+                    <li>Defini e documentei a <strong>arquitetura orientada a eventos</strong> e a modelagem de dados;
+                        estruturei o monorepo e os contratos <strong>OpenAPI e JSON Schema</strong> compartilhados
+                        entre API Java, serviços Python e frontend Vue.</li>
+                    <li>Implementei na API <strong>Spring Boot</strong> a máquina de estados dos jobs, o
+                        <strong>outbox transacional</strong> com publicação confirmada no RabbitMQ e o acompanhamento
+                        em tempo real por <strong>SSE</strong>, integrado ao frontend.</li>
+                    <li>Construí o executor de código gerado em <strong>containers Docker efêmeros</strong>, sem
+                        rede, com sistema de arquivos somente leitura e limites de CPU, memória e tempo. Implementei
+                        a conferência independente do baseline, a decomposição dos resultados e o tratamento de
+                        reentregas sem repetir execuções já persistidas.</li>
+                    <li>Implementei o motor de <strong>extração estruturada de regras</strong> e sua integração ao
+                        grafo <strong>LangGraph</strong>, com validação de domínio, pausa para confirmação e
+                        reextração após correções. Acrescentei verificações para impedir que parâmetros sem suporte
+                        no texto fossem incorporados à regra.</li>
+                    <li>Desenvolvi sugestões de <strong>taxas alternativas e metas de venda</strong> avaliadas por
+                        novas simulações no worker; integrei a transcrição de áudio na API e os fluxos de entrada,
+                        correção e reprocessamento no frontend.</li>
+                    <li>Integrei a autenticação com <strong>Keycloak (OIDC/PKCE)</strong> e configurei
+                        <strong>CI/CD por componente</strong> com GitHub Actions, Docker Compose e Caddy em staging
+                        na DigitalOcean, além de logs estruturados e métricas no serviço de IA.</li>
+                    <li>Escrevi <strong>testes unitários, de integração e ponta a ponta</strong> para mensageria,
+                        persistência, isolamento do sandbox e correção de regras, incluindo cenários de falha,
+                        reentrega de mensagens e interrupção do worker.</li>
+                </ul>
+                <p class="pl-2 mt-1"><strong>Stack:</strong> Java, Spring Boot, Python, FastAPI, LangGraph, Vue 3,
+                    TypeScript, PostgreSQL, RabbitMQ, SQLAlchemy, Liquibase, Keycloak, SSE, Docker, GitHub Actions,
+                    Caddy, DigitalOcean, pytest.</p>
+            </div>
+
+            <div class="mb-5 no-break">
+                <div class="flex justify-between items-baseline">
                     <a href="https://github.com/Titus-System/syncdesk-api" target="_blank"
                         class="font-semibold text-primary hover:underline">SyncDesk</a>
                     <span class="text-gray-600 text-xs">Help desk (web + mobile, tempo real) · projeto acadêmico em equipe (FATEC)</span>
@@ -335,16 +397,29 @@
                 <div class="flex justify-between items-baseline">
                     <a href="https://github.com/Titus-System/Nexa-api" target="_blank"
                         class="font-semibold text-primary hover:underline">Nexa</a>
-                    <span class="text-gray-600 text-xs">Classificação fiscal automatizada · projeto acadêmico em equipe (FATEC / cliente TecSys)</span>
+                    <span class="text-gray-600 text-xs">Classificação fiscal com agentes de IA e RAG · projeto acadêmico em equipe (FATEC / cliente TecSys)</span>
                 </div>
-                <p class="pl-2 mt-1">Backend desacoplado e <strong>orientado a eventos</strong> para classificação
-                    fiscal automatizada a partir de <em>part-numbers</em> e documentos PDF. Processamento assíncrono com
-                    Celery e <strong>Redis Pub/Sub para comunicação entre serviços</strong>; status de processamento
-                    exposto em tempo real via WebSockets.</p>
-                <p class="pl-2 mt-1"><strong>Minhas contribuições:</strong> responsável por praticamente toda a API,
-                    exceto a extração de dados de PDF.</p>
-                <p class="pl-2 mt-1"><strong>Stack:</strong> Python, Flask, PostgreSQL, Redis (broker/pub-sub), Celery,
-                    Docker, REST APIs, WebSockets.</p>
+                <p class="pl-2 mt-1">Aplicação para apoiar o registro de importação a partir de <em>part-numbers</em>
+                    e pedidos de compra em PDF. O serviço de IA utiliza <strong>quatro agentes Smolagents</strong>
+                    com <strong>Qwen2.5 via Ollama</strong>: um gerente coordena pesquisa na web, geração de descrições
+                    técnicas e classificação fiscal. A classificação NCM/EX é apoiada por <strong>RAG com
+                    ChromaDB</strong> e embeddings <strong>Sentence Transformers</strong> sobre descrições de NCMs.</p>
+                <p class="pl-2 mt-1"><strong>Minhas contribuições:</strong></p>
+                <ul class="list-disc list-inside pl-2 mt-2 space-y-1.5">
+                    <li>Desenvolvi praticamente toda a <strong>API Python/Flask</strong> e o servidor Flask de
+                        integração com o serviço de IA. Conectei a entrada por part-number ou PDF ao fluxo de
+                        classificação; a extração dos dados do PDF foi implementada por outro integrante.</li>
+                    <li>Implementei <strong>jobs assíncronos, classificação em lote e resultados parciais</strong>,
+                        com Celery na API, comunicação HTTP/Redis Pub/Sub com o serviço de IA e acompanhamento em
+                        tempo real via WebSockets.</li>
+                    <li>Defini schemas de entrada e saída com <strong>Pydantic</strong>, implementei tratamento
+                        de falhas e persistência das classificações em PostgreSQL, associando o NCM/EX retornado
+                        às regras TIPI. Escrevi testes de integração para as rotas e os eventos de progresso do
+                        servidor de IA.</li>
+                </ul>
+                <p class="pl-2 mt-1"><strong>Stack da aplicação:</strong> Python, Flask, Smolagents, LiteLLM,
+                    Ollama, Qwen2.5, ChromaDB, Sentence Transformers, Pydantic, SQLAlchemy, PostgreSQL, Redis,
+                    Celery, Socket.IO, pytest e Docker.</p>
             </div>
 
             <div class="mb-5 no-break">
@@ -374,27 +449,8 @@
                 <p class="pl-2 mt-1"><strong>Stack:</strong> Go, chi, HTMX, PostgreSQL, OIDC, Docker.</p>
             </div>
 
-            <div class="mb-5 no-break">
-                <div class="flex justify-between items-baseline">
-                    <a href="https://github.com/pedro-fs-garcia/JurisBot" target="_blank"
-                        class="font-semibold text-primary hover:underline">JurisBot</a>
-                    <span class="text-gray-600 text-xs">Automação de pesquisa jurídica com agentes de IA</span>
-                </div>
-                <p class="pl-2 mt-1">Pipeline de agentes autônomos (LLMs) para pesquisa, análise e síntese de
-                    informações em bases jurídicas, com orquestração de chamadas e composição de respostas.</p>
-                <p class="pl-2 mt-1"><strong>Stack:</strong> Python, Hugging Face, SmolAgents.</p>
-            </div>
 
-            <div class="mb-5 no-break">
-                <div class="flex justify-between items-baseline">
-                    <a href="https://pedrogarcia.space" target="_blank"
-                        class="font-semibold text-primary hover:underline">Portfólio Pessoal</a>
-                    <span class="text-gray-600 text-xs">SPA responsiva</span>
-                </div>
-                <p class="pl-2 mt-1">Single Page Application com integração à API do GitHub para listagem dinâmica de
-                    repositórios e projetos.</p>
-                <p class="pl-2 mt-1"><strong>Stack:</strong> React, TypeScript, TailwindCSS.</p>
-            </div>
+
         </section>
 
         <!-- COMPETÊNCIAS -->
@@ -412,10 +468,10 @@
                 <div><strong>DevOps:</strong> Docker, Docker Compose, GitHub Actions, Railway, Digital Ocean, AWS,
                     Linux</div>
                 <div><strong>Observabilidade:</strong> Grafana, Loki, Prometheus, Promtail</div>
-                <div><strong>Armazenamento / Mensageria:</strong> MinIO, Redis Pub/Sub, cronjobs e jobs em background</div>
+                <div><strong>Armazenamento / Mensageria:</strong> armazenamento de objetos compatível com S3, Redis Pub/Sub, cronjobs e jobs em background</div>
                 <div><strong>IA/LLMs:</strong> Agentes de IA (LLMs), API Anthropic (Claude), Hugging Face, SmolAgents,
                     Ollama, OCR (Tesseract)</div>
-                <div><strong>Visão computacional:</strong> OpenCV, PyTorch, torchvision, timm, YuNet, SFace, MiVOLO v2</div>
+                <div><strong>Visão computacional:</strong> MediaPipe, OpenCV, PyTorch, torchvision, timm, YuNet, SFace, MiVOLO v2</div>
                 <div><strong>Testes / QA:</strong> Pytest, Jest, Maestro, Go, testes manuais, testes de regressão,
                     GitHub Issues, validação pós-deploy</div>
                 <div><strong>Segurança:</strong> auditoria caixa-preta, proxy MITM/TLS, BOLA/IDOR, Broken Access
@@ -443,6 +499,12 @@
                 </div>
                 <p class="text-gray-600">ECA/USP - Escola de Comunicações e Artes da Universidade de São Paulo</p>
             </div>
+        </section>
+
+        <!-- MARATONAS DE PROGRAMAÇÃO -->
+        <section class="mb-6 no-break">
+            <h2 class="text-base font-bold uppercase border-b border-gray-300 mb-3">Maratonas de Programação</h2>
+            <p>Participei da <strong>Maratona de Programação da SBC</strong> e do <strong>InterFatecs</strong>.</p>
         </section>
 
         <!-- IDIOMAS -->

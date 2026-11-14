@@ -44,8 +44,7 @@
         <!-- HEADER -->
         <header class="mb-3 border-b border-black pb-2.5">
             <h1 class="text-2xl font-bold uppercase tracking-wide">Pedro Felipe Sousa Garcia</h1>
-            <p class="text-[15px] font-medium text-primary">Desenvolvedor Backend | Python e Go | APIs REST,
-                Processamento Assíncrono e Testes Automatizados</p>
+            <p class="text-[15px] font-medium text-primary">Desenvolvedor Backend | Python, Go e Java | APIs e Sistemas Orientados a Eventos</p>
 
             <div class="flex flex-wrap items-center gap-x-2.5 gap-y-0.5 mt-1.5">
                 <span>São José dos Campos - SP</span>
@@ -62,68 +61,40 @@
 
         <!-- RESUMO -->
         <section class="mb-3">
-            <p>
-                Desenvolveu uma API em Python/FastAPI com <strong>117 endpoints</strong> e 963 funções de teste,
-                e de uma suíte E2E em Go com <strong>113 testes</strong> acoplada ao CI/CD de um produto em produção.
-                Docker, PostgreSQL e arquitetura orientada a eventos.
-            </p>
+            <p>Desenvolvedor backend com experiência em <strong>APIs e sistemas orientados a eventos</strong>.
+                Atuação em persistência transacional, autenticação, processamento assíncrono, testes e entrega
+                de serviços em produção.</p>
         </section>
 
         <!-- EXPERIÊNCIA PROFISSIONAL -->
         <section class="mb-3">
             <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Experiência Profissional</h2>
-
-            <div class="no-break">
+            <div>
                 <div class="flex justify-between items-baseline">
                     <h3 class="font-semibold text-[14px]">RCDNC - Desenvolvedor de Software (estágio)</h3>
                     <span class="text-gray-600 text-xs">11/2025 - Atual</span>
                 </div>
-                <!-- <p class="text-xs text-gray-600">Software house com produtos B2G, B2B e B2C.</p> -->
-                
-                <!-- Auditoria -->
-                <div class="mt-2 pl-3 border-l-2 border-gray-200">
-                    <p class="font-medium text-primary">Segurança de aplicação e automação de testes
-                        <!-- <span class="text-gray-500 font-normal text-xs">(07/2026)</span> -->
-                    </p>
+                <div class="mt-2 pl-3 border-l-2 border-gray-200 no-break">
+                    <h4 class="font-medium text-primary">Segurança de APIs e automação de testes</h4>
                     <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>Identifiquei 22 falhas de controle de acesso (BOLA/IDOR)
-                            e de tratamento de dados pessoais (LGPD)
-                            auditando em caixa-preta a autorização do backend via
-                            proxy MITM; todas reportadas e corrigidas.
-                            Outras 14 violações de contrato de API, também corrigidas - <strong>36 defeitos</strong> ao todo.
-                        </li>
-                        <li>Desenvolvi em Go uma suíte de regressão
-                            E2E com 113 testes (~16 min) que valida as correções de forma
-                            determinística e a acoplei ao CI/CD do projeto,
-                            substituindo uma suíte anterior que reportava falso positivo em staging.
-                        </li>
-                        <!-- <li>36 bugs (vulnerabilidades e violações de contrato de API) reportados e corrigidos.</li> -->
+                        <li>Identifiquei <strong>36 defeitos</strong>: 22 falhas de autorização e tratamento de
+                            dados pessoais e 14 violações de contrato de API, todos reportados e corrigidos.</li>
+                        <li>Desenvolvi uma suíte <strong>E2E em Go com 113 testes</strong> e a integrei ao CI/CD,
+                            substituindo verificações que reportavam falsos positivos.</li>
                     </ul>
                 </div>
-                <div class="mt-2 pl-3 border-l-2 border-gray-200">
-                    <p class="font-medium text-primary">Trading algorítmico e gestão de risco em cripto
-                        <!-- <span class="text-gray-500 font-normal text-xs">(06/2026)</span> -->
-                    </p>
-                    <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>Construí um pipeline
-                            em Python/Django Ninja e NumPy: ingestão de dados de mercado, sinais, risco, execução e portfólio,
-                            com engine de backtest sem look-ahead.</li>
-
-                        <li>A validação estatística refutou a viabilidade do produto em produção, evitando a alocação em estratégia com desempenho 40% inferior em relação ao benchmark (buy and hold); decisões técnicas registradas em ADRs.</li>
-                    </ul>
+                <div class="mt-2 pl-3 border-l-2 border-gray-200 no-break">
+                    <h4 class="font-medium text-primary">Serviço de triagem de candidaturas para agência de modelos</h4>
+                    <p class="pl-2 mt-1">Refatorei o serviço <strong>Python em 4 PRs</strong>: configuração única,
+                        organização por domínio, logs JSON sem dados da foto, endpoint de prontidão e timeout por
+                        imagem. Conferi paridade byte a byte em <strong>200 fotos</strong>, com <strong>809 testes
+                        offline</strong>.</p>
                 </div>
-
-                <div class="mt-2 pl-3 border-l-2 border-gray-200">
-                    <p class="font-medium text-primary">Especificação técnica e correção de produtos em produção
-                        <!-- <span class="text-gray-500 font-normal text-xs">(01/2026)</span> -->
-                    </p>
-                    <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>
-                            Dirigi o ciclo de correção de defeitos em produção (reproduzi as falhas, isolei a causa, especifiquei a correção e revalidei): 
-                            VigieEditais (licitações públicas — requisitos DFD/ETP/TR/Mapa de Risco e integração com a API do PNCP) e 
-                            CriptoDeclara (arquitetura orientada a eventos em NestJS, race conditions no cálculo fiscal e silos de dados).
-                            </li>
-                    </ul>
+                <div class="mt-2 pl-3 border-l-2 border-gray-200 no-break">
+                    <h4 class="font-medium text-primary">APIs e integrações em produção</h4>
+                    <p class="pl-2 mt-1">Entreguei um sistema de gestão de forma autônoma com <strong>Express/PostgreSQL</strong>,
+                        filas Redis e deploy na Railway. No VigieEditais, implementei geração de documentos de
+                        licitação e corrigi integrações com o <strong>PNCP</strong>.</p>
                 </div>
             </div>
         </section>
@@ -131,75 +102,54 @@
         <!-- PROJETOS -->
         <section class="mb-3">
             <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Projetos</h2>
-
             <div class="mb-2 no-break">
-                <p>
-                    <a href="https://github.com/Titus-System/syncdesk-api"
-                        class="font-semibold text-primary hover:underline">SyncDesk</a>
-                    <span class="text-gray-600">- Backend web e mobile de plataforma de help desk</span>
-                    <span class="text-gray-500 text-xs"> (Projeto acadêmico em equipe - FATEC | Cliente: Pro4Tech)</span>
-                </p>
-                <p class="text-xs">
-                    <a href="https://github.com/Titus-System/syncdesk-api" class="text-blue-700">github.com/Titus-System/syncdesk-api</a>
-                </p>
-                <p class="pl-2 mt-0.5">Liderei 6 pessoas no desenvolvimento de uma API em
-                    Python/FastAPI com 117 endpoints, 9 migrations Alembic e 963 funções de teste em pytest (unitário + integração + E2E). 
-                    Projetei o Event Dispatcher que desacopla os domínios; implementei chat ao vivo (armazenado em MongoDB) por websocket
-                    e e-mail transacional no padrão outbox.
-                </p>
-                <p class="pl-2 mt-0.5">Montei o deploy contínuo: GitHub Actions publica a imagem no GHCR e faz deploy em VPS com Prometheus,
-                    Alertmanager, Loki, Promtail e dashboard no Grafana.
+                <p><a href="https://github.com/Titus-System/syncdesk-api"
+                    class="font-semibold text-primary hover:underline">SyncDesk</a>
+                    <span class="text-gray-600">- Backend de help desk web e mobile</span>
+                    <span class="text-gray-500 text-xs">(FATEC / Pro4Tech)</span></p>
+                <p class="text-xs"><a href="https://github.com/Titus-System/syncdesk-api"
+                    class="text-blue-700">github.com/Titus-System/syncdesk-api</a></p>
+                <p class="pl-2 mt-0.5">Liderei <strong>6 pessoas</strong> na API <strong>Python/FastAPI</strong>
+                    com <strong>117 endpoints e 963 funções de teste</strong>. Projetei o Event Dispatcher;
+                    implementei chat via WebSockets com histórico em MongoDB e e-mail transacional com outbox.
+                    Montei CI/CD com GitHub Actions/GHCR, deploy em VPS e observabilidade.</p>
             </div>
-
+            <div class="mb-2 no-break">
+                <p><a href="https://github.com/Titus-System/synapse"
+                    class="font-semibold text-primary hover:underline">Synapse</a>
+                    <span class="text-gray-600">- Simulação de regras de comissionamento com IA</span>
+                    <span class="text-gray-500 text-xs">(FATEC / Dom Rock; em desenvolvimento)</span></p>
+                <p class="text-xs"><a href="https://github.com/Titus-System/synapse"
+                    class="text-blue-700">github.com/Titus-System/synapse</a></p>
+                <p class="pl-2 mt-0.5">Defini arquitetura, modelagem e contratos OpenAPI/JSON Schema. Implementei
+                    na API <strong>Java/Spring Boot</strong> estados dos jobs, <strong>outbox transacional com
+                    RabbitMQ</strong> e SSE. Construí o worker Python para execução de código em containers isolados,
+                    com tratamento de reentregas sem repetir execuções persistidas, testes de integração e E2E.</p>
+            </div>
             <div class="no-break">
-                <p>
-                    <a href="https://github.com/pedro-fs-garcia/filmmash-go"
-                        class="font-semibold text-primary hover:underline">FilmMash</a>
-                    <span class="text-gray-600">- Ranking de filmes por duelos com rating Elo</span>
-                    <span class="text-gray-500 text-xs"> (projeto individual)</span>
-                </p>
-                <p class="text-xs">
-                    <a href="https://filmmash.pedrogarcia.space" class="text-blue-700">filmmash.pedrogarcia.space - demo ao vivo</a>
+                <p><a href="https://github.com/pedro-fs-garcia/filmmash-go"
+                    class="font-semibold text-primary hover:underline">FilmMash</a>
+                    <span class="text-gray-600">- Ranking de filmes por duelos</span>
+                    <span class="text-gray-500 text-xs">(projeto individual)</span></p>
+                <p class="text-xs"><a href="https://filmmash.pedrogarcia.space/ui/"
+                    class="text-blue-700">filmmash.pedrogarcia.space/ui/ - demo</a>
                     <span class="text-gray-500"> · </span>
-                    <a href="https://github.com/pedro-fs-garcia/filmmash-go" class="text-blue-700">github.com/pedro-fs-garcia/filmmash-go</a>
-                </p>
-                <p class="pl-2 mt-0.5">
-                    Aplicação full-stack em Go (chi, HTMX server-rendered) em vertical slices; 
-                    catálogo de filmes populados a partir da API TMDB ranqueados por Elo com atualização transacional (SELECT ... FOR UPDATE) por duelo. 
-                    Autenticação OAuth 2.0 Authorization Code + PKCE / OpenID Connect provider-agnóstica (OIDC discovery), 
-                    sessões próprias em PostgreSQL; sqlc/pgx/goose, observabilidade (Prometheus, Alertmanager, Loki, Grafana), caddy e Docker Compose para dev e produção.
-<!-- 
-                    Aplicação full-stack em Go (chi, HTMX server-rendered) com arquitetura em vertical slices, sqlc, pgx e migrations goose.
-                    Implementei OAuth 2.0 + PKCE com OpenID Connect e
-                    stack de observabilidade (Prometheus, Alertmanager, Loki, Grafana).</p> -->
-                </p>
+                    <a href="https://github.com/pedro-fs-garcia/filmmash-go"
+                    class="text-blue-700">github.com/pedro-fs-garcia/filmmash-go</a></p>
+                <p class="pl-2 mt-0.5">Desenvolvi em <strong>Go (chi, sqlc/pgx/goose)</strong> o ranking Elo com
+                    atualização transacional em PostgreSQL (<code>SELECT FOR UPDATE</code>). Implementei
+                    <strong>OAuth 2.0 + PKCE/OIDC</strong>, sessões no banco, integração TMDB, Docker Compose e
+                    observabilidade com Prometheus/Grafana/Loki.</p>
             </div>
-
-            <!-- <div class="no-break">
-                <p>
-                    <a href="https://github.com/Titus-System/Nexa-api"
-                        class="font-semibold text-primary hover:underline">Nexa</a>
-                    <span class="text-gray-600">- Classificação fiscal automatizada de part-numbers</span>
-                    <span class="text-gray-500 text-xs">(projeto acadêmico em equipe - FATEC / cliente TecSys, 2025)</span>
-                </p>
-                <p class="text-xs">
-                    <a href="https://github.com/Titus-System/Nexa-api" class="text-blue-700">github.com/Titus-System/Nexa-api</a>
-                </p>
-                <p class="pl-2 mt-0.5">Autor de ~94% dos commits do backend: processamento assíncrono em Celery com Redis (broker pub/sub)
-                    e status em tempo real por Websockets. <strong>Stack:</strong> Python, Flask, PostgreSQL, Redis, Docker.</p>
-                </p>
-            </div> -->
         </section>
 
         <!-- COMPETÊNCIAS -->
         <section class="mb-3 no-break">
             <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Competências Técnicas</h2>
             <div class="space-y-1">
-                <div><strong>Linguagens e Frameworks:</strong> Python (FastAPI, Django), Go, TypeScript/Node.js </div>
-                <div><strong>Dados, infra e observabilidade:</strong> PostgreSQL, MongoDB, WebSockets, Docker, GitHub Actions, Prometheus, Grafana, Loki</div>
-                <!-- <div><strong>Observabilidade:</strong> Prometheus, Grafana, Loki</div> -->
-                <div><strong>Práticas:</strong> Orientação a eventos,
-                    testes automatizados (pytest, Go), testes de autorização (BOLA/IDOR), MITMProxy, LGPD</div>
+                <div><strong>Linguagens e frameworks:</strong> Python (FastAPI, Django), Go, Java/Spring Boot, Node.js/Express</div>
+                <div><strong>Dados e mensageria:</strong> PostgreSQL, MongoDB, Redis, RabbitMQ, armazenamento de objetos compatível com S3</div>
+                <div><strong>Qualidade e entrega:</strong> pytest, testes E2E e de autorização, Docker, GitHub Actions, observabilidade</div>
             </div>
         </section>
 
@@ -216,10 +166,16 @@
             </div>
         </section>
 
+        <!-- MARATONAS -->
+        <section class="mb-3 no-break">
+            <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Maratonas de Programação</h2>
+            <p>Participei da <strong>Maratona de Programação da SBC</strong> e do <strong>InterFatecs</strong>.</p>
+        </section>
+
         <!-- IDIOMAS -->
         <section class="no-break">
             <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Idiomas</h2>
-            <p><strong>Inglês:</strong> Avançado - leitura técnica, documentação e comunicação.</p>
+            <p><strong>Inglês:</strong> Avançado (C1) - leitura técnica, documentação e comunicação.</p>
         </section>
     </div>
 </body>
