@@ -77,20 +77,22 @@
                 <div class="mt-2 pl-3 border-l-2 border-gray-200 no-break">
                     <h4 class="font-medium text-primary">Visão computacional</h4>
                     <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>Fui responsável pelo serviço <strong>Python</strong> de triagem de fotos de perfil do app da
-                            empresa e pelo protótipo de avaliação de candidatas para uma agência de modelos, com
-                            <strong>medição de viés e estabilidade</strong> e processamento local das fotos (LGPD).</li>
+                        <li>Desenvolvi do zero o serviço <strong>Python</strong> de classificação e análise de fotos de
+                            perfil do app da empresa, com <strong>YuNet, SFace e MiVOLO v2</strong> em CPU.</li>
+                        <li>Implementei e entreguei o MVP completo do avaliador de candidatas para uma agência de modelos,
+                            com <strong>medição de viés e estabilidade</strong> e processamento local das fotos (LGPD).</li>
                         <li>Refatorei o serviço em <strong>4 PRs</strong>, com paridade byte a byte em
                             <strong>200 fotos</strong> e <strong>809 testes offline</strong>.</li>
                     </ul>
                 </div>
                 <div class="mt-2 pl-3 border-l-2 border-gray-200 no-break">
-                    <h4 class="font-medium text-primary">Segurança de APIs e automação de testes</h4>
+                    <h4 class="font-medium text-primary">Auditoria de segurança caixa-preta e automação de testes</h4>
                     <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>Identifiquei <strong>36 defeitos</strong>: 22 falhas de autorização e tratamento de
-                            dados pessoais e 14 violações de contrato de API, todos reportados e corrigidos.</li>
-                        <li>Desenvolvi uma suíte <strong>E2E em Go com 113 testes</strong> e a integrei ao CI/CD,
-                            substituindo verificações que reportavam falsos positivos.</li>
+                        <li>Conduzi uma auditoria <strong>caixa-preta</strong> das APIs, com o cliente Android como ponto
+                            de observação e tráfego interceptado por proxy TLS em staging. Identifiquei
+                            <strong>36 defeitos</strong>: 22 falhas de autorização e tratamento de dados pessoais e 14
+                            violações de contrato de API, todos reportados e corrigidos.</li>
+                        <li>Desenvolvi uma suíte <strong>E2E em Go com 113 testes</strong>, integrada ao CI/CD.</li>
                     </ul>
                 </div>
                 <div class="mt-2 pl-3 border-l-2 border-gray-200 no-break">
@@ -112,10 +114,10 @@
                     <span class="text-gray-500 text-xs">(FATEC / Pro4Tech)</span></p>
                 <p class="text-xs"><a href="https://github.com/Titus-System/syncdesk-api"
                     class="text-blue-700">github.com/Titus-System/syncdesk-api</a></p>
-                <p class="pl-2 mt-0.5">Liderei <strong>6 pessoas</strong> na API <strong>Python/FastAPI</strong>
-                    com <strong>117 endpoints e 963 funções de teste</strong>. Projetei o Event Dispatcher;
+                <p class="pl-2 mt-0.5">Liderei <strong>6 pessoas</strong> na API <strong>Python/FastAPI</strong>.
+                    Projetei o Event Dispatcher;
                     implementei chat via WebSockets com histórico em MongoDB e e-mail transacional com outbox.
-                    Montei CI/CD com GitHub Actions/GHCR, deploy em VPS e observabilidade.</p>
+                    Montei CI/CD, deploy em VPS e observabilidade.</p>
             </div>
             <div class="mb-2 no-break">
                 <p><a href="https://github.com/Titus-System/synapse"
@@ -152,7 +154,7 @@
             <div class="space-y-1">
                 <div><strong>Linguagens e frameworks:</strong> Python (FastAPI, Django), Go, Java/Spring Boot, Node.js/Express</div>
                 <div><strong>Dados e mensageria:</strong> PostgreSQL, MongoDB, Redis, RabbitMQ, armazenamento de objetos compatível com S3</div>
-                <div><strong>Qualidade e entrega:</strong> pytest, testes E2E e de autorização, Docker, VMs (AWS, DigitalOcean, Azure), GitHub Actions, observabilidade</div>
+                <div><strong>Qualidade e entrega:</strong> pytest, testes E2E, Docker, VMs (AWS, DigitalOcean, Azure), GitHub Actions, observabilidade</div>
             </div>
         </section>
 

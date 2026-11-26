@@ -71,26 +71,28 @@
             <div>
                 <div class="flex justify-between items-baseline">
                     <h3 class="font-semibold text-[14px]">RCDNC - Desenvolvedor de Software (estágio)</h3>
-                    <span class="text-gray-600 text-xs">11/2025 - Atual</span>
+                    <span class="text-gray-600 text-xs">11/2025 - 11/2026</span>
                 </div>
                 <div class="mt-2 pl-3 border-l-2 border-gray-200 no-break">
                     <p class="font-medium text-primary">Cafezinho - Classificação e análise de fotos de perfil</p>
                     <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>Integrei <strong>YuNet, SFace e MiVOLO v2</strong> para classificar fotos, avaliar qualidade
-                            facial, estimar idade e comparar rostos em CPU. Entreguei biblioteca Python, CLI e lotes.</li>
+                        <li>Desenvolvi do zero um componente Python que integra <strong>YuNet, SFace e MiVOLO v2</strong>
+                            para classificar fotos, avaliar qualidade facial, estimar idade e comparar rostos em CPU.
+                            Entreguei biblioteca Python, CLI e lotes.</li>
                         <li>Construí avaliação com precisão, recall e MAE, preservando erros e abstenções nas métricas.
                             Integrei descritor via <strong>API Claude</strong> com saída estruturada e revisão humana
                             para decisões sensíveis.</li>
-                        <li>Validei o pipeline com <strong>80 testes</strong>, incluindo modelos reais sem acesso à
-                            rede. Fixei versões e integridade dos pesos e configurei empacotamento e CI.</li>
+                        <li>Fixei versões e integridade dos pesos, executei inferência sem acesso à rede e configurei
+                            empacotamento e CI.</li>
                     </ul>
                 </div>
                 <div class="mt-2 pl-3 border-l-2 border-gray-200 no-break">
                     <p class="font-medium text-primary">Ferramenta de triagem de candidaturas para agência de modelos</p>
                     <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-                        <li>Desenvolvi um avaliador com <strong>MediaPipe, OpenCV e Pydantic</strong>: três proporções
-                            faciais sobre malha densa e nota baseada em régua JSON versionada. Fotos inadequadas
-                            recebem “não medida”; a nota não recusa candidatos.</li>
+                        <li>Implementei e entreguei o MVP completo de um avaliador com
+                            <strong>MediaPipe, OpenCV e Pydantic</strong>, que mede três proporções faciais sobre malha
+                            densa e calcula a nota a partir de uma régua JSON versionada. Fotos inadequadas recebem
+                            “não medida”, e a nota não recusa candidatos.</li>
                         <li>Documentei a régua provisória aprovada pelo responsável. Retirei a simetria após teste
                             próprio e defini a medição de viés como condição para uso com pessoas reais.</li>
                         <li>Refatorei o serviço em <strong>4 PRs</strong>, com logs JSON sem dados da foto e limite
