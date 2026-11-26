@@ -39,7 +39,7 @@
 </head>
 
 <body class="bg-white text-gray-800 font-sans text-[13px] leading-snug">
-    <div class="container mx-auto px-9 py-6 max-w-[210mm] min-h-[297mm]">
+    <div class="container mx-auto px-9 py-4 max-w-[210mm] min-h-[297mm]">
 
         <!-- HEADER -->
         <header class="mb-3 border-b border-black pb-2.5">
@@ -107,18 +107,19 @@
             <div class="mb-2 no-break">
                 <p><a href="https://github.com/Titus-System/synapse"
                     class="font-semibold text-primary hover:underline">Synapse</a>
-                    <span class="text-gray-600">- Regras de comissionamento com IA</span>
+                    <span class="text-gray-600">- Simulação de regras de comissionamento com IA</span>
                     <span class="text-gray-500 text-xs">(FATEC / Dom Rock; em desenvolvimento)</span></p>
                 <p class="text-xs"><a href="https://github.com/Titus-System/synapse"
                     class="text-blue-700">github.com/Titus-System/synapse</a></p>
                 <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
                     <li>Implementei extração estruturada e correção de regras por texto e voz no <strong>LangGraph</strong>,
                         com validação de domínio, confirmação humana e verificações contra parâmetros sem suporte no texto.</li>
-                    <li>Construí o executor do código gerado em <strong>containers Docker efêmeros</strong>, sem rede,
-                        com limites de recursos e conferência independente do baseline. Desenvolvi sugestões de taxas
-                        e metas avaliadas por novas simulações no worker.</li>
-                    <li>Defini arquitetura e contratos entre serviços; implementei outbox/RabbitMQ e SSE na API
-                        Spring Boot, testes de integração e E2E e CI/CD por componente.</li>
+                    <li>Construí o worker Python que executa o código gerado em <strong>containers Docker efêmeros</strong>,
+                        sem rede, com limites de recursos e conferência independente do baseline. Desenvolvi sugestões
+                        de taxas e metas avaliadas por novas simulações.</li>
+                    <li>Defini arquitetura, modelagem e contratos OpenAPI/JSON Schema. Implementei na API
+                        <strong>Java/Spring Boot</strong> estados dos jobs, <strong>outbox transacional com RabbitMQ</strong>
+                        e SSE, com testes de integração e E2E e CI/CD por componente.</li>
                 </ul>
             </div>
             <div class="no-break">
@@ -132,17 +133,15 @@
                     <strong>Celery/Redis</strong>, persistência e progresso via WebSockets.</p>
             </div>
         </section>
-        <br>
         <!-- COMPETÊNCIAS -->
         <section class="mb-3 no-break">
             <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Competências Técnicas</h2>
             <div class="space-y-1">
                 <div><strong>IA e dados:</strong> Python, PyTorch, OpenCV, MediaPipe, NumPy, LangGraph, APIs de LLMs, OCR</div>
-                <div><strong>Engenharia:</strong> FastAPI, Pydantic, PostgreSQL, RabbitMQ, Docker, GitHub Actions, pytest</div>
+                <div><strong>Engenharia:</strong> FastAPI, Pydantic, PostgreSQL, RabbitMQ, Docker, deploy em VMs (AWS, DigitalOcean, Azure), GitHub Actions, pytest</div>
                 <div><strong>Práticas:</strong> avaliação de modelos, inferência em CPU, saídas estruturadas, testes de integração e E2E, observabilidade</div>
             </div>
         </section>
-        <br>
         <!-- FORMAÇÃO -->
         <section class="mb-3 no-break">
             <h2 class="text-[15px] font-bold uppercase border-b border-gray-300 mb-2">Formação</h2>
